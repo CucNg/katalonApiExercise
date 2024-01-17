@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Exercise 3" time="3.78" tests="3" failures="0" errors="0">
+   <testsuite name="Exercise 3" tests="3" failures="0" errors="0" time="3.78" skipped="0" timestamp="15-01-2024T22:50:16" hostname="cucnguyen - 192.168.21.105" id="Test Suites/Exercise 3">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/cucnguyen/Katalon Studio/Exam Katalon/Reports/20240115_225010/Exercise 3/20240115_225010"/>
+         <property name="logFiles" value="/Users/cucnguyen/Katalon Studio/Exam Katalon/Reports/20240115_225010/Exercise 3/20240115_225010/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="cucnguyen - 192.168.21.105"/>
+         <property name="hostAddress" value="192.168.21.105"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.1.0.212"/>
+      </properties>
+      <testcase name="Test Cases/POST Create Token" time="3.612" classname="Test Cases/POST Create Token" status="PASSED">
+         <system-out><![CDATA[15-01-2024T22:50:16 - [TEST_CASE][PASSED] - Test Cases/POST Create Token: Test Cases/POST Create Token
+
+15-01-2024T22:50:16 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("POST Create Token")): Send request successfully
+
+15-01-2024T22:50:19 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/Katalon Studio/Exam Katalon/Reports/20240115_225010/Exercise 3/20240115_225010/requests/main/0.har
+
+15-01-2024T22:50:19 - [MESSAGE][PASSED] - Send request successfully
+
+15-01-2024T22:50:19 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+15-01-2024T22:50:19 - [MESSAGE][PASSED] - Verify response status code successfully
+
+15-01-2024T22:50:19 - [TEST_STEP][PASSED] - responseBody = response.getResponseBodyContent(): null
+
+15-01-2024T22:50:19 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+15-01-2024T22:50:19 - [TEST_STEP][PASSED] - token = token: null
+
+15-01-2024T22:50:19 - [TEST_STEP][PASSED] - token = token: null
+
+15-01-2024T22:50:19 - [TEST_STEP][PASSED] - println("Token: " + token): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Store Token" time="0.028" classname="Test Cases/Store Token" status="PASSED">
+         <system-out><![CDATA[15-01-2024T22:50:19 - [TEST_CASE][PASSED] - Test Cases/Store Token: Test Cases/Store Token
+
+15-01-2024T22:50:19 - [TEST_STEP][PASSED] - storedToken = token: null
+
+15-01-2024T22:50:19 - [TEST_STEP][PASSED] - println("storedToken " + storedToken): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/PUT Update Booking" time="0.016" classname="Test Cases/PUT Update Booking" status="PASSED">
+         <system-out><![CDATA[15-01-2024T22:50:19 - [TEST_CASE][PASSED] - Test Cases/PUT Update Booking: Test Cases/PUT Update Booking
+
+15-01-2024T22:50:19 - [TEST_STEP][PASSED] - return null: null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[15-01-2024T22:50:16 - [TEST_SUITE][PASSED] - Exercise 3: Test Cases/PUT Update Booking]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

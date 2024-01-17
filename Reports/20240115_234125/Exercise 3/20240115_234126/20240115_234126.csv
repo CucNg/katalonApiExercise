@@ -1,0 +1,26 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Exercise 3,,,,15-01-2024 23:41:32,15-01-2024 23:41:34,2.521s,FAILED
+,,,,,,,
+Test Cases/POST Create Token,,,,15-01-2024 23:41:32,15-01-2024 23:41:34,2.260s,PASSED
+"response = sendRequest(findTestObject(""POST Create Token""))",,Verify status code ,,15-01-2024 23:41:32,15-01-2024 23:41:34,2.142s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,15-01-2024 23:41:34,15-01-2024 23:41:34,0.011s,PASSED
+responseBody = response.getResponseBodyContent(),,Stored token,,15-01-2024 23:41:34,15-01-2024 23:41:34,0.004s,PASSED
+jsonResponse = JsonSlurper().parseText(responseBody),,,,15-01-2024 23:41:34,15-01-2024 23:41:34,0.008s,PASSED
+token = token,,,,15-01-2024 23:41:34,15-01-2024 23:41:34,0.003s,PASSED
+token = token,,,,15-01-2024 23:41:34,15-01-2024 23:41:34,0.001s,PASSED
+"println(""Token: "" + token)",,,,15-01-2024 23:41:34,15-01-2024 23:41:34,0.002s,PASSED
+,,,,,,,
+Test Cases/Store Token,,,,15-01-2024 23:41:34,15-01-2024 23:41:34,0.026s,PASSED
+storedToken = token,,Stored token,,15-01-2024 23:41:34,15-01-2024 23:41:34,0.001s,PASSED
+"println(""storedToken "" + storedToken)",,,,15-01-2024 23:41:34,15-01-2024 23:41:34,0.001s,PASSED
+,,,,,,,
+Test Cases/PUT Update Booking,,,,15-01-2024 23:41:34,15-01-2024 23:41:34,0.116s,FAILED
+authToken = token,,,,15-01-2024 23:41:34,15-01-2024 23:41:34,0.002s,PASSED
+"requestObject = findTestObject(""Object Repository/PUT Update Booking"", [""id"":""1""])",,,,15-01-2024 23:41:34,15-01-2024 23:41:34,0.032s,PASSED
+"cookie = ""token="" + authToken",,,,15-01-2024 23:41:34,15-01-2024 23:41:34,0.001s,PASSED
+"println(""cookie = "" + cookie)",,,,15-01-2024 23:41:34,15-01-2024 23:41:34,0.001s,PASSED
+headersList = new java.util.ArrayList(),,,,15-01-2024 23:41:34,15-01-2024 23:41:34,0.002s,PASSED
+"headers = [[""name"":""Content-Type"", ""value"":""application/json""], [""name"":""Accept"", ""value"":""application/json""], [""name"":""Cookie"", ""value"":cookie]]",,,,15-01-2024 23:41:34,15-01-2024 23:41:34,0.001s,PASSED
+headersList.addAll(headers),,,,15-01-2024 23:41:34,15-01-2024 23:41:34,0.003s,PASSED
+requestObject.setHttpHeaderProperties(headersList),,,,15-01-2024 23:41:34,15-01-2024 23:41:34,0.006s,PASSED
+response = sendRequest(requestObject),,,,15-01-2024 23:41:34,15-01-2024 23:41:34,0.007s,FAILED

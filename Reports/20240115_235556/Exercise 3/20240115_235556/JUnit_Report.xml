@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Exercise 3" time="4.148" tests="3" failures="0" errors="0">
+   <testsuite name="Exercise 3" tests="3" failures="0" errors="0" time="4.148" skipped="0" timestamp="15-01-2024T23:56:02" hostname="cucnguyen - 192.168.21.105" id="Test Suites/Exercise 3">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/cucnguyen/Katalon Studio/Exam Katalon/Reports/20240115_235556/Exercise 3/20240115_235556"/>
+         <property name="logFiles" value="/Users/cucnguyen/Katalon Studio/Exam Katalon/Reports/20240115_235556/Exercise 3/20240115_235556/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="cucnguyen - 192.168.21.105"/>
+         <property name="hostAddress" value="192.168.21.105"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.1.0.212"/>
+      </properties>
+      <testcase name="Test Cases/POST Create Token" time="2.522" classname="Test Cases/POST Create Token" status="PASSED">
+         <system-out><![CDATA[15-01-2024T23:56:02 - [TEST_CASE][PASSED] - Test Cases/POST Create Token: Test Cases/POST Create Token
+
+15-01-2024T23:56:02 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("POST Create Token")): Send request successfully
+
+15-01-2024T23:56:04 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/Katalon Studio/Exam Katalon/Reports/20240115_235556/Exercise 3/20240115_235556/requests/main/0.har
+
+15-01-2024T23:56:04 - [MESSAGE][PASSED] - Send request successfully
+
+15-01-2024T23:56:04 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+15-01-2024T23:56:04 - [MESSAGE][PASSED] - Verify response status code successfully
+
+15-01-2024T23:56:04 - [TEST_STEP][PASSED] - responseBody = response.getResponseBodyContent(): null
+
+15-01-2024T23:56:04 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+15-01-2024T23:56:04 - [TEST_STEP][PASSED] - token = token: null
+
+15-01-2024T23:56:04 - [TEST_STEP][PASSED] - token = token: null
+
+15-01-2024T23:56:04 - [TEST_STEP][PASSED] - println("Token: " + token): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Store Token" time="0.027" classname="Test Cases/Store Token" status="PASSED">
+         <system-out><![CDATA[15-01-2024T23:56:04 - [TEST_CASE][PASSED] - Test Cases/Store Token: Test Cases/Store Token
+
+15-01-2024T23:56:04 - [TEST_STEP][PASSED] - storedToken = token: null
+
+15-01-2024T23:56:04 - [TEST_STEP][PASSED] - println("storedToken " + storedToken): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/PUT Update Booking" time="1.481" classname="Test Cases/PUT Update Booking" status="PASSED">
+         <system-out><![CDATA[15-01-2024T23:56:04 - [TEST_CASE][PASSED] - Test Cases/PUT Update Booking: Test Cases/PUT Update Booking
+
+15-01-2024T23:56:04 - [TEST_STEP][PASSED] - authToken = token: null
+
+15-01-2024T23:56:04 - [TEST_STEP][PASSED] - requestObject = findTestObject("Object Repository/PUT Update Booking", ["id":"1"]): null
+
+15-01-2024T23:56:04 - [TEST_STEP][PASSED] - cookie = "token=" + authToken: null
+
+15-01-2024T23:56:04 - [TEST_STEP][PASSED] - println("cookie = " + cookie): null
+
+15-01-2024T23:56:04 - [TEST_STEP][PASSED] - headersList = new java.util.ArrayList(): null
+
+15-01-2024T23:56:04 - [TEST_STEP][PASSED] - headersList.add(new com.kms.katalon.core.testobject.TestObjectProperty(Content-Type, com.kms.katalon.core.testobject.ConditionType.EQUALS, application/json)): null
+
+15-01-2024T23:56:04 - [TEST_STEP][PASSED] - headersList.add(new com.kms.katalon.core.testobject.TestObjectProperty(Accept, com.kms.katalon.core.testobject.ConditionType.EQUALS, application/json)): null
+
+15-01-2024T23:56:04 - [TEST_STEP][PASSED] - headersList.add(new com.kms.katalon.core.testobject.TestObjectProperty(Cookie, com.kms.katalon.core.testobject.ConditionType.EQUALS, cookie)): null
+
+15-01-2024T23:56:04 - [TEST_STEP][PASSED] - requestObject.setHttpHeaderProperties(headersList): null
+
+15-01-2024T23:56:04 - [TEST_STEP][PASSED] - response = sendRequest(requestObject): Send request successfully
+
+15-01-2024T23:56:06 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/Katalon Studio/Exam Katalon/Reports/20240115_235556/Exercise 3/20240115_235556/requests/main/1.har
+
+15-01-2024T23:56:06 - [MESSAGE][PASSED] - Send request successfully
+
+15-01-2024T23:56:06 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+15-01-2024T23:56:06 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[15-01-2024T23:56:02 - [TEST_SUITE][PASSED] - Exercise 3: Test Cases/PUT Update Booking]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

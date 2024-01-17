@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Multiple data</description>
+   <name>GET Booking Ids</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cd70a495-8420-4f8c-90e4-4c80172843f9</testCaseGuid>
+</TestCaseEntity>

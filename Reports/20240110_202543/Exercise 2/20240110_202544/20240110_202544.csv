@@ -1,0 +1,31 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Exercise 2,,,,10-01-2024 20:25:57,10-01-2024 20:26:06,8.828s,ERROR
+,,,,,,,
+Test Cases/POST Create Multiple Booking,,,,10-01-2024 20:25:57,10-01-2024 20:26:01,4.563s,PASSED
+"response = sendRequest(findTestObject(""Object Repository/POST Create Multiple Booking"", [""firstName"":firstName, ""lastName"":lastName]))",,,,10-01-2024 20:25:57,10-01-2024 20:26:01,4.411s,PASSED
+"verifyResponseStatusCode(response, 200)",,The status should be 200,,10-01-2024 20:26:01,10-01-2024 20:26:01,0.009s,PASSED
+"verifyElementPropertyValue(response, ""booking.firstname"", $firstName)",,,,10-01-2024 20:26:01,10-01-2024 20:26:01,0.031s,PASSED
+"verifyElementPropertyValue(response, ""booking.lastname"", $lastName)",,,,10-01-2024 20:26:01,10-01-2024 20:26:01,0.011s,PASSED
+"id = getElementPropertyValue(response, ""bookingid"")",,,,10-01-2024 20:26:01,10-01-2024 20:26:01,0.014s,PASSED
+ids = id,,,,10-01-2024 20:26:01,10-01-2024 20:26:01,0.002s,PASSED
+"println(""Boooking id: "" + id)",,,,10-01-2024 20:26:01,10-01-2024 20:26:01,0.002s,PASSED
+,,,,,,,
+Test Cases/POST Create Multiple Booking,,,,10-01-2024 20:26:01,10-01-2024 20:26:04,2.706s,PASSED
+"response = sendRequest(findTestObject(""Object Repository/POST Create Multiple Booking"", [""firstName"":firstName, ""lastName"":lastName]))",,,,10-01-2024 20:26:01,10-01-2024 20:26:04,2.666s,PASSED
+"verifyResponseStatusCode(response, 200)",,The status should be 200,,10-01-2024 20:26:04,10-01-2024 20:26:04,0.002s,PASSED
+"verifyElementPropertyValue(response, ""booking.firstname"", $firstName)",,,,10-01-2024 20:26:04,10-01-2024 20:26:04,0.011s,PASSED
+"verifyElementPropertyValue(response, ""booking.lastname"", $lastName)",,,,10-01-2024 20:26:04,10-01-2024 20:26:04,0.009s,PASSED
+"id = getElementPropertyValue(response, ""bookingid"")",,,,10-01-2024 20:26:04,10-01-2024 20:26:04,0.008s,PASSED
+ids = id,,,,10-01-2024 20:26:04,10-01-2024 20:26:04,0.000s,PASSED
+"println(""Boooking id: "" + id)",,,,10-01-2024 20:26:04,10-01-2024 20:26:04,0.000s,PASSED
+,,,,,,,
+Test Cases/POST Create Multiple Booking,,,,10-01-2024 20:26:04,10-01-2024 20:26:06,1.404s,PASSED
+"response = sendRequest(findTestObject(""Object Repository/POST Create Multiple Booking"", [""firstName"":firstName, ""lastName"":lastName]))",,,,10-01-2024 20:26:04,10-01-2024 20:26:05,1.354s,PASSED
+"verifyResponseStatusCode(response, 200)",,The status should be 200,,10-01-2024 20:26:05,10-01-2024 20:26:05,0.001s,PASSED
+"verifyElementPropertyValue(response, ""booking.firstname"", $firstName)",,,,10-01-2024 20:26:05,10-01-2024 20:26:06,0.015s,PASSED
+"verifyElementPropertyValue(response, ""booking.lastname"", $lastName)",,,,10-01-2024 20:26:06,10-01-2024 20:26:06,0.012s,PASSED
+"id = getElementPropertyValue(response, ""bookingid"")",,,,10-01-2024 20:26:06,10-01-2024 20:26:06,0.012s,PASSED
+ids = id,,,,10-01-2024 20:26:06,10-01-2024 20:26:06,0.001s,PASSED
+"println(""Boooking id: "" + id)",,,,10-01-2024 20:26:06,10-01-2024 20:26:06,0.000s,PASSED
+,,,,,,,
+Test Cases/GET Booking Ids,,Multiple data,,10-01-2024 20:26:06,10-01-2024 20:26:06,0.015s,ERROR

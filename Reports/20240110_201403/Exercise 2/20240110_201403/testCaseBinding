@@ -1,0 +1,4 @@
+{"testCaseName":"Test Cases/POST Create Multiple Booking","testCaseId":"Test Cases/POST Create Multiple Booking","iterationVariableName":"","bindedValues":{"firstName":"\u0027Cuc\u0027","lastName":"\u0027Nguyen\u0027"}}
+{"testCaseName":"Test Cases/POST Create Multiple Booking","testCaseId":"Test Cases/POST Create Multiple Booking","iterationVariableName":"","bindedValues":{"firstName":"\u0027Lap\u0027","lastName":"\u0027Chau\u0027"}}
+{"testCaseName":"Test Cases/POST Create Multiple Booking","testCaseId":"Test Cases/POST Create Multiple Booking","iterationVariableName":"","bindedValues":{"firstName":"\u0027Anh\u0027","lastName":"\u0027Nguyen\u0027"}}
+{"testCaseName":"Test Cases/GET Booking Ids","testCaseId":"Test Cases/GET Booking Ids","iterationVariableName":""}

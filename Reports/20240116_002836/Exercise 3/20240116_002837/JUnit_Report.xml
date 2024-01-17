@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Exercise 3" time="5.504" tests="3" failures="0" errors="0">
+   <testsuite name="Exercise 3" tests="3" failures="0" errors="0" time="5.504" skipped="0" timestamp="16-01-2024T00:29:08" hostname="cucnguyen - 192.168.21.105" id="Test Suites/Exercise 3">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/cucnguyen/Katalon Studio/Exam Katalon/Reports/20240116_002836/Exercise 3/20240116_002837"/>
+         <property name="logFiles" value="/Users/cucnguyen/Katalon Studio/Exam Katalon/Reports/20240116_002836/Exercise 3/20240116_002837/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="cucnguyen - 192.168.21.105"/>
+         <property name="hostAddress" value="192.168.21.105"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.1.0.212"/>
+      </properties>
+      <testcase name="Test Cases/POST Create Token" time="2.319" classname="Test Cases/POST Create Token" status="PASSED">
+         <system-out><![CDATA[16-01-2024T00:29:08 - [TEST_CASE][PASSED] - Test Cases/POST Create Token: Test Cases/POST Create Token
+
+16-01-2024T00:29:08 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("POST Create Token")): Send request successfully
+
+16-01-2024T00:29:10 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/Katalon Studio/Exam Katalon/Reports/20240116_002836/Exercise 3/20240116_002837/requests/main/0.har
+
+16-01-2024T00:29:10 - [MESSAGE][PASSED] - Send request successfully
+
+16-01-2024T00:29:10 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+16-01-2024T00:29:10 - [MESSAGE][PASSED] - Verify response status code successfully
+
+16-01-2024T00:29:10 - [TEST_STEP][PASSED] - responseBody = response.getResponseBodyContent(): null
+
+16-01-2024T00:29:10 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+16-01-2024T00:29:10 - [TEST_STEP][PASSED] - token = token: null
+
+16-01-2024T00:29:10 - [TEST_STEP][PASSED] - token = token: null
+
+16-01-2024T00:29:10 - [TEST_STEP][PASSED] - println("Token: " + token): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/POST Create booking" time="1.581" classname="Test Cases/POST Create booking" status="PASSED">
+         <system-out><![CDATA[16-01-2024T00:29:10 - [TEST_CASE][PASSED] - Test Cases/POST Create booking: Test Cases/POST Create booking
+
+16-01-2024T00:29:11 - [TEST_STEP][PASSED] - firstName = sample.Common.generateRandomString(): sample.Common.generateRandomString is PASSED
+
+16-01-2024T00:29:11 - [MESSAGE][PASSED] - sample.Common.generateRandomString is PASSED
+
+16-01-2024T00:29:11 - [TEST_STEP][PASSED] - lastName = sample.Common.generateRandomString(): sample.Common.generateRandomString is PASSED
+
+16-01-2024T00:29:11 - [MESSAGE][PASSED] - sample.Common.generateRandomString is PASSED
+
+16-01-2024T00:29:11 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Object Repository/POST Create booking", ["firstName":firstName, "lastName":lastName])): Send request successfully
+
+16-01-2024T00:29:12 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/Katalon Studio/Exam Katalon/Reports/20240116_002836/Exercise 3/20240116_002837/requests/main/1.har
+
+16-01-2024T00:29:12 - [MESSAGE][PASSED] - Send request successfully
+
+16-01-2024T00:29:12 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+16-01-2024T00:29:12 - [MESSAGE][PASSED] - Verify response status code successfully
+
+16-01-2024T00:29:12 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.firstname", $firstName): Verify element property value successfully
+
+16-01-2024T00:29:12 - [MESSAGE][PASSED] - Verify element property value successfully
+
+16-01-2024T00:29:12 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.lastname", $lastName): Verify element property value successfully
+
+16-01-2024T00:29:12 - [MESSAGE][PASSED] - Verify element property value successfully
+
+16-01-2024T00:29:12 - [TEST_STEP][PASSED] - responseFirstName = getElementPropertyValue(response, "booking.firstname"): null
+
+16-01-2024T00:29:12 - [TEST_STEP][PASSED] - responseLastName = getElementPropertyValue(response, "booking.lastname"): null
+
+16-01-2024T00:29:12 - [TEST_STEP][PASSED] - id = getElementPropertyValue(response, "bookingid"): null
+
+16-01-2024T00:29:12 - [TEST_STEP][PASSED] - firstName = responseFirstName: null
+
+16-01-2024T00:29:12 - [TEST_STEP][PASSED] - lastName = responseLastName: null
+
+16-01-2024T00:29:12 - [TEST_STEP][PASSED] - id = id: null
+
+16-01-2024T00:29:12 - [TEST_STEP][PASSED] - println("responseFirstName " + responseFirstName): null
+
+16-01-2024T00:29:12 - [TEST_STEP][PASSED] - println("responseLastName " + responseLastName): null
+
+16-01-2024T00:29:12 - [TEST_STEP][PASSED] - println("id: " + id): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/PUT Update Booking" time="1.481" classname="Test Cases/PUT Update Booking" status="PASSED">
+         <system-out><![CDATA[16-01-2024T00:29:12 - [TEST_CASE][PASSED] - Test Cases/PUT Update Booking: Test Cases/PUT Update Booking
+
+16-01-2024T00:29:12 - [TEST_STEP][PASSED] - authToken = token: null
+
+16-01-2024T00:29:12 - [TEST_STEP][PASSED] - id = id: null
+
+16-01-2024T00:29:12 - [TEST_STEP][PASSED] - firstName = "Cuc": null
+
+16-01-2024T00:29:12 - [TEST_STEP][PASSED] - lastName = "123 test": null
+
+16-01-2024T00:29:12 - [TEST_STEP][PASSED] - requestObject = findTestObject("Object Repository/PUT Update Booking", ["id":id, "firstName":firstName, "lastName":lastName]): null
+
+16-01-2024T00:29:12 - [TEST_STEP][PASSED] - cookie = "token=" + authToken: null
+
+16-01-2024T00:29:12 - [TEST_STEP][PASSED] - println("cookie = " + cookie): null
+
+16-01-2024T00:29:12 - [TEST_STEP][PASSED] - headersList = new java.util.ArrayList(): null
+
+16-01-2024T00:29:12 - [TEST_STEP][PASSED] - headersList.add(new com.kms.katalon.core.testobject.TestObjectProperty(Content-Type, com.kms.katalon.core.testobject.ConditionType.EQUALS, application/json)): null
+
+16-01-2024T00:29:12 - [TEST_STEP][PASSED] - headersList.add(new com.kms.katalon.core.testobject.TestObjectProperty(Accept, com.kms.katalon.core.testobject.ConditionType.EQUALS, application/json)): null
+
+16-01-2024T00:29:12 - [TEST_STEP][PASSED] - headersList.add(new com.kms.katalon.core.testobject.TestObjectProperty(Cookie, com.kms.katalon.core.testobject.ConditionType.EQUALS, cookie)): null
+
+16-01-2024T00:29:12 - [TEST_STEP][PASSED] - requestObject.setHttpHeaderProperties(headersList): null
+
+16-01-2024T00:29:12 - [TEST_STEP][PASSED] - response = sendRequest(requestObject): Send request successfully
+
+16-01-2024T00:29:14 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/Katalon Studio/Exam Katalon/Reports/20240116_002836/Exercise 3/20240116_002837/requests/main/2.har
+
+16-01-2024T00:29:14 - [MESSAGE][PASSED] - Send request successfully
+
+16-01-2024T00:29:14 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+16-01-2024T00:29:14 - [MESSAGE][PASSED] - Verify response status code successfully
+
+16-01-2024T00:29:14 - [TEST_STEP][PASSED] - responseBody = response.getResponseBodyContent(): null
+
+16-01-2024T00:29:14 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+16-01-2024T00:29:14 - [TEST_STEP][PASSED] - firstNameRes = firstname: null
+
+16-01-2024T00:29:14 - [TEST_STEP][PASSED] - lastNameRes = lastname: null
+
+16-01-2024T00:29:14 - [TEST_STEP][PASSED] - println("RESPONE: " + jsonResponse): null
+
+16-01-2024T00:29:14 - [TEST_STEP][PASSED] - verifyEqual(lastNameRes, $lastName): Actual object '123 test' and expected object '123 test' are equal
+
+16-01-2024T00:29:14 - [MESSAGE][PASSED] - Actual object '123 test' and expected object '123 test' are equal
+
+16-01-2024T00:29:14 - [TEST_STEP][PASSED] - verifyEqual(firstNameRes, $firstName): Actual object 'Cuc' and expected object 'Cuc' are equal
+
+16-01-2024T00:29:14 - [MESSAGE][PASSED] - Actual object 'Cuc' and expected object 'Cuc' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[16-01-2024T00:29:08 - [TEST_SUITE][PASSED] - Exercise 3: Test Cases/PUT Update Booking]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

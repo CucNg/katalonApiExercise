@@ -1,0 +1,23 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Exercise 3,,,,15-01-2024 23:39:43,15-01-2024 23:39:45,2.643s,PASSED
+,,,,,,,
+Test Cases/POST Create Token,,,,15-01-2024 23:39:43,15-01-2024 23:39:45,2.426s,PASSED
+"response = sendRequest(findTestObject(""POST Create Token""))",,Verify status code ,,15-01-2024 23:39:43,15-01-2024 23:39:45,2.314s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,15-01-2024 23:39:45,15-01-2024 23:39:45,0.008s,PASSED
+responseBody = response.getResponseBodyContent(),,Stored token,,15-01-2024 23:39:45,15-01-2024 23:39:45,0.003s,PASSED
+jsonResponse = JsonSlurper().parseText(responseBody),,,,15-01-2024 23:39:45,15-01-2024 23:39:45,0.007s,PASSED
+token = token,,,,15-01-2024 23:39:45,15-01-2024 23:39:45,0.003s,PASSED
+token = token,,,,15-01-2024 23:39:45,15-01-2024 23:39:45,0.001s,PASSED
+"println(""Token: "" + token)",,,,15-01-2024 23:39:45,15-01-2024 23:39:45,0.002s,PASSED
+,,,,,,,
+Test Cases/Store Token,,,,15-01-2024 23:39:45,15-01-2024 23:39:45,0.033s,PASSED
+storedToken = token,,Stored token,,15-01-2024 23:39:45,15-01-2024 23:39:45,0.001s,PASSED
+"println(""storedToken "" + storedToken)",,,,15-01-2024 23:39:45,15-01-2024 23:39:45,0.000s,PASSED
+,,,,,,,
+Test Cases/PUT Update Booking,,,,15-01-2024 23:39:45,15-01-2024 23:39:45,0.070s,PASSED
+authToken = token,,,,15-01-2024 23:39:45,15-01-2024 23:39:45,0.001s,PASSED
+"requestObject = findTestObject(""Object Repository/PUT Update Booking"", [""id"":""1""])",,,,15-01-2024 23:39:45,15-01-2024 23:39:45,0.025s,PASSED
+"cookie = ""token="" + authToken",,,,15-01-2024 23:39:45,15-01-2024 23:39:45,0.001s,PASSED
+"println(""cookie = "" + cookie)",,,,15-01-2024 23:39:45,15-01-2024 23:39:45,0.000s,PASSED
+"headers = [[""name"":""Content-Type"", ""value"":""application/json""], [""name"":""Accept"", ""value"":""application/json""], [""name"":""Cookie"", ""value"":cookie]]",,,,15-01-2024 23:39:45,15-01-2024 23:39:45,0.000s,PASSED
+requestObject.setHttpHeaderProperties(headers),,,,15-01-2024 23:39:45,15-01-2024 23:39:45,0.006s,PASSED

@@ -1,0 +1,21 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Exercise 3,,,,15-01-2024 23:05:20,15-01-2024 23:05:23,2.859s,ERROR
+,,,,,,,
+Test Cases/POST Create Token,,,,15-01-2024 23:05:20,15-01-2024 23:05:23,2.621s,PASSED
+"response = sendRequest(findTestObject(""POST Create Token""))",,Verify status code ,,15-01-2024 23:05:21,15-01-2024 23:05:23,2.507s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,15-01-2024 23:05:23,15-01-2024 23:05:23,0.008s,PASSED
+responseBody = response.getResponseBodyContent(),,Stored token,,15-01-2024 23:05:23,15-01-2024 23:05:23,0.003s,PASSED
+jsonResponse = JsonSlurper().parseText(responseBody),,,,15-01-2024 23:05:23,15-01-2024 23:05:23,0.007s,PASSED
+token = token,,,,15-01-2024 23:05:23,15-01-2024 23:05:23,0.004s,PASSED
+token = token,,,,15-01-2024 23:05:23,15-01-2024 23:05:23,0.001s,PASSED
+"println(""Token: "" + token)",,,,15-01-2024 23:05:23,15-01-2024 23:05:23,0.002s,PASSED
+,,,,,,,
+Test Cases/Store Token,,,,15-01-2024 23:05:23,15-01-2024 23:05:23,0.026s,PASSED
+storedToken = token,,Stored token,,15-01-2024 23:05:23,15-01-2024 23:05:23,0.001s,PASSED
+"println(""storedToken "" + storedToken)",,,,15-01-2024 23:05:23,15-01-2024 23:05:23,0.001s,PASSED
+,,,,,,,
+Test Cases/PUT Update Booking,,,,15-01-2024 23:05:23,15-01-2024 23:05:23,0.094s,ERROR
+authToken = token,,,,15-01-2024 23:05:23,15-01-2024 23:05:23,0.001s,PASSED
+"requestObject = findTestObject(""PUT Update Booking"", [""id"":""1""])",,,,15-01-2024 23:05:23,15-01-2024 23:05:23,0.028s,PASSED
+httpHeaders = new java.util.ArrayList(),,,,15-01-2024 23:05:23,15-01-2024 23:05:23,0.000s,PASSED
+"httpHeaders.add(new com.kms.katalon.core.testobject.TestObjectProperty(Content-Type, ConditionType.EQUALS, application/json))",,,,15-01-2024 23:05:23,15-01-2024 23:05:23,0.001s,ERROR

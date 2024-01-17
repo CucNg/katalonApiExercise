@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>POST Create Multiple Booking</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f7fc540b-b029-4307-8543-22f0d3146427</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>2ed95c4e-6083-4052-a8f3-26587951ae40</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/Booking multiple data</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>2ed95c4e-6083-4052-a8f3-26587951ae40</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>firstName</value>
+      <variableId>29b2d6b5-2106-4a2b-8d02-884b225c55c2</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>2ed95c4e-6083-4052-a8f3-26587951ae40</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>lastName</value>
+      <variableId>c1142d30-aa74-4fa8-a27a-517f65f0a994</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'aa'</defaultValue>
+      <description></description>
+      <id>29b2d6b5-2106-4a2b-8d02-884b225c55c2</id>
+      <masked>false</masked>
+      <name>firstName</name>
+   </variable>
+   <variable>
+      <defaultValue>'bb'</defaultValue>
+      <description></description>
+      <id>c1142d30-aa74-4fa8-a27a-517f65f0a994</id>
+      <masked>false</masked>
+      <name>lastName</name>
+   </variable>
+</TestCaseEntity>

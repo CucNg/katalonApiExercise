@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="web-service-tests - All Test Cases" time="0.25" tests="3" failures="0" errors="0">
+   <testsuite name="web-service-tests - All Test Cases" tests="3" failures="0" errors="0" time="0.25" skipped="0" timestamp="08-01-2024T21:20:14" hostname="cucnguyen - 192.168.2.12" id="Test Suites/web-service-tests - All Test Cases">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/cucnguyen/Katalon Studio/Exam Katalon/Reports/20240108_212010/web-service-tests - All Test Cases/20240108_212010"/>
+         <property name="logFiles" value="/Users/cucnguyen/Katalon Studio/Exam Katalon/Reports/20240108_212010/web-service-tests - All Test Cases/20240108_212010/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="cucnguyen - 192.168.2.12"/>
+         <property name="hostAddress" value="192.168.2.12"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.1.0.212"/>
+      </properties>
+      <testcase name="Test Cases/exam use data driven" time="0.08" classname="Test Cases/exam use data driven" status="PASSED">
+         <system-out><![CDATA[08-01-2024T21:20:14 - [TEST_CASE][PASSED] - Test Cases/exam use data driven: Test Cases/exam use data driven
+
+08-01-2024T21:20:14 - [TEST_STEP][PASSED] - println($employee - $department): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/exam use data driven" time="0.012" classname="Test Cases/exam use data driven" status="PASSED">
+         <system-out><![CDATA[08-01-2024T21:20:14 - [TEST_CASE][PASSED] - Test Cases/exam use data driven: Test Cases/exam use data driven
+
+08-01-2024T21:20:14 - [TEST_STEP][PASSED] - println($employee - $department): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/exam use data driven" time="0.011" classname="Test Cases/exam use data driven" status="PASSED">
+         <system-out><![CDATA[08-01-2024T21:20:14 - [TEST_CASE][PASSED] - Test Cases/exam use data driven: Test Cases/exam use data driven
+
+08-01-2024T21:20:14 - [TEST_STEP][PASSED] - println($employee - $department): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[08-01-2024T21:20:14 - [TEST_SUITE][PASSED] - web-service-tests - All Test Cases: Test Cases/exam use data driven]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

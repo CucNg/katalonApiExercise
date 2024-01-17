@@ -1,0 +1,21 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Exercise 1,,,,10-01-2024 00:21:02,10-01-2024 00:21:05,2.626s,ERROR
+,,,,,,,
+Test Cases/POST Create booking,,,,10-01-2024 00:21:02,10-01-2024 00:21:05,2.386s,PASSED
+firstName = sample.Common.generateRandomString(),,,,10-01-2024 00:21:02,10-01-2024 00:21:02,0.025s,PASSED
+lastName = sample.Common.generateRandomString(),,,,10-01-2024 00:21:02,10-01-2024 00:21:02,0.002s,PASSED
+"response = sendRequest(findTestObject(""Object Repository/POST Create booking"", [""firstName"":firstName, ""lastName"":lastName]))",,,,10-01-2024 00:21:02,10-01-2024 00:21:05,2.171s,PASSED
+"verifyResponseStatusCode(response, 200)",,The status should be 200,,10-01-2024 00:21:05,10-01-2024 00:21:05,0.007s,PASSED
+"verifyElementPropertyValue(response, ""booking.firstname"", $firstName)",,Verify response,,10-01-2024 00:21:05,10-01-2024 00:21:05,0.024s,PASSED
+"verifyElementPropertyValue(response, ""booking.lastname"", $lastName)",,,,10-01-2024 00:21:05,10-01-2024 00:21:05,0.010s,PASSED
+"responseFirstName = getElementPropertyValue(response, ""booking.firstname"")",,,,10-01-2024 00:21:05,10-01-2024 00:21:05,0.014s,PASSED
+"responseLastName = getElementPropertyValue(response, ""booking.lastname"")",,,,10-01-2024 00:21:05,10-01-2024 00:21:05,0.010s,PASSED
+"id = getElementPropertyValue(response, ""bookingid"")",,,,10-01-2024 00:21:05,10-01-2024 00:21:05,0.009s,PASSED
+firstName = responseFirstName,,,,10-01-2024 00:21:05,10-01-2024 00:21:05,0.000s,PASSED
+lastName = responseLastName,,,,10-01-2024 00:21:05,10-01-2024 00:21:05,0.000s,PASSED
+id = id,,,,10-01-2024 00:21:05,10-01-2024 00:21:05,0.001s,PASSED
+"println(""responseFirstName "" + responseFirstName)",,,,10-01-2024 00:21:05,10-01-2024 00:21:05,0.004s,PASSED
+"println(""responseLastName "" + responseLastName)",,,,10-01-2024 00:21:05,10-01-2024 00:21:05,0.001s,PASSED
+"println(""id: "" + id)",,,,10-01-2024 00:21:05,10-01-2024 00:21:05,0.000s,PASSED
+,,,,,,,
+Test Cases/GET Search booking,,by first name and last name,,10-01-2024 00:21:05,10-01-2024 00:21:05,0.027s,ERROR

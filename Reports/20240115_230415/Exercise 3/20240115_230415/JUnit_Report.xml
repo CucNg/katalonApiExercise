@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Exercise 3" time="2.85" tests="3" failures="0" errors="1">
+   <testsuite name="Exercise 3" tests="3" failures="0" errors="1" time="2.85" skipped="0" timestamp="15-01-2024T23:04:21" hostname="cucnguyen - 192.168.21.105" id="Test Suites/Exercise 3">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/cucnguyen/Katalon Studio/Exam Katalon/Reports/20240115_230415/Exercise 3/20240115_230415"/>
+         <property name="logFiles" value="/Users/cucnguyen/Katalon Studio/Exam Katalon/Reports/20240115_230415/Exercise 3/20240115_230415/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="cucnguyen - 192.168.21.105"/>
+         <property name="hostAddress" value="192.168.21.105"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.1.0.212"/>
+      </properties>
+      <testcase name="Test Cases/POST Create Token" time="2.651" classname="Test Cases/POST Create Token" status="PASSED">
+         <system-out><![CDATA[15-01-2024T23:04:21 - [TEST_CASE][PASSED] - Test Cases/POST Create Token: Test Cases/POST Create Token
+
+15-01-2024T23:04:21 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("POST Create Token")): Send request successfully
+
+15-01-2024T23:04:23 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/Katalon Studio/Exam Katalon/Reports/20240115_230415/Exercise 3/20240115_230415/requests/main/0.har
+
+15-01-2024T23:04:23 - [MESSAGE][PASSED] - Send request successfully
+
+15-01-2024T23:04:23 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+15-01-2024T23:04:23 - [MESSAGE][PASSED] - Verify response status code successfully
+
+15-01-2024T23:04:23 - [TEST_STEP][PASSED] - responseBody = response.getResponseBodyContent(): null
+
+15-01-2024T23:04:23 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+15-01-2024T23:04:23 - [TEST_STEP][PASSED] - token = token: null
+
+15-01-2024T23:04:23 - [TEST_STEP][PASSED] - token = token: null
+
+15-01-2024T23:04:23 - [TEST_STEP][PASSED] - println("Token: " + token): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Store Token" time="0.03" classname="Test Cases/Store Token" status="PASSED">
+         <system-out><![CDATA[15-01-2024T23:04:23 - [TEST_CASE][PASSED] - Test Cases/Store Token: Test Cases/Store Token
+
+15-01-2024T23:04:23 - [TEST_STEP][PASSED] - storedToken = token: null
+
+15-01-2024T23:04:24 - [TEST_STEP][PASSED] - println("storedToken " + storedToken): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/PUT Update Booking" time="0.055" classname="Test Cases/PUT Update Booking" status="ERROR">
+         <error type="ERROR" message="Test Cases/PUT Update Booking FAILED.&#xa;Reason:&#xa;org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:&#xa;file:/Users/cucnguyen/Katalon%20Studio/Exam%20Katalon/Scripts/PUT%20Update%20Booking/Script1705250154622.groovy: 35: unable to resolve class TestObjectProperty&#xa; @ line 35, column 6.&#xa;   List&lt;TestObjectProperty> httpHeaders = new ArrayList&lt;TestObjectProperty>()&#xa;        ^&#xa;&#xa;file:/Users/cucnguyen/Katalon%20Studio/Exam%20Katalon/Scripts/PUT%20Update%20Booking/Script1705250154622.groovy: 35: unable to resolve class TestObjectProperty&#xa; @ line 35, column 54.&#xa;   > httpHeaders = new ArrayList&lt;TestObject&#xa;                                 ^&#xa;&#xa;file:/Users/cucnguyen/Katalon%20Studio/Exam%20Katalon/Scripts/PUT%20Update%20Booking/Script1705250154622.groovy: 37: unable to resolve class TestObjectProperty&#xa; @ line 37, column 17.&#xa;   httpHeaders.add(new TestObjectProperty(&quot;Content-Type&quot;, ConditionType.EQUALS, &quot;application/json&quot;))&#xa;                   ^&#xa;&#xa;file:/Users/cucnguyen/Katalon%20Studio/Exam%20Katalon/Scripts/PUT%20Update%20Booking/Script1705250154622.groovy: 38: unable to resolve class TestObjectProperty&#xa; @ line 38, column 17.&#xa;   httpHeaders.add(new TestObjectProperty(&quot;Accept&quot;, ConditionType.EQUALS, &quot;application/json&quot;))&#xa;                   ^&#xa;&#xa;file:/Users/cucnguyen/Katalon%20Studio/Exam%20Katalon/Scripts/PUT%20Update%20Booking/Script1705250154622.groovy: 40: unable to resolve class TestObjectProperty&#xa; @ line 40, column 17.&#xa;   httpHeaders.add(new TestObjectProperty(&quot;Cookie&quot;, ConditionType.EQUALS, &quot;token=${authToken}&quot;))&#xa;                   ^&#xa;&#xa;5 errors&#xa;&#xa;	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)&#xa;	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xa;	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)&#xa;	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)&#xa;	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)&#xa;	at TempTestSuite1705334655612.run(TempTestSuite1705334655612.groovy:36)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#xa;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#xa;"/>
+         <system-out><![CDATA[15-01-2024T23:04:24 - [TEST_CASE][ERROR] - Test Cases/PUT Update Booking: Test Cases/PUT Update Booking FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/Users/cucnguyen/Katalon%20Studio/Exam%20Katalon/Scripts/PUT%20Update%20Booking/Script1705250154622.groovy: 35: unable to resolve class TestObjectProperty
+ @ line 35, column 6.
+   List<TestObjectProperty> httpHeaders = new ArrayList<TestObjectProperty>()
+        ^
+
+file:/Users/cucnguyen/Katalon%20Studio/Exam%20Katalon/Scripts/PUT%20Update%20Booking/Script1705250154622.groovy: 35: unable to resolve class TestObjectProperty
+ @ line 35, column 54.
+   > httpHeaders = new ArrayList<TestObject
+                                 ^
+
+file:/Users/cucnguyen/Katalon%20Studio/Exam%20Katalon/Scripts/PUT%20Update%20Booking/Script1705250154622.groovy: 37: unable to resolve class TestObjectProperty
+ @ line 37, column 17.
+   httpHeaders.add(new TestObjectProperty("Content-Type", ConditionType.EQUALS, "application/json"))
+                   ^
+
+file:/Users/cucnguyen/Katalon%20Studio/Exam%20Katalon/Scripts/PUT%20Update%20Booking/Script1705250154622.groovy: 38: unable to resolve class TestObjectProperty
+ @ line 38, column 17.
+   httpHeaders.add(new TestObjectProperty("Accept", ConditionType.EQUALS, "application/json"))
+                   ^
+
+file:/Users/cucnguyen/Katalon%20Studio/Exam%20Katalon/Scripts/PUT%20Update%20Booking/Script1705250154622.groovy: 40: unable to resolve class TestObjectProperty
+ @ line 40, column 17.
+   httpHeaders.add(new TestObjectProperty("Cookie", ConditionType.EQUALS, "token=${authToken}"))
+                   ^
+
+5 errors
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1705334655612.run(TempTestSuite1705334655612.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-out>
+         <system-err><![CDATA[15-01-2024T23:04:24 - [TEST_CASE][ERROR] - Test Cases/PUT Update Booking: Test Cases/PUT Update Booking FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/Users/cucnguyen/Katalon%20Studio/Exam%20Katalon/Scripts/PUT%20Update%20Booking/Script1705250154622.groovy: 35: unable to resolve class TestObjectProperty
+ @ line 35, column 6.
+   List<TestObjectProperty> httpHeaders = new ArrayList<TestObjectProperty>()
+        ^
+
+file:/Users/cucnguyen/Katalon%20Studio/Exam%20Katalon/Scripts/PUT%20Update%20Booking/Script1705250154622.groovy: 35: unable to resolve class TestObjectProperty
+ @ line 35, column 54.
+   > httpHeaders = new ArrayList<TestObject
+                                 ^
+
+file:/Users/cucnguyen/Katalon%20Studio/Exam%20Katalon/Scripts/PUT%20Update%20Booking/Script1705250154622.groovy: 37: unable to resolve class TestObjectProperty
+ @ line 37, column 17.
+   httpHeaders.add(new TestObjectProperty("Content-Type", ConditionType.EQUALS, "application/json"))
+                   ^
+
+file:/Users/cucnguyen/Katalon%20Studio/Exam%20Katalon/Scripts/PUT%20Update%20Booking/Script1705250154622.groovy: 38: unable to resolve class TestObjectProperty
+ @ line 38, column 17.
+   httpHeaders.add(new TestObjectProperty("Accept", ConditionType.EQUALS, "application/json"))
+                   ^
+
+file:/Users/cucnguyen/Katalon%20Studio/Exam%20Katalon/Scripts/PUT%20Update%20Booking/Script1705250154622.groovy: 40: unable to resolve class TestObjectProperty
+ @ line 40, column 17.
+   httpHeaders.add(new TestObjectProperty("Cookie", ConditionType.EQUALS, "token=${authToken}"))
+                   ^
+
+5 errors
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1705334655612.run(TempTestSuite1705334655612.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[15-01-2024T23:04:21 - [TEST_SUITE][ERROR] - Exercise 3: Test Cases/PUT Update Booking FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/Users/cucnguyen/Katalon%20Studio/Exam%20Katalon/Scripts/PUT%20Update%20Booking/Script1705250154622.groovy: 35: unable to resolve class TestObjectProperty
+ @ line 35, column 6.
+   List<TestObjectProperty> httpHeaders = new ArrayList<TestObjectProperty>()
+        ^
+
+file:/Users/cucnguyen/Katalon%20Studio/Exam%20Katalon/Scripts/PUT%20Update%20Booking/Script1705250154622.groovy: 35: unable to resolve class TestObjectProperty
+ @ line 35, column 54.
+   > httpHeaders = new ArrayList<TestObject
+                                 ^
+
+file:/Users/cucnguyen/Katalon%20Studio/Exam%20Katalon/Scripts/PUT%20Update%20Booking/Script1705250154622.groovy: 37: unable to resolve class TestObjectProperty
+ @ line 37, column 17.
+   httpHeaders.add(new TestObjectProperty("Content-Type", ConditionType.EQUALS, "application/json"))
+                   ^
+
+file:/Users/cucnguyen/Katalon%20Studio/Exam%20Katalon/Scripts/PUT%20Update%20Booking/Script1705250154622.groovy: 38: unable to resolve class TestObjectProperty
+ @ line 38, column 17.
+   httpHeaders.add(new TestObjectProperty("Accept", ConditionType.EQUALS, "application/json"))
+                   ^
+
+file:/Users/cucnguyen/Katalon%20Studio/Exam%20Katalon/Scripts/PUT%20Update%20Booking/Script1705250154622.groovy: 40: unable to resolve class TestObjectProperty
+ @ line 40, column 17.
+   httpHeaders.add(new TestObjectProperty("Cookie", ConditionType.EQUALS, "token=${authToken}"))
+                   ^
+
+5 errors
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1705334655612.run(TempTestSuite1705334655612.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-out>
+      <system-err><![CDATA[15-01-2024T23:04:21 - [TEST_SUITE][ERROR] - Exercise 3: Test Cases/PUT Update Booking FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/Users/cucnguyen/Katalon%20Studio/Exam%20Katalon/Scripts/PUT%20Update%20Booking/Script1705250154622.groovy: 35: unable to resolve class TestObjectProperty
+ @ line 35, column 6.
+   List<TestObjectProperty> httpHeaders = new ArrayList<TestObjectProperty>()
+        ^
+
+file:/Users/cucnguyen/Katalon%20Studio/Exam%20Katalon/Scripts/PUT%20Update%20Booking/Script1705250154622.groovy: 35: unable to resolve class TestObjectProperty
+ @ line 35, column 54.
+   > httpHeaders = new ArrayList<TestObject
+                                 ^
+
+file:/Users/cucnguyen/Katalon%20Studio/Exam%20Katalon/Scripts/PUT%20Update%20Booking/Script1705250154622.groovy: 37: unable to resolve class TestObjectProperty
+ @ line 37, column 17.
+   httpHeaders.add(new TestObjectProperty("Content-Type", ConditionType.EQUALS, "application/json"))
+                   ^
+
+file:/Users/cucnguyen/Katalon%20Studio/Exam%20Katalon/Scripts/PUT%20Update%20Booking/Script1705250154622.groovy: 38: unable to resolve class TestObjectProperty
+ @ line 38, column 17.
+   httpHeaders.add(new TestObjectProperty("Accept", ConditionType.EQUALS, "application/json"))
+                   ^
+
+file:/Users/cucnguyen/Katalon%20Studio/Exam%20Katalon/Scripts/PUT%20Update%20Booking/Script1705250154622.groovy: 40: unable to resolve class TestObjectProperty
+ @ line 40, column 17.
+   httpHeaders.add(new TestObjectProperty("Cookie", ConditionType.EQUALS, "token=${authToken}"))
+                   ^
+
+5 errors
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1705334655612.run(TempTestSuite1705334655612.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-err>
+   </testsuite>
+</testsuites>

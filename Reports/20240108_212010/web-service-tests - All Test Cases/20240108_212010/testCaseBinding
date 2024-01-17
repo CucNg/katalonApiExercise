@@ -1,0 +1,3 @@
+{"testCaseName":"Test Cases/exam use data driven - Iteration 1","testCaseId":"Test Cases/exam use data driven","iterationVariableName":"","bindedValues":{"employee":"\u0027Cuc\u0027","department":"\u0027Marketing\u0027"}}
+{"testCaseName":"Test Cases/exam use data driven - Iteration 2","testCaseId":"Test Cases/exam use data driven","iterationVariableName":"","bindedValues":{"employee":"\u0027Cuc2\u0027","department":"\u0027FIN\u0027"}}
+{"testCaseName":"Test Cases/exam use data driven - Iteration 3","testCaseId":"Test Cases/exam use data driven","iterationVariableName":"","bindedValues":{"employee":"\u0027Cuc3\u0027","department":"\u0027Sales\u0027"}}

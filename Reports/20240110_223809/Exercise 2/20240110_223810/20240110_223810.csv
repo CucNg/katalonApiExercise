@@ -1,0 +1,56 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Exercise 2,,,,10-01-2024 22:38:15,10-01-2024 22:38:25,9.613s,PASSED
+,,,,,,,
+Test Cases/POST Create Multiple Booking,,,,10-01-2024 22:38:15,10-01-2024 22:38:19,3.946s,PASSED
+"response = sendRequest(findTestObject(""Object Repository/POST Create Multiple Booking"", [""firstName"":firstName, ""lastName"":lastName]))",,,,10-01-2024 22:38:15,10-01-2024 22:38:17,1.919s,PASSED
+"verifyResponseStatusCode(response, 200)",,The status should be 200,,10-01-2024 22:38:17,10-01-2024 22:38:17,0.008s,PASSED
+"verifyElementPropertyValue(response, ""booking.firstname"", $firstName)",,,,10-01-2024 22:38:17,10-01-2024 22:38:17,0.024s,PASSED
+"verifyElementPropertyValue(response, ""booking.lastname"", $lastName)",,,,10-01-2024 22:38:17,10-01-2024 22:38:17,0.011s,PASSED
+"id = getElementPropertyValue(response, ""bookingid"")",,,,10-01-2024 22:38:17,10-01-2024 22:38:17,0.017s,PASSED
+ids = id,,,,10-01-2024 22:38:17,10-01-2024 22:38:17,0.001s,PASSED
+"println(""Boooking id: "" + id)",,,,10-01-2024 22:38:17,10-01-2024 22:38:17,0.004s,PASSED
+"responseGETRequest = sendRequestAndVerify(findTestObject(""Object Repository/GET Booking Ids"", [""id"":id]))",,Send GER Request,,10-01-2024 22:38:17,10-01-2024 22:38:19,1.849s,PASSED
+"verifyResponseStatusCode(responseGETRequest, 200)",,Verify status code should be 200,,10-01-2024 22:38:19,10-01-2024 22:38:19,0.002s,PASSED
+responseBody = responseGETRequest.getResponseBodyContent(),,Verify body contain data,,10-01-2024 22:38:19,10-01-2024 22:38:19,0.003s,PASSED
+jsonResponse = JsonSlurper().parseText(responseBody),,,,10-01-2024 22:38:19,10-01-2024 22:38:19,0.001s,PASSED
+firstNameRes = firstname,,,,10-01-2024 22:38:19,10-01-2024 22:38:19,0.001s,PASSED
+lastNameRes = lastname,,,,10-01-2024 22:38:19,10-01-2024 22:38:19,0.000s,PASSED
+"println(""RESPONE: "" + jsonResponse)",,,,10-01-2024 22:38:19,10-01-2024 22:38:19,0.001s,PASSED
+"verifyEqual(lastNameRes, $lastName)",,,,10-01-2024 22:38:19,10-01-2024 22:38:19,0.010s,PASSED
+"verifyEqual(firstNameRes, $firstName)",,,,10-01-2024 22:38:19,10-01-2024 22:38:19,0.001s,PASSED
+,,,,,,,
+Test Cases/POST Create Multiple Booking,,,,10-01-2024 22:38:19,10-01-2024 22:38:22,2.938s,PASSED
+"response = sendRequest(findTestObject(""Object Repository/POST Create Multiple Booking"", [""firstName"":firstName, ""lastName"":lastName]))",,,,10-01-2024 22:38:19,10-01-2024 22:38:21,1.407s,PASSED
+"verifyResponseStatusCode(response, 200)",,The status should be 200,,10-01-2024 22:38:21,10-01-2024 22:38:21,0.003s,PASSED
+"verifyElementPropertyValue(response, ""booking.firstname"", $firstName)",,,,10-01-2024 22:38:21,10-01-2024 22:38:21,0.015s,PASSED
+"verifyElementPropertyValue(response, ""booking.lastname"", $lastName)",,,,10-01-2024 22:38:21,10-01-2024 22:38:21,0.014s,PASSED
+"id = getElementPropertyValue(response, ""bookingid"")",,,,10-01-2024 22:38:21,10-01-2024 22:38:21,0.013s,PASSED
+ids = id,,,,10-01-2024 22:38:21,10-01-2024 22:38:21,0.000s,PASSED
+"println(""Boooking id: "" + id)",,,,10-01-2024 22:38:21,10-01-2024 22:38:21,0.000s,PASSED
+"responseGETRequest = sendRequestAndVerify(findTestObject(""Object Repository/GET Booking Ids"", [""id"":id]))",,Send GER Request,,10-01-2024 22:38:21,10-01-2024 22:38:22,1.468s,PASSED
+"verifyResponseStatusCode(responseGETRequest, 200)",,Verify status code should be 200,,10-01-2024 22:38:22,10-01-2024 22:38:22,0.002s,PASSED
+responseBody = responseGETRequest.getResponseBodyContent(),,Verify body contain data,,10-01-2024 22:38:22,10-01-2024 22:38:22,0.001s,PASSED
+jsonResponse = JsonSlurper().parseText(responseBody),,,,10-01-2024 22:38:22,10-01-2024 22:38:22,0.000s,PASSED
+firstNameRes = firstname,,,,10-01-2024 22:38:22,10-01-2024 22:38:22,0.000s,PASSED
+lastNameRes = lastname,,,,10-01-2024 22:38:22,10-01-2024 22:38:22,0.000s,PASSED
+"println(""RESPONE: "" + jsonResponse)",,,,10-01-2024 22:38:22,10-01-2024 22:38:22,0.000s,PASSED
+"verifyEqual(lastNameRes, $lastName)",,,,10-01-2024 22:38:22,10-01-2024 22:38:22,0.002s,PASSED
+"verifyEqual(firstNameRes, $firstName)",,,,10-01-2024 22:38:22,10-01-2024 22:38:22,0.001s,PASSED
+,,,,,,,
+Test Cases/POST Create Multiple Booking,,,,10-01-2024 22:38:22,10-01-2024 22:38:25,2.590s,PASSED
+"response = sendRequest(findTestObject(""Object Repository/POST Create Multiple Booking"", [""firstName"":firstName, ""lastName"":lastName]))",,,,10-01-2024 22:38:22,10-01-2024 22:38:23,1.064s,PASSED
+"verifyResponseStatusCode(response, 200)",,The status should be 200,,10-01-2024 22:38:23,10-01-2024 22:38:23,0.002s,PASSED
+"verifyElementPropertyValue(response, ""booking.firstname"", $firstName)",,,,10-01-2024 22:38:23,10-01-2024 22:38:23,0.013s,PASSED
+"verifyElementPropertyValue(response, ""booking.lastname"", $lastName)",,,,10-01-2024 22:38:23,10-01-2024 22:38:23,0.013s,PASSED
+"id = getElementPropertyValue(response, ""bookingid"")",,,,10-01-2024 22:38:23,10-01-2024 22:38:23,0.012s,PASSED
+ids = id,,,,10-01-2024 22:38:23,10-01-2024 22:38:23,0.000s,PASSED
+"println(""Boooking id: "" + id)",,,,10-01-2024 22:38:23,10-01-2024 22:38:23,0.001s,PASSED
+"responseGETRequest = sendRequestAndVerify(findTestObject(""Object Repository/GET Booking Ids"", [""id"":id]))",,Send GER Request,,10-01-2024 22:38:23,10-01-2024 22:38:25,1.468s,PASSED
+"verifyResponseStatusCode(responseGETRequest, 200)",,Verify status code should be 200,,10-01-2024 22:38:25,10-01-2024 22:38:25,0.002s,PASSED
+responseBody = responseGETRequest.getResponseBodyContent(),,Verify body contain data,,10-01-2024 22:38:25,10-01-2024 22:38:25,0.001s,PASSED
+jsonResponse = JsonSlurper().parseText(responseBody),,,,10-01-2024 22:38:25,10-01-2024 22:38:25,0.000s,PASSED
+firstNameRes = firstname,,,,10-01-2024 22:38:25,10-01-2024 22:38:25,0.001s,PASSED
+lastNameRes = lastname,,,,10-01-2024 22:38:25,10-01-2024 22:38:25,0.000s,PASSED
+"println(""RESPONE: "" + jsonResponse)",,,,10-01-2024 22:38:25,10-01-2024 22:38:25,0.000s,PASSED
+"verifyEqual(lastNameRes, $lastName)",,,,10-01-2024 22:38:25,10-01-2024 22:38:25,0.002s,PASSED
+"verifyEqual(firstNameRes, $firstName)",,,,10-01-2024 22:38:25,10-01-2024 22:38:25,0.001s,PASSED

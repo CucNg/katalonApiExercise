@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Exercise 3" time="2.663" tests="3" failures="0" errors="0">
+   <testsuite name="Exercise 3" tests="3" failures="0" errors="0" time="2.663" skipped="0" timestamp="15-01-2024T00:09:22" hostname="cucnguyen - 192.168.21.104" id="Test Suites/Exercise 3">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/cucnguyen/Katalon Studio/Exam Katalon/Reports/20240115_000914/Exercise 3/20240115_000915"/>
+         <property name="logFiles" value="/Users/cucnguyen/Katalon Studio/Exam Katalon/Reports/20240115_000914/Exercise 3/20240115_000915/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="cucnguyen - 192.168.21.104"/>
+         <property name="hostAddress" value="192.168.21.104"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.1.0.212"/>
+      </properties>
+      <testcase name="Test Cases/POST Create Token" time="2.432" classname="Test Cases/POST Create Token" status="PASSED">
+         <system-out><![CDATA[15-01-2024T00:09:22 - [TEST_CASE][PASSED] - Test Cases/POST Create Token: Test Cases/POST Create Token
+
+15-01-2024T00:09:22 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("POST Create Token")): Send request successfully
+
+15-01-2024T00:09:24 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/Katalon Studio/Exam Katalon/Reports/20240115_000914/Exercise 3/20240115_000915/requests/main/0.har
+
+15-01-2024T00:09:24 - [MESSAGE][PASSED] - Send request successfully
+
+15-01-2024T00:09:24 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+15-01-2024T00:09:24 - [MESSAGE][PASSED] - Verify response status code successfully
+
+15-01-2024T00:09:24 - [TEST_STEP][PASSED] - responseBody = response.getResponseBodyContent(): null
+
+15-01-2024T00:09:24 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+15-01-2024T00:09:24 - [TEST_STEP][PASSED] - token = token: null
+
+15-01-2024T00:09:24 - [TEST_STEP][PASSED] - token = token: null
+
+15-01-2024T00:09:24 - [TEST_STEP][PASSED] - println("Token: " + token): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Store Token" time="0.026" classname="Test Cases/Store Token" status="PASSED">
+         <system-out><![CDATA[15-01-2024T00:09:24 - [TEST_CASE][PASSED] - Test Cases/Store Token: Test Cases/Store Token
+
+15-01-2024T00:09:24 - [TEST_STEP][PASSED] - storedToken = token: null
+
+15-01-2024T00:09:24 - [TEST_STEP][PASSED] - println("storedToken " + storedToken): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/PUT Update Booking" time="0.072" classname="Test Cases/PUT Update Booking" status="PASSED">
+         <system-out><![CDATA[15-01-2024T00:09:24 - [TEST_CASE][PASSED] - Test Cases/PUT Update Booking: Test Cases/PUT Update Booking
+
+15-01-2024T00:09:24 - [TEST_STEP][PASSED] - authToken = token: null
+
+15-01-2024T00:09:24 - [TEST_STEP][PASSED] - request = findTestObject("PUT Update Booking", ["id":"1"]): null
+
+15-01-2024T00:09:24 - [TEST_STEP][PASSED] - headers = ["Cookie":authToken=$authToken]: null
+
+15-01-2024T00:09:24 - [TEST_STEP][PASSED] - println(headers): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[15-01-2024T00:09:22 - [TEST_SUITE][PASSED] - Exercise 3: Test Cases/PUT Update Booking]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

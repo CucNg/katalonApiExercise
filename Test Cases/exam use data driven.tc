@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>exam use data driven</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7d3acee5-fc65-4921-9334-1bfea75fff29</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>09e7bec5-b3c6-4b03-8c4a-7ca123569098</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/examData</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>09e7bec5-b3c6-4b03-8c4a-7ca123569098</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>employee</value>
+      <variableId>3c7e117e-c7a0-40a3-96f6-2242f56a523f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>09e7bec5-b3c6-4b03-8c4a-7ca123569098</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>department</value>
+      <variableId>4e29e804-c99b-41e6-b727-6ad9c55bb2a8</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'a'</defaultValue>
+      <description></description>
+      <id>3c7e117e-c7a0-40a3-96f6-2242f56a523f</id>
+      <masked>false</masked>
+      <name>employee</name>
+   </variable>
+   <variable>
+      <defaultValue>'b'</defaultValue>
+      <description></description>
+      <id>4e29e804-c99b-41e6-b727-6ad9c55bb2a8</id>
+      <masked>false</masked>
+      <name>department</name>
+   </variable>
+</TestCaseEntity>

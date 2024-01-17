@@ -1,0 +1,51 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Exercise 3,,,,16-01-2024 00:29:08,16-01-2024 00:29:14,5.504s,PASSED
+,,,,,,,
+Test Cases/POST Create Token,,,,16-01-2024 00:29:08,16-01-2024 00:29:10,2.319s,PASSED
+"response = sendRequest(findTestObject(""POST Create Token""))",,Verify status code ,,16-01-2024 00:29:08,16-01-2024 00:29:10,2.194s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,16-01-2024 00:29:10,16-01-2024 00:29:10,0.008s,PASSED
+responseBody = response.getResponseBodyContent(),,Stored token,,16-01-2024 00:29:10,16-01-2024 00:29:10,0.003s,PASSED
+jsonResponse = JsonSlurper().parseText(responseBody),,,,16-01-2024 00:29:10,16-01-2024 00:29:10,0.008s,PASSED
+token = token,,,,16-01-2024 00:29:10,16-01-2024 00:29:10,0.004s,PASSED
+token = token,,,,16-01-2024 00:29:10,16-01-2024 00:29:10,0.001s,PASSED
+"println(""Token: "" + token)",,,,16-01-2024 00:29:10,16-01-2024 00:29:10,0.002s,PASSED
+,,,,,,,
+Test Cases/POST Create booking,,,,16-01-2024 00:29:10,16-01-2024 00:29:12,1.581s,PASSED
+firstName = sample.Common.generateRandomString(),,,,16-01-2024 00:29:11,16-01-2024 00:29:11,0.018s,PASSED
+lastName = sample.Common.generateRandomString(),,,,16-01-2024 00:29:11,16-01-2024 00:29:11,0.001s,PASSED
+"response = sendRequest(findTestObject(""Object Repository/POST Create booking"", [""firstName"":firstName, ""lastName"":lastName]))",,,,16-01-2024 00:29:11,16-01-2024 00:29:12,1.416s,PASSED
+"verifyResponseStatusCode(response, 200)",,The status should be 200,,16-01-2024 00:29:12,16-01-2024 00:29:12,0.002s,PASSED
+"verifyElementPropertyValue(response, ""booking.firstname"", $firstName)",,Verify response,,16-01-2024 00:29:12,16-01-2024 00:29:12,0.022s,PASSED
+"verifyElementPropertyValue(response, ""booking.lastname"", $lastName)",,,,16-01-2024 00:29:12,16-01-2024 00:29:12,0.015s,PASSED
+"responseFirstName = getElementPropertyValue(response, ""booking.firstname"")",,,,16-01-2024 00:29:12,16-01-2024 00:29:12,0.016s,PASSED
+"responseLastName = getElementPropertyValue(response, ""booking.lastname"")",,,,16-01-2024 00:29:12,16-01-2024 00:29:12,0.010s,PASSED
+"id = getElementPropertyValue(response, ""bookingid"")",,,,16-01-2024 00:29:12,16-01-2024 00:29:12,0.009s,PASSED
+firstName = responseFirstName,,,,16-01-2024 00:29:12,16-01-2024 00:29:12,0.001s,PASSED
+lastName = responseLastName,,,,16-01-2024 00:29:12,16-01-2024 00:29:12,0.001s,PASSED
+id = id,,,,16-01-2024 00:29:12,16-01-2024 00:29:12,0.000s,PASSED
+"println(""responseFirstName "" + responseFirstName)",,,,16-01-2024 00:29:12,16-01-2024 00:29:12,0.000s,PASSED
+"println(""responseLastName "" + responseLastName)",,,,16-01-2024 00:29:12,16-01-2024 00:29:12,0.001s,PASSED
+"println(""id: "" + id)",,,,16-01-2024 00:29:12,16-01-2024 00:29:12,0.000s,PASSED
+,,,,,,,
+Test Cases/PUT Update Booking,,,,16-01-2024 00:29:12,16-01-2024 00:29:14,1.481s,PASSED
+authToken = token,,,,16-01-2024 00:29:12,16-01-2024 00:29:12,0.001s,PASSED
+id = id,,,,16-01-2024 00:29:12,16-01-2024 00:29:12,0.000s,PASSED
+"firstName = ""Cuc""",,,,16-01-2024 00:29:12,16-01-2024 00:29:12,0.001s,PASSED
+"lastName = ""123 test""",,,,16-01-2024 00:29:12,16-01-2024 00:29:12,0.000s,PASSED
+"requestObject = findTestObject(""Object Repository/PUT Update Booking"", [""id"":id, ""firstName"":firstName, ""lastName"":lastName])",,,,16-01-2024 00:29:12,16-01-2024 00:29:12,0.033s,PASSED
+"cookie = ""token="" + authToken",,,,16-01-2024 00:29:12,16-01-2024 00:29:12,0.000s,PASSED
+"println(""cookie = "" + cookie)",,,,16-01-2024 00:29:12,16-01-2024 00:29:12,0.000s,PASSED
+headersList = new java.util.ArrayList(),,,,16-01-2024 00:29:12,16-01-2024 00:29:12,0.001s,PASSED
+"headersList.add(new com.kms.katalon.core.testobject.TestObjectProperty(Content-Type, com.kms.katalon.core.testobject.ConditionType.EQUALS, application/json))",,,,16-01-2024 00:29:12,16-01-2024 00:29:12,0.006s,PASSED
+"headersList.add(new com.kms.katalon.core.testobject.TestObjectProperty(Accept, com.kms.katalon.core.testobject.ConditionType.EQUALS, application/json))",,,,16-01-2024 00:29:12,16-01-2024 00:29:12,0.001s,PASSED
+"headersList.add(new com.kms.katalon.core.testobject.TestObjectProperty(Cookie, com.kms.katalon.core.testobject.ConditionType.EQUALS, cookie))",,,,16-01-2024 00:29:12,16-01-2024 00:29:12,0.000s,PASSED
+requestObject.setHttpHeaderProperties(headersList),,,,16-01-2024 00:29:12,16-01-2024 00:29:12,0.006s,PASSED
+response = sendRequest(requestObject),,,,16-01-2024 00:29:12,16-01-2024 00:29:14,1.352s,PASSED
+"verifyResponseStatusCode(response, 200)",,Verify status code,,16-01-2024 00:29:14,16-01-2024 00:29:14,0.002s,PASSED
+responseBody = response.getResponseBodyContent(),,Verify respone,,16-01-2024 00:29:14,16-01-2024 00:29:14,0.000s,PASSED
+jsonResponse = JsonSlurper().parseText(responseBody),,,,16-01-2024 00:29:14,16-01-2024 00:29:14,0.000s,PASSED
+firstNameRes = firstname,,,,16-01-2024 00:29:14,16-01-2024 00:29:14,0.001s,PASSED
+lastNameRes = lastname,,,,16-01-2024 00:29:14,16-01-2024 00:29:14,0.001s,PASSED
+"println(""RESPONE: "" + jsonResponse)",,,,16-01-2024 00:29:14,16-01-2024 00:29:14,0.001s,PASSED
+"verifyEqual(lastNameRes, $lastName)",,,,16-01-2024 00:29:14,16-01-2024 00:29:14,0.009s,PASSED
+"verifyEqual(firstNameRes, $firstName)",,,,16-01-2024 00:29:14,16-01-2024 00:29:14,0.001s,PASSED

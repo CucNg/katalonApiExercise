@@ -1,0 +1,20 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Exercise 3,,,,14-01-2024 23:58:29,14-01-2024 23:58:32,2.576s,ERROR
+,,,,,,,
+Test Cases/POST Create Token,,,,14-01-2024 23:58:29,14-01-2024 23:58:31,2.300s,PASSED
+"response = sendRequest(findTestObject(""POST Create Token""))",,Verify status code ,,14-01-2024 23:58:29,14-01-2024 23:58:31,2.177s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,14-01-2024 23:58:31,14-01-2024 23:58:31,0.009s,PASSED
+responseBody = response.getResponseBodyContent(),,Stored token,,14-01-2024 23:58:31,14-01-2024 23:58:31,0.003s,PASSED
+jsonResponse = JsonSlurper().parseText(responseBody),,,,14-01-2024 23:58:31,14-01-2024 23:58:31,0.008s,PASSED
+token = token,,,,14-01-2024 23:58:31,14-01-2024 23:58:31,0.004s,PASSED
+token = token,,,,14-01-2024 23:58:31,14-01-2024 23:58:31,0.001s,PASSED
+"println(""Token: "" + token)",,,,14-01-2024 23:58:31,14-01-2024 23:58:31,0.002s,PASSED
+,,,,,,,
+Test Cases/Store Token,,,,14-01-2024 23:58:31,14-01-2024 23:58:31,0.028s,PASSED
+storedToken = token,,Stored token,,14-01-2024 23:58:31,14-01-2024 23:58:31,0.002s,PASSED
+"println(""storedToken "" + storedToken)",,,,14-01-2024 23:58:31,14-01-2024 23:58:31,0.000s,PASSED
+,,,,,,,
+Test Cases/PUT Update Booking,,,,14-01-2024 23:58:31,14-01-2024 23:58:32,0.109s,ERROR
+authToken = token,,,,14-01-2024 23:58:31,14-01-2024 23:58:31,0.001s,PASSED
+"request = findTestObject(""PUT Update Booking"", [""id"":""1""])",,,,14-01-2024 23:58:31,14-01-2024 23:58:32,0.027s,PASSED
+"request.modifyRequestHeader(""Cookie"", ""authToken"")",,,,14-01-2024 23:58:32,14-01-2024 23:58:32,0.027s,ERROR

@@ -1,0 +1,36 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Exercise 1,,,,10-01-2024 01:59:12,10-01-2024 01:59:17,4.750s,PASSED
+,,,,,,,
+Test Cases/POST Create booking,,,,10-01-2024 01:59:12,10-01-2024 01:59:15,3.378s,PASSED
+firstName = sample.Common.generateRandomString(),,,,10-01-2024 01:59:12,10-01-2024 01:59:12,0.039s,PASSED
+lastName = sample.Common.generateRandomString(),,,,10-01-2024 01:59:12,10-01-2024 01:59:12,0.002s,PASSED
+"response = sendRequest(findTestObject(""Object Repository/POST Create booking"", [""firstName"":firstName, ""lastName"":lastName]))",,,,10-01-2024 01:59:12,10-01-2024 01:59:15,3.149s,PASSED
+"verifyResponseStatusCode(response, 200)",,The status should be 200,,10-01-2024 01:59:15,10-01-2024 01:59:15,0.008s,PASSED
+"verifyElementPropertyValue(response, ""booking.firstname"", $firstName)",,Verify response,,10-01-2024 01:59:15,10-01-2024 01:59:15,0.026s,PASSED
+"verifyElementPropertyValue(response, ""booking.lastname"", $lastName)",,,,10-01-2024 01:59:15,10-01-2024 01:59:15,0.010s,PASSED
+"responseFirstName = getElementPropertyValue(response, ""booking.firstname"")",,,,10-01-2024 01:59:15,10-01-2024 01:59:15,0.012s,PASSED
+"responseLastName = getElementPropertyValue(response, ""booking.lastname"")",,,,10-01-2024 01:59:15,10-01-2024 01:59:15,0.010s,PASSED
+"id = getElementPropertyValue(response, ""bookingid"")",,,,10-01-2024 01:59:15,10-01-2024 01:59:15,0.010s,PASSED
+firstName = responseFirstName,,,,10-01-2024 01:59:15,10-01-2024 01:59:15,0.001s,PASSED
+lastName = responseLastName,,,,10-01-2024 01:59:15,10-01-2024 01:59:15,0.001s,PASSED
+id = id,,,,10-01-2024 01:59:15,10-01-2024 01:59:15,0.001s,PASSED
+"println(""responseFirstName "" + responseFirstName)",,,,10-01-2024 01:59:15,10-01-2024 01:59:15,0.002s,PASSED
+"println(""responseLastName "" + responseLastName)",,,,10-01-2024 01:59:15,10-01-2024 01:59:15,0.000s,PASSED
+"println(""id: "" + id)",,,,10-01-2024 01:59:15,10-01-2024 01:59:15,0.000s,PASSED
+,,,,,,,
+Test Cases/GET Search booking,,by first name and last name,,10-01-2024 01:59:15,10-01-2024 01:59:17,1.276s,PASSED
+firstName = firstName,,Send a request to retrieve the list of booking IDs,,10-01-2024 01:59:15,10-01-2024 01:59:15,0.001s,PASSED
+lastName = lastName,,,,10-01-2024 01:59:15,10-01-2024 01:59:15,0.001s,PASSED
+id = id,,,,10-01-2024 01:59:15,10-01-2024 01:59:15,0.001s,PASSED
+"response = sendRequestAndVerify(findTestObject(""Object Repository/GET Search booking"", [""firstName"":firstName, ""lastName"":lastName]))",,,,10-01-2024 01:59:15,10-01-2024 01:59:17,1.204s,PASSED
+"println(""Step2: First Name "" + firstName)",,,,10-01-2024 01:59:17,10-01-2024 01:59:17,0.001s,PASSED
+"println(""Step2: Last Name "" + lastName)",,,,10-01-2024 01:59:17,10-01-2024 01:59:17,0.001s,PASSED
+"println(""Step2: ID "" + id)",,,,10-01-2024 01:59:17,10-01-2024 01:59:17,0.001s,PASSED
+"verifyResponseStatusCode(response, 200)",,The status should be 200,,10-01-2024 01:59:17,10-01-2024 01:59:17,0.001s,PASSED
+responseBody = response.getResponseBodyContent(),,Verify,,10-01-2024 01:59:17,10-01-2024 01:59:17,0.001s,PASSED
+jsonResponse = JsonSlurper().parseText(responseBody),,,,10-01-2024 01:59:17,10-01-2024 01:59:17,0.002s,PASSED
+userId = bookingid,,,,10-01-2024 01:59:17,10-01-2024 01:59:17,0.002s,PASSED
+"println(""ID in response: "" + userId)",,,,10-01-2024 01:59:17,10-01-2024 01:59:17,0.001s,PASSED
+"println(""response: "" + responseBody)",,,,10-01-2024 01:59:17,10-01-2024 01:59:17,0.000s,PASSED
+"verifyEqual(userId, id)",,,,10-01-2024 01:59:17,10-01-2024 01:59:17,0.008s,PASSED
+if (userId.toString() != id),,,,10-01-2024 01:59:17,10-01-2024 01:59:17,0.001s,PASSED

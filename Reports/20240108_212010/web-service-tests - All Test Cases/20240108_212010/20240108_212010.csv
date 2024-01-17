@@ -1,0 +1,11 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+web-service-tests - All Test Cases,,,,08-01-2024 21:20:14,08-01-2024 21:20:14,0.250s,PASSED
+,,,,,,,
+Test Cases/exam use data driven,,,,08-01-2024 21:20:14,08-01-2024 21:20:14,0.080s,PASSED
+println($employee - $department),,,,08-01-2024 21:20:14,08-01-2024 21:20:14,0.017s,PASSED
+,,,,,,,
+Test Cases/exam use data driven,,,,08-01-2024 21:20:14,08-01-2024 21:20:14,0.012s,PASSED
+println($employee - $department),,,,08-01-2024 21:20:14,08-01-2024 21:20:14,0.000s,PASSED
+,,,,,,,
+Test Cases/exam use data driven,,,,08-01-2024 21:20:14,08-01-2024 21:20:14,0.011s,PASSED
+println($employee - $department),,,,08-01-2024 21:20:14,08-01-2024 21:20:14,0.000s,PASSED

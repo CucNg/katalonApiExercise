@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Exercise 2" time="10.396" tests="3" failures="0" errors="0">
+   <testsuite name="Exercise 2" tests="3" failures="0" errors="0" time="10.396" skipped="0" timestamp="10-01-2024T22:36:44" hostname="cucnguyen - 192.168.2.12" id="Test Suites/Exercise 2">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/cucnguyen/Katalon Studio/Exam Katalon/Reports/20240110_223640/Exercise 2/20240110_223640"/>
+         <property name="logFiles" value="/Users/cucnguyen/Katalon Studio/Exam Katalon/Reports/20240110_223640/Exercise 2/20240110_223640/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="cucnguyen - 192.168.2.12"/>
+         <property name="hostAddress" value="192.168.2.12"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.1.0.212"/>
+      </properties>
+      <testcase name="Test Cases/POST Create Multiple Booking" time="4.561" classname="Test Cases/POST Create Multiple Booking" status="PASSED">
+         <system-out><![CDATA[10-01-2024T22:36:45 - [TEST_CASE][PASSED] - Test Cases/POST Create Multiple Booking: Test Cases/POST Create Multiple Booking
+
+10-01-2024T22:36:45 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Object Repository/POST Create Multiple Booking", ["firstName":firstName, "lastName":lastName])): Send request successfully
+
+10-01-2024T22:36:47 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/Katalon Studio/Exam Katalon/Reports/20240110_223640/Exercise 2/20240110_223640/requests/main/0.har
+
+10-01-2024T22:36:47 - [MESSAGE][PASSED] - Send request successfully
+
+10-01-2024T22:36:47 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+10-01-2024T22:36:47 - [MESSAGE][PASSED] - Verify response status code successfully
+
+10-01-2024T22:36:47 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.firstname", $firstName): Verify element property value successfully
+
+10-01-2024T22:36:47 - [MESSAGE][PASSED] - Verify element property value successfully
+
+10-01-2024T22:36:47 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.lastname", $lastName): Verify element property value successfully
+
+10-01-2024T22:36:47 - [MESSAGE][PASSED] - Verify element property value successfully
+
+10-01-2024T22:36:47 - [TEST_STEP][PASSED] - id = getElementPropertyValue(response, "bookingid"): null
+
+10-01-2024T22:36:47 - [TEST_STEP][PASSED] - ids = id: null
+
+10-01-2024T22:36:47 - [TEST_STEP][PASSED] - println("Boooking id: " + id): null
+
+10-01-2024T22:36:47 - [TEST_STEP][PASSED] - responseGETRequest = sendRequestAndVerify(findTestObject("Object Repository/GET Booking Ids", ["id":id])): Send request and verify the response successfully
+
+10-01-2024T22:36:49 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/Katalon Studio/Exam Katalon/Reports/20240110_223640/Exercise 2/20240110_223640/requests/main/1.har
+
+10-01-2024T22:36:49 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+10-01-2024T22:36:49 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+10-01-2024T22:36:49 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+10-01-2024T22:36:49 - [MESSAGE][PASSED] - Verify response successfully
+
+10-01-2024T22:36:49 - [MESSAGE][PASSED] - All validation steps have been passed
+
+10-01-2024T22:36:49 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+10-01-2024T22:36:49 - [TEST_STEP][PASSED] - verifyResponseStatusCode(responseGETRequest, 200): Verify response status code successfully
+
+10-01-2024T22:36:49 - [MESSAGE][PASSED] - Verify response status code successfully
+
+10-01-2024T22:36:49 - [TEST_STEP][PASSED] - responseBody = responseGETRequest.getResponseBodyContent(): null
+
+10-01-2024T22:36:49 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+10-01-2024T22:36:49 - [TEST_STEP][PASSED] - firstNameRes = firstname: null
+
+10-01-2024T22:36:49 - [TEST_STEP][PASSED] - lastNameRes = lastname: null
+
+10-01-2024T22:36:49 - [TEST_STEP][PASSED] - println("RESPONE: " + jsonResponse): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/POST Create Multiple Booking" time="2.793" classname="Test Cases/POST Create Multiple Booking" status="PASSED">
+         <system-out><![CDATA[10-01-2024T22:36:49 - [TEST_CASE][PASSED] - Test Cases/POST Create Multiple Booking: Test Cases/POST Create Multiple Booking
+
+10-01-2024T22:36:49 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Object Repository/POST Create Multiple Booking", ["firstName":firstName, "lastName":lastName])): Send request successfully
+
+10-01-2024T22:36:51 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/Katalon Studio/Exam Katalon/Reports/20240110_223640/Exercise 2/20240110_223640/requests/main/2.har
+
+10-01-2024T22:36:51 - [MESSAGE][PASSED] - Send request successfully
+
+10-01-2024T22:36:51 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+10-01-2024T22:36:51 - [MESSAGE][PASSED] - Verify response status code successfully
+
+10-01-2024T22:36:51 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.firstname", $firstName): Verify element property value successfully
+
+10-01-2024T22:36:51 - [MESSAGE][PASSED] - Verify element property value successfully
+
+10-01-2024T22:36:51 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.lastname", $lastName): Verify element property value successfully
+
+10-01-2024T22:36:51 - [MESSAGE][PASSED] - Verify element property value successfully
+
+10-01-2024T22:36:51 - [TEST_STEP][PASSED] - id = getElementPropertyValue(response, "bookingid"): null
+
+10-01-2024T22:36:51 - [TEST_STEP][PASSED] - ids = id: null
+
+10-01-2024T22:36:51 - [TEST_STEP][PASSED] - println("Boooking id: " + id): null
+
+10-01-2024T22:36:51 - [TEST_STEP][PASSED] - responseGETRequest = sendRequestAndVerify(findTestObject("Object Repository/GET Booking Ids", ["id":id])): Send request and verify the response successfully
+
+10-01-2024T22:36:52 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/Katalon Studio/Exam Katalon/Reports/20240110_223640/Exercise 2/20240110_223640/requests/main/3.har
+
+10-01-2024T22:36:52 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+10-01-2024T22:36:52 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+10-01-2024T22:36:52 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+10-01-2024T22:36:52 - [MESSAGE][PASSED] - Verify response successfully
+
+10-01-2024T22:36:52 - [MESSAGE][PASSED] - All validation steps have been passed
+
+10-01-2024T22:36:52 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+10-01-2024T22:36:52 - [TEST_STEP][PASSED] - verifyResponseStatusCode(responseGETRequest, 200): Verify response status code successfully
+
+10-01-2024T22:36:52 - [MESSAGE][PASSED] - Verify response status code successfully
+
+10-01-2024T22:36:52 - [TEST_STEP][PASSED] - responseBody = responseGETRequest.getResponseBodyContent(): null
+
+10-01-2024T22:36:52 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+10-01-2024T22:36:52 - [TEST_STEP][PASSED] - firstNameRes = firstname: null
+
+10-01-2024T22:36:52 - [TEST_STEP][PASSED] - lastNameRes = lastname: null
+
+10-01-2024T22:36:52 - [TEST_STEP][PASSED] - println("RESPONE: " + jsonResponse): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/POST Create Multiple Booking" time="2.907" classname="Test Cases/POST Create Multiple Booking" status="PASSED">
+         <system-out><![CDATA[10-01-2024T22:36:52 - [TEST_CASE][PASSED] - Test Cases/POST Create Multiple Booking: Test Cases/POST Create Multiple Booking
+
+10-01-2024T22:36:52 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Object Repository/POST Create Multiple Booking", ["firstName":firstName, "lastName":lastName])): Send request successfully
+
+10-01-2024T22:36:53 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/Katalon Studio/Exam Katalon/Reports/20240110_223640/Exercise 2/20240110_223640/requests/main/4.har
+
+10-01-2024T22:36:53 - [MESSAGE][PASSED] - Send request successfully
+
+10-01-2024T22:36:53 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+10-01-2024T22:36:53 - [MESSAGE][PASSED] - Verify response status code successfully
+
+10-01-2024T22:36:53 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.firstname", $firstName): Verify element property value successfully
+
+10-01-2024T22:36:53 - [MESSAGE][PASSED] - Verify element property value successfully
+
+10-01-2024T22:36:53 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.lastname", $lastName): Verify element property value successfully
+
+10-01-2024T22:36:53 - [MESSAGE][PASSED] - Verify element property value successfully
+
+10-01-2024T22:36:53 - [TEST_STEP][PASSED] - id = getElementPropertyValue(response, "bookingid"): null
+
+10-01-2024T22:36:53 - [TEST_STEP][PASSED] - ids = id: null
+
+10-01-2024T22:36:53 - [TEST_STEP][PASSED] - println("Boooking id: " + id): null
+
+10-01-2024T22:36:53 - [TEST_STEP][PASSED] - responseGETRequest = sendRequestAndVerify(findTestObject("Object Repository/GET Booking Ids", ["id":id])): Send request and verify the response successfully
+
+10-01-2024T22:36:55 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/Katalon Studio/Exam Katalon/Reports/20240110_223640/Exercise 2/20240110_223640/requests/main/5.har
+
+10-01-2024T22:36:55 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+10-01-2024T22:36:55 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+10-01-2024T22:36:55 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+10-01-2024T22:36:55 - [MESSAGE][PASSED] - Verify response successfully
+
+10-01-2024T22:36:55 - [MESSAGE][PASSED] - All validation steps have been passed
+
+10-01-2024T22:36:55 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+10-01-2024T22:36:55 - [TEST_STEP][PASSED] - verifyResponseStatusCode(responseGETRequest, 200): Verify response status code successfully
+
+10-01-2024T22:36:55 - [MESSAGE][PASSED] - Verify response status code successfully
+
+10-01-2024T22:36:55 - [TEST_STEP][PASSED] - responseBody = responseGETRequest.getResponseBodyContent(): null
+
+10-01-2024T22:36:55 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+10-01-2024T22:36:55 - [TEST_STEP][PASSED] - firstNameRes = firstname: null
+
+10-01-2024T22:36:55 - [TEST_STEP][PASSED] - lastNameRes = lastname: null
+
+10-01-2024T22:36:55 - [TEST_STEP][PASSED] - println("RESPONE: " + jsonResponse): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[10-01-2024T22:36:44 - [TEST_SUITE][PASSED] - Exercise 2: Test Cases/POST Create Multiple Booking]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

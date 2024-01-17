@@ -1,0 +1,24 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Exercise 1,,,,09-01-2024 22:54:35,09-01-2024 22:54:39,3.410s,PASSED
+,,,,,,,
+Test Cases/POST Create booking,,,,09-01-2024 22:54:35,09-01-2024 22:54:37,2.052s,PASSED
+"alphabet = ""ABCDEFGHIJKLMNOPQRSTUVWXYZ""",,,,09-01-2024 22:54:35,09-01-2024 22:54:35,0.003s,PASSED
+sb = new java.lang.StringBuilder(),,,,09-01-2024 22:54:35,09-01-2024 22:54:35,0.007s,PASSED
+random = new java.util.Random(),,,,09-01-2024 22:54:35,09-01-2024 22:54:35,0.004s,PASSED
+length = 7,,,,09-01-2024 22:54:35,09-01-2024 22:54:35,0.001s,PASSED
+"for ([i = 0, i < length, (i++)])",,,,09-01-2024 22:54:35,09-01-2024 22:54:35,0.016s,PASSED
+firstName = sb.toString(),,,,09-01-2024 22:54:35,09-01-2024 22:54:35,0.000s,PASSED
+lastName = sb.toString(),,,,09-01-2024 22:54:35,09-01-2024 22:54:35,0.001s,PASSED
+"response = sendRequest(findTestObject(""Object Repository/POST Create booking"", [""firstName"":firstName, ""lastName"":lastName]))",,,,09-01-2024 22:54:35,09-01-2024 22:54:37,1.832s,PASSED
+"verifyResponseStatusCode(response, 200)",,The status should be 200,,09-01-2024 22:54:37,09-01-2024 22:54:37,0.007s,PASSED
+"verifyElementPropertyValue(response, ""booking.firstname"", $firstName)",,Verify response,,09-01-2024 22:54:37,09-01-2024 22:54:37,0.024s,PASSED
+"verifyElementPropertyValue(response, ""booking.lastname"", $lastName)",,,,09-01-2024 22:54:37,09-01-2024 22:54:37,0.010s,PASSED
+"responseFirstName = getElementPropertyValue(response, ""booking.firstname"")",,,,09-01-2024 22:54:37,09-01-2024 22:54:37,0.013s,PASSED
+"responseLastName = getElementPropertyValue(response, ""booking.lastname"")",,,,09-01-2024 22:54:37,09-01-2024 22:54:37,0.010s,PASSED
+firstName = responseFirstName,,,,09-01-2024 22:54:37,09-01-2024 22:54:37,0.001s,PASSED
+lastName = responseLastName,,,,09-01-2024 22:54:37,09-01-2024 22:54:37,0.000s,PASSED
+,,,,,,,
+Test Cases/GET Search booking,,by first name and last name,,09-01-2024 22:54:37,09-01-2024 22:54:39,1.257s,PASSED
+firstName = firstName,,Send a request to retrieve the list of booking IDs,,09-01-2024 22:54:37,09-01-2024 22:54:37,0.001s,PASSED
+lastName = lastName,,,,09-01-2024 22:54:37,09-01-2024 22:54:37,0.001s,PASSED
+"sendRequestAndVerify(findTestObject(""Object Repository/GET Search booking"", [""firstName"":firstName, ""lastName"":lastName]))",,,,09-01-2024 22:54:37,09-01-2024 22:54:39,1.226s,PASSED
