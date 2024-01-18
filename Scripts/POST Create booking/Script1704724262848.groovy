@@ -16,11 +16,11 @@ import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 
-'Random first name and last name using custome keyword'
 String firstName = CustomKeywords.'sample.Common.generateRandomString'()
 String lastName = CustomKeywords.'sample.Common.generateRandomString'()
-
-'Send request create '
+println 'First Name: ' + firstName
+println 'Last Name: '+ lastName
+'Send request create booking'
 ResponseObject response = WS.sendRequest(findTestObject('Object Repository/POST Create booking', [('firstName') : firstName, ('lastName') : lastName]))
 
 'The status should be 200'
@@ -34,7 +34,7 @@ def responseFirstName = WS.getElementPropertyValue(response, 'booking.firstname'
 def responseLastName = WS.getElementPropertyValue(response, 'booking.lastname')
 def id= WS.getElementPropertyValue(response, 'bookingid')
 
-'Send request search bôkingID by first name and last '
+'Send request search bookingID by first name and last name'
 ResponseObject responseSearch= WS.sendRequestAndVerify(findTestObject('Object Repository/GET Search booking', [('firstName') :responseFirstName, ('lastName') :  responseLastName]))
 
 'The status should be 200'

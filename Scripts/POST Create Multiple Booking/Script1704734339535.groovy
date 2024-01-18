@@ -10,6 +10,8 @@ ResponseObject response = WS.sendRequest(findTestObject('Object Repository/POST 
 
 'The status code should be 200'
 WS.verifyResponseStatusCode(response, 200)
+
+'Verrify resonse body'
 WS.verifyElementPropertyValue(response, 'booking.firstname',"${firstName}")
 WS.verifyElementPropertyValue(response, 'booking.lastname', "${lastName}")
 def id= WS.getElementPropertyValue(response, 'bookingid')
@@ -21,7 +23,7 @@ ResponseObject responseGETRequest = WS.sendRequestAndVerify(findTestObject('Obje
 'Verify status code should be 200'
 WS.verifyResponseStatusCode(responseGETRequest, 200)
 
-'Verify body contain data'
+'Verify body contain correct data'
 String responseBody = responseGETRequest.getResponseBodyContent()
 def jsonResponse = new JsonSlurper().parseText(responseBody)
 def firstNameRes= jsonResponse.firstname;

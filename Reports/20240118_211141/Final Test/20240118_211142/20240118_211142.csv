@@ -1,0 +1,73 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Final Test,,,,18-01-2024 21:11:49,18-01-2024 21:12:13,24.022s,PASSED
+,,,,,,,
+Test Cases/POST Create booking,,,,18-01-2024 21:11:52,18-01-2024 21:11:55,3.323s,PASSED
+firstName = sample.Common.generateRandomString(),,Random first name and last name using custome keyword,,18-01-2024 21:11:52,18-01-2024 21:11:52,0.021s,PASSED
+lastName = sample.Common.generateRandomString(),,,,18-01-2024 21:11:52,18-01-2024 21:11:52,0.002s,PASSED
+"response = sendRequest(findTestObject(""Object Repository/POST Create booking"", [""firstName"":firstName, ""lastName"":lastName]))",,Send request create ,,18-01-2024 21:11:52,18-01-2024 21:11:53,1.554s,PASSED
+"verifyResponseStatusCode(response, 200)",,The status should be 200,,18-01-2024 21:11:53,18-01-2024 21:11:53,0.005s,PASSED
+"verifyElementPropertyValue(response, ""booking.firstname"", $firstName)",,Verify response,,18-01-2024 21:11:53,18-01-2024 21:11:53,0.028s,PASSED
+"verifyElementPropertyValue(response, ""booking.lastname"", $lastName)",,,,18-01-2024 21:11:53,18-01-2024 21:11:53,0.015s,PASSED
+"responseFirstName = getElementPropertyValue(response, ""booking.firstname"")",,,,18-01-2024 21:11:53,18-01-2024 21:11:53,0.015s,PASSED
+"responseLastName = getElementPropertyValue(response, ""booking.lastname"")",,,,18-01-2024 21:11:53,18-01-2024 21:11:53,0.011s,PASSED
+"id = getElementPropertyValue(response, ""bookingid"")",,,,18-01-2024 21:11:53,18-01-2024 21:11:53,0.013s,PASSED
+"responseSearch = sendRequestAndVerify(findTestObject(""Object Repository/GET Search booking"", [""firstName"":responseFirstName, ""lastName"":responseLastName]))",,Send request search bôkingID by first name and last ,,18-01-2024 21:11:53,18-01-2024 21:11:55,1.566s,PASSED
+"verifyResponseStatusCode(responseSearch, 200)",,The status should be 200,,18-01-2024 21:11:55,18-01-2024 21:11:55,0.002s,PASSED
+responseBody = responseSearch.getResponseBodyContent(),,Verify correct ID,,18-01-2024 21:11:55,18-01-2024 21:11:55,0.001s,PASSED
+jsonResponse = JsonSlurper().parseText(responseBody),,,,18-01-2024 21:11:55,18-01-2024 21:11:55,0.001s,PASSED
+userId = bookingid,,,,18-01-2024 21:11:55,18-01-2024 21:11:55,0.004s,PASSED
+"println(""ID in response: "" + userId)",,,,18-01-2024 21:11:55,18-01-2024 21:11:55,0.001s,PASSED
+"println(""response: "" + responseBody)",,,,18-01-2024 21:11:55,18-01-2024 21:11:55,0.001s,PASSED
+"verifyEqual(userId, id)",,,,18-01-2024 21:11:55,18-01-2024 21:11:55,0.006s,PASSED
+countID = jsonResponse.collect({ -> ... }),,Verify response only contain 1 ID,,18-01-2024 21:11:55,18-01-2024 21:11:55,0.003s,PASSED
+println(countID.size()),,,,18-01-2024 21:11:55,18-01-2024 21:11:55,0.001s,PASSED
+expectedNumber = 1,,,,18-01-2024 21:11:55,18-01-2024 21:11:55,0.001s,PASSED
+"verifyEqual(countID.size(), expectedNumber)",,,,18-01-2024 21:11:55,18-01-2024 21:11:55,0.002s,PASSED
+,,,,,,,
+Test Cases/POST Create Multiple Booking,,,,18-01-2024 21:11:55,18-01-2024 21:11:58,2.954s,PASSED
+"response = sendRequest(findTestObject(""Object Repository/POST Create Multiple Booking"", [""firstName"":firstName, ""lastName"":lastName]))",,Send request create multiple bookings,,18-01-2024 21:11:55,18-01-2024 21:11:56,1.393s,PASSED
+"verifyResponseStatusCode(response, 200)",,The status code should be 200,,18-01-2024 21:11:56,18-01-2024 21:11:56,0.004s,PASSED
+"verifyElementPropertyValue(response, ""booking.firstname"", $firstName)",,,,18-01-2024 21:11:56,18-01-2024 21:11:56,0.019s,PASSED
+"verifyElementPropertyValue(response, ""booking.lastname"", $lastName)",,,,18-01-2024 21:11:56,18-01-2024 21:11:57,0.014s,PASSED
+"id = getElementPropertyValue(response, ""bookingid"")",,,,18-01-2024 21:11:57,18-01-2024 21:11:57,0.013s,PASSED
+"responseGETRequest = sendRequestAndVerify(findTestObject(""Object Repository/GET Booking Ids"", [""id"":id]))",,Send GET Request to find booking infomation by ID,,18-01-2024 21:11:57,18-01-2024 21:11:58,1.463s,PASSED
+"verifyResponseStatusCode(responseGETRequest, 200)",,Verify status code should be 200,,18-01-2024 21:11:58,18-01-2024 21:11:58,0.003s,PASSED
+responseBody = responseGETRequest.getResponseBodyContent(),,Verify body contain data,,18-01-2024 21:11:58,18-01-2024 21:11:58,0.001s,PASSED
+jsonResponse = JsonSlurper().parseText(responseBody),,,,18-01-2024 21:11:58,18-01-2024 21:11:58,0.001s,PASSED
+firstNameRes = firstname,,,,18-01-2024 21:11:58,18-01-2024 21:11:58,0.001s,PASSED
+lastNameRes = lastname,,,,18-01-2024 21:11:58,18-01-2024 21:11:58,0.001s,PASSED
+"println(""RESPONE: "" + jsonResponse)",,,,18-01-2024 21:11:58,18-01-2024 21:11:58,0.001s,PASSED
+"verifyEqual(lastNameRes, $lastName)",,,,18-01-2024 21:11:58,18-01-2024 21:11:58,0.002s,PASSED
+"verifyEqual(firstNameRes, $firstName)",,,,18-01-2024 21:11:58,18-01-2024 21:11:58,0.001s,PASSED
+,,,,,,,
+Test Cases/POST Create Multiple Booking,,,,18-01-2024 21:12:06,18-01-2024 21:12:10,3.401s,PASSED
+"response = sendRequest(findTestObject(""Object Repository/POST Create Multiple Booking"", [""firstName"":firstName, ""lastName"":lastName]))",,Send request create multiple bookings,,18-01-2024 21:12:06,18-01-2024 21:12:08,1.395s,PASSED
+"verifyResponseStatusCode(response, 200)",,The status code should be 200,,18-01-2024 21:12:08,18-01-2024 21:12:08,0.003s,PASSED
+"verifyElementPropertyValue(response, ""booking.firstname"", $firstName)",,,,18-01-2024 21:12:08,18-01-2024 21:12:08,0.021s,PASSED
+"verifyElementPropertyValue(response, ""booking.lastname"", $lastName)",,,,18-01-2024 21:12:08,18-01-2024 21:12:08,0.014s,PASSED
+"id = getElementPropertyValue(response, ""bookingid"")",,,,18-01-2024 21:12:08,18-01-2024 21:12:08,0.012s,PASSED
+"responseGETRequest = sendRequestAndVerify(findTestObject(""Object Repository/GET Booking Ids"", [""id"":id]))",,Send GET Request to find booking infomation by ID,,18-01-2024 21:12:08,18-01-2024 21:12:10,1.923s,PASSED
+"verifyResponseStatusCode(responseGETRequest, 200)",,Verify status code should be 200,,18-01-2024 21:12:10,18-01-2024 21:12:10,0.018s,PASSED
+responseBody = responseGETRequest.getResponseBodyContent(),,Verify body contain data,,18-01-2024 21:12:10,18-01-2024 21:12:10,0.000s,PASSED
+jsonResponse = JsonSlurper().parseText(responseBody),,,,18-01-2024 21:12:10,18-01-2024 21:12:10,0.000s,PASSED
+firstNameRes = firstname,,,,18-01-2024 21:12:10,18-01-2024 21:12:10,0.001s,PASSED
+lastNameRes = lastname,,,,18-01-2024 21:12:10,18-01-2024 21:12:10,0.000s,PASSED
+"println(""RESPONE: "" + jsonResponse)",,,,18-01-2024 21:12:10,18-01-2024 21:12:10,0.000s,PASSED
+"verifyEqual(lastNameRes, $lastName)",,,,18-01-2024 21:12:10,18-01-2024 21:12:10,0.002s,PASSED
+"verifyEqual(firstNameRes, $firstName)",,,,18-01-2024 21:12:10,18-01-2024 21:12:10,0.001s,PASSED
+,,,,,,,
+Test Cases/POST Create Multiple Booking,,,,18-01-2024 21:12:10,18-01-2024 21:12:13,3.411s,PASSED
+"response = sendRequest(findTestObject(""Object Repository/POST Create Multiple Booking"", [""firstName"":firstName, ""lastName"":lastName]))",,Send request create multiple bookings,,18-01-2024 21:12:10,18-01-2024 21:12:12,1.861s,PASSED
+"verifyResponseStatusCode(response, 200)",,The status code should be 200,,18-01-2024 21:12:12,18-01-2024 21:12:12,0.002s,PASSED
+"verifyElementPropertyValue(response, ""booking.firstname"", $firstName)",,,,18-01-2024 21:12:12,18-01-2024 21:12:12,0.018s,PASSED
+"verifyElementPropertyValue(response, ""booking.lastname"", $lastName)",,,,18-01-2024 21:12:12,18-01-2024 21:12:12,0.014s,PASSED
+"id = getElementPropertyValue(response, ""bookingid"")",,,,18-01-2024 21:12:12,18-01-2024 21:12:12,0.011s,PASSED
+"responseGETRequest = sendRequestAndVerify(findTestObject(""Object Repository/GET Booking Ids"", [""id"":id]))",,Send GET Request to find booking infomation by ID,,18-01-2024 21:12:12,18-01-2024 21:12:13,1.491s,PASSED
+"verifyResponseStatusCode(responseGETRequest, 200)",,Verify status code should be 200,,18-01-2024 21:12:13,18-01-2024 21:12:13,0.002s,PASSED
+responseBody = responseGETRequest.getResponseBodyContent(),,Verify body contain data,,18-01-2024 21:12:13,18-01-2024 21:12:13,0.000s,PASSED
+jsonResponse = JsonSlurper().parseText(responseBody),,,,18-01-2024 21:12:13,18-01-2024 21:12:13,0.000s,PASSED
+firstNameRes = firstname,,,,18-01-2024 21:12:13,18-01-2024 21:12:13,0.001s,PASSED
+lastNameRes = lastname,,,,18-01-2024 21:12:13,18-01-2024 21:12:13,0.000s,PASSED
+"println(""RESPONE: "" + jsonResponse)",,,,18-01-2024 21:12:13,18-01-2024 21:12:13,0.000s,PASSED
+"verifyEqual(lastNameRes, $lastName)",,,,18-01-2024 21:12:13,18-01-2024 21:12:13,0.001s,PASSED
+"verifyEqual(firstNameRes, $firstName)",,,,18-01-2024 21:12:13,18-01-2024 21:12:13,0.001s,PASSED
