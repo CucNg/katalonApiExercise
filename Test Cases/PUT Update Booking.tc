@@ -5,4 +5,30 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>1e13498a-dfb6-40d9-afe6-e6770110ab6d</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b76b5a8a-003f-47b1-af3f-1cd5cb77cb68</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>24d4af70-2a7e-43f3-b522-b1e8d0dc3ba2</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Cuc'</defaultValue>
+      <description></description>
+      <id>b76b5a8a-003f-47b1-af3f-1cd5cb77cb68</id>
+      <masked>false</masked>
+      <name>firstNameUpdate</name>
+   </variable>
+   <variable>
+      <defaultValue>'Nguyen'</defaultValue>
+      <description></description>
+      <id>24d4af70-2a7e-43f3-b522-b1e8d0dc3ba2</id>
+      <masked>false</masked>
+      <name>lastNameUpdate</name>
+   </variable>
 </TestCaseEntity>

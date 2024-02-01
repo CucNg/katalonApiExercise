@@ -1,0 +1,23 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+PUT,,,,23-01-2024 21:46:25,23-01-2024 21:46:31,6.009s,PASSED
+,,,,,,,
+Test Cases/PUT Update Booking,,,,23-01-2024 21:46:28,23-01-2024 21:46:31,3.130s,PASSED
+firstName = sample.Common.generateRandomString(),,,,23-01-2024 21:46:28,23-01-2024 21:46:28,0.025s,PASSED
+lastName = sample.Common.generateRandomString(),,,,23-01-2024 21:46:28,23-01-2024 21:46:28,0.002s,PASSED
+"response = sendRequest(findTestObject(""Object Repository/POST Create booking"", [""firstName"":firstName, ""lastName"":lastName]))",,Send request create booking,,23-01-2024 21:46:28,23-01-2024 21:46:29,1.482s,PASSED
+"verifyResponseStatusCode(response, 200)",,The status should be 200,,23-01-2024 21:46:29,23-01-2024 21:46:29,0.004s,PASSED
+"verifyElementPropertyValue(response, ""booking.firstname"", $firstName)",,Verify response,,23-01-2024 21:46:29,23-01-2024 21:46:29,0.027s,PASSED
+"verifyElementPropertyValue(response, ""booking.lastname"", $lastName)",,,,23-01-2024 21:46:29,23-01-2024 21:46:29,0.015s,PASSED
+"id = getElementPropertyValue(response, ""bookingid"")",,,,23-01-2024 21:46:29,23-01-2024 21:46:29,0.020s,PASSED
+firstNameUpdate = $firstNameUpdate,,,,23-01-2024 21:46:29,23-01-2024 21:46:29,0.000s,PASSED
+lastNameUpdate = $lastNameUpdate,,,,23-01-2024 21:46:29,23-01-2024 21:46:29,0.001s,PASSED
+"responseObject = sendRequest(findTestObject(""Object Repository/PUT Update Booking"", [""id"":id, ""firstNameUpdate"":firstNameUpdate, ""lastNameUpdate"":lastNameUpdate]))",,Send request update first name and last name,,23-01-2024 21:46:29,23-01-2024 21:46:31,1.463s,PASSED
+"println(""body: "" + responseObject)",,,,23-01-2024 21:46:31,23-01-2024 21:46:31,0.002s,PASSED
+"verifyResponseStatusCode(responseObject, 200)",,Verify status code,,23-01-2024 21:46:31,23-01-2024 21:46:31,0.004s,PASSED
+responseBody = responseObject.getResponseBodyContent(),,Verify respone,,23-01-2024 21:46:31,23-01-2024 21:46:31,0.001s,PASSED
+jsonResponse = JsonSlurper().parseText(responseBody),,,,23-01-2024 21:46:31,23-01-2024 21:46:31,0.002s,PASSED
+firstNameRes = firstname,,,,23-01-2024 21:46:31,23-01-2024 21:46:31,0.001s,PASSED
+lastNameRes = lastname,,,,23-01-2024 21:46:31,23-01-2024 21:46:31,0.001s,PASSED
+"println(""RESPONE: "" + jsonResponse)",,,,23-01-2024 21:46:31,23-01-2024 21:46:31,0.001s,PASSED
+"verifyEqual(lastNameRes, lastNameUpdate)",,,,23-01-2024 21:46:31,23-01-2024 21:46:31,0.009s,PASSED
+"verifyEqual(firstNameRes, firstNameUpdate)",,,,23-01-2024 21:46:31,23-01-2024 21:46:31,0.002s,PASSED

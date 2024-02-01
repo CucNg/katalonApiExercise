@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="PUT" time="6.561" tests="1" failures="0" errors="0">
+   <testsuite name="PUT" tests="1" failures="0" errors="0" time="6.561" skipped="0" timestamp="25-01-2024T22:19:00" hostname="cucnguyen - 192.168.2.12" id="Test Suites/PUT">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/cucnguyen/git/katalonApiExercise/Reports/20240125_221853/PUT/20240125_221854"/>
+         <property name="logFiles" value="/Users/cucnguyen/git/katalonApiExercise/Reports/20240125_221853/PUT/20240125_221854/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="cucnguyen - 192.168.2.12"/>
+         <property name="hostAddress" value="192.168.2.12"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.1.0.212"/>
+      </properties>
+      <testcase name="Test Cases/PUT Update Booking" time="3.74" classname="Test Cases/PUT Update Booking" status="PASSED">
+         <system-out><![CDATA[25-01-2024T22:19:02 - [TEST_CASE][PASSED] - Test Cases/PUT Update Booking: Test Cases/PUT Update Booking
+
+25-01-2024T22:19:02 - [TEST_STEP][PASSED] - firstName = sample.Common.generateRandomString(): sample.Common.generateRandomString is PASSED
+
+25-01-2024T22:19:02 - [MESSAGE][PASSED] - sample.Common.generateRandomString is PASSED
+
+25-01-2024T22:19:02 - [TEST_STEP][PASSED] - lastName = sample.Common.generateRandomString(): sample.Common.generateRandomString is PASSED
+
+25-01-2024T22:19:02 - [MESSAGE][PASSED] - sample.Common.generateRandomString is PASSED
+
+25-01-2024T22:19:02 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Object Repository/POST Create booking", ["firstName":firstName, "lastName":lastName])): Send request successfully
+
+25-01-2024T22:19:04 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240125_221853/PUT/20240125_221854/requests/main/1.har
+
+25-01-2024T22:19:04 - [MESSAGE][PASSED] - Send request successfully
+
+25-01-2024T22:19:04 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+25-01-2024T22:19:04 - [MESSAGE][PASSED] - Verify response status code successfully
+
+25-01-2024T22:19:04 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.firstname", $firstName): Verify element property value successfully
+
+25-01-2024T22:19:04 - [MESSAGE][PASSED] - Verify element property value successfully
+
+25-01-2024T22:19:04 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.lastname", $lastName): Verify element property value successfully
+
+25-01-2024T22:19:04 - [MESSAGE][PASSED] - Verify element property value successfully
+
+25-01-2024T22:19:04 - [TEST_STEP][PASSED] - id = getElementPropertyValue(response, "bookingid"): null
+
+25-01-2024T22:19:04 - [TEST_STEP][PASSED] - firstNameUpdate = $firstNameUpdate: null
+
+25-01-2024T22:19:04 - [TEST_STEP][PASSED] - lastNameUpdate = $lastNameUpdate: null
+
+25-01-2024T22:19:04 - [TEST_STEP][PASSED] - responseObject = sendRequest(findTestObject("Object Repository/PUT Update Booking", ["id":id, "firstNameUpdate":firstNameUpdate, "lastNameUpdate":lastNameUpdate])): Send request successfully
+
+25-01-2024T22:19:06 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240125_221853/PUT/20240125_221854/requests/main/2.har
+
+25-01-2024T22:19:06 - [MESSAGE][PASSED] - Send request successfully
+
+25-01-2024T22:19:06 - [TEST_STEP][PASSED] - verifyResponseStatusCode(responseObject, 200): Verify response status code successfully
+
+25-01-2024T22:19:06 - [MESSAGE][PASSED] - Verify response status code successfully
+
+25-01-2024T22:19:06 - [TEST_STEP][PASSED] - responseBody = responseObject.getResponseBodyContent(): null
+
+25-01-2024T22:19:06 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+25-01-2024T22:19:06 - [TEST_STEP][PASSED] - firstNameRes = firstname: null
+
+25-01-2024T22:19:06 - [TEST_STEP][PASSED] - lastNameRes = lastname: null
+
+25-01-2024T22:19:06 - [TEST_STEP][PASSED] - println("RESPONE: " + jsonResponse): null
+
+25-01-2024T22:19:06 - [TEST_STEP][PASSED] - verifyEqual(lastNameRes, lastNameUpdate): Actual object 'Nguyen' and expected object 'Nguyen' are equal
+
+25-01-2024T22:19:06 - [MESSAGE][PASSED] - Actual object 'Nguyen' and expected object 'Nguyen' are equal
+
+25-01-2024T22:19:06 - [TEST_STEP][PASSED] - verifyEqual(firstNameRes, firstNameUpdate): Actual object 'Cuc' and expected object 'Cuc' are equal
+
+25-01-2024T22:19:06 - [MESSAGE][PASSED] - Actual object 'Cuc' and expected object 'Cuc' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[25-01-2024T22:19:00 - [TEST_SUITE][PASSED] - PUT: Test Cases/PUT Update Booking]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

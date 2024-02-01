@@ -1,0 +1,52 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Exercise 4,,,,31-01-2024 13:56:34,31-01-2024 13:56:40,6.130s,PASSED
+,,,,,,,
+Test Cases/Ex 4- PATCH_DELETE Booking,,,,31-01-2024 13:56:34,31-01-2024 13:56:40,6.060s,PASSED
+firstName = sample.Common.generateRandomString(),,,,31-01-2024 13:56:34,31-01-2024 13:56:35,0.035s,PASSED
+lastName = sample.Common.generateRandomString(),,,,31-01-2024 13:56:35,31-01-2024 13:56:35,0.005s,PASSED
+"response = sendRequest(findTestObject(""Object Repository/POST Create booking"", [""firstName"":firstName, ""lastName"":lastName]))",,Send request create booking,,31-01-2024 13:56:35,31-01-2024 13:56:36,1.823s,PASSED
+"verifyResponseStatusCode(response, 200, STOP_ON_FAILURE)",,The status should be 200,,31-01-2024 13:56:36,31-01-2024 13:56:36,0.011s,PASSED
+"verifyElementPropertyValue(response, ""booking.firstname"", $firstName)",,Verify response,,31-01-2024 13:56:36,31-01-2024 13:56:36,0.021s,PASSED
+"verifyElementPropertyValue(response, ""booking.lastname"", $lastName)",,,,31-01-2024 13:56:36,31-01-2024 13:56:36,0.011s,PASSED
+"id = getElementPropertyValue(response, ""bookingid"")",,,,31-01-2024 13:56:36,31-01-2024 13:56:36,0.012s,PASSED
+firstNameUpdate = $firstNameUpdate,,,,31-01-2024 13:56:36,31-01-2024 13:56:36,0.001s,PASSED
+lastNameUpdate = $lastNameUpdate,,,,31-01-2024 13:56:36,31-01-2024 13:56:36,0.001s,PASSED
+"responseObject = sendRequest(findTestObject(""Object Repository/PATCH Update Booking"", [""id"":id, ""fName"":firstNameUpdate, ""lName"":lastNameUpdate]))",,Send request update first name and last name,,31-01-2024 13:56:36,31-01-2024 13:56:37,1.060s,PASSED
+"verifyResponseStatusCode(responseObject, 200, STOP_ON_FAILURE)",,Verify status code,,31-01-2024 13:56:37,31-01-2024 13:56:37,0.004s,PASSED
+responseBody = responseObject.getResponseBodyContent(),,Verify respone,,31-01-2024 13:56:37,31-01-2024 13:56:37,0.006s,PASSED
+jsonResponse = JsonSlurper().parseText(responseBody),,,,31-01-2024 13:56:37,31-01-2024 13:56:37,0.002s,PASSED
+firstNameRes = firstname,,,,31-01-2024 13:56:37,31-01-2024 13:56:37,0.001s,PASSED
+lastNameRes = lastname,,,,31-01-2024 13:56:37,31-01-2024 13:56:37,0.001s,PASSED
+"verifyEqual(lastNameRes, lastNameUpdate)",,,,31-01-2024 13:56:37,31-01-2024 13:56:37,0.013s,PASSED
+"verifyEqual(firstNameRes, firstNameUpdate)",,,,31-01-2024 13:56:38,31-01-2024 13:56:38,0.002s,PASSED
+"jsonPass = ""
+{
+  ""$id"": ""https://example.com/booking.schema.json"",
+  ""$schema"": ""https://json-schema.org/draft/2020-12/schema"",
+  ""type"": ""object"",
+  ""properties"": {
+    ""firstname"": { ""type"": ""string"" },
+    ""lastname"": { ""type"": ""string"" },
+    ""totalprice"": { ""type"": ""integer"" },
+    ""depositpaid"": { ""type"": ""boolean"" },
+    ""bookingdates"": {
+      ""type"": ""object"",
+      ""properties"": {
+        ""checkin"": { ""type"": ""string"", ""format"": ""date"" },
+        ""checkout"": { ""type"": ""string"", ""format"": ""date"" }
+      },
+      ""required"": [""checkin"", ""checkout""]
+    },
+    ""additionalneeds"": { ""type"": ""string"" }
+  },
+  ""required"": [""firstname"", ""lastname"", ""totalprice"", ""depositpaid"", ""bookingdates"", ""additionalneeds""]
+}
+""",,Verify schema of response body,,31-01-2024 13:56:38,31-01-2024 13:56:38,0.002s,PASSED
+"successful = validateJsonAgainstSchema(responseObject, jsonPass)",,,,31-01-2024 13:56:38,31-01-2024 13:56:38,0.046s,PASSED
+"verifyEqual(successful, true)",,,,31-01-2024 13:56:38,31-01-2024 13:56:38,0.004s,PASSED
+"responseDelete = sendRequest(findTestObject(""Object Repository/DELETE Booking"", [""id"":id]))",,Delete booking by ID,,31-01-2024 13:56:38,31-01-2024 13:56:39,1.630s,PASSED
+"verifyResponseStatusCode(responseDelete, 201, STOP_ON_FAILURE)",,Verify status code,,31-01-2024 13:56:39,31-01-2024 13:56:39,0.004s,PASSED
+"assert getResponseBodyContent().contains(""Created"")",,Verify response body,,31-01-2024 13:56:39,31-01-2024 13:56:39,0.009s,PASSED
+"responseGETRequest = sendRequestAndVerify(findTestObject(""Object Repository/GET Booking Ids"", [""id"":id]))",,Send GET Request to find booking deleted by ID,,31-01-2024 13:56:39,31-01-2024 13:56:40,1.170s,PASSED
+"verifyResponseStatusCode(responseGETRequest, 404, STOP_ON_FAILURE)",,Verify status code,,31-01-2024 13:56:40,31-01-2024 13:56:40,0.001s,PASSED
+"assert getResponseBodyContent().contains(""Not Found"")",,Verify response body indicates the booking is no longer available.,,31-01-2024 13:56:40,31-01-2024 13:56:40,0.001s,PASSED

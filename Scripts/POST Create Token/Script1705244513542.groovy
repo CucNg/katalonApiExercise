@@ -31,4 +31,3 @@ def jsonResponse = new JsonSlurper().parseText(responseBody)
 String token = jsonResponse.token
 String cookie = 'token='+token
 GlobalVariable.cookie=  cookie
-println 'Cookie ' + cookie 

@@ -1,0 +1,6 @@
+{"testCaseName":"Test Cases/POST Create booking","testCaseId":"Test Cases/POST Create booking","iterationVariableName":""}
+{"testCaseName":"Test Cases/POST Create Multiple Booking","testCaseId":"Test Cases/POST Create Multiple Booking","iterationVariableName":"","bindedValues":{"firstName":"\u0027Cuc\u0027","lastName":"\u0027Nguyen\u0027"}}
+{"testCaseName":"Test Cases/POST Create Multiple Booking","testCaseId":"Test Cases/POST Create Multiple Booking","iterationVariableName":"","bindedValues":{"firstName":"\u0027Lap\u0027","lastName":"\u0027Chau\u0027"}}
+{"testCaseName":"Test Cases/POST Create Multiple Booking","testCaseId":"Test Cases/POST Create Multiple Booking","iterationVariableName":"","bindedValues":{"firstName":"\u0027Anh\u0027","lastName":"\u0027Nguyen\u0027"}}
+{"testCaseName":"Test Cases/PUT Update Booking","testCaseId":"Test Cases/PUT Update Booking","iterationVariableName":""}
+{"testCaseName":"Test Cases/Ex 4- PATCH_DELETE Booking","testCaseId":"Test Cases/Ex 4- PATCH_DELETE Booking","iterationVariableName":""}

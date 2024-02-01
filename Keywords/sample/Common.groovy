@@ -45,5 +45,4 @@ public class Common {
 		}
 		return randomString.toString();
 	}
-
 }

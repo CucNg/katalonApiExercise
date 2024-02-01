@@ -27,37 +27,7 @@ public class GlobalVariable {
     /**
      * <p></p>
      */
-    public static Object baseUrl1
-     
-    /**
-     * <p></p>
-     */
-    public static Object firstName
-     
-    /**
-     * <p></p>
-     */
-    public static Object lastName
-     
-    /**
-     * <p></p>
-     */
-    public static Object id
-     
-    /**
-     * <p></p>
-     */
-    public static Object ids
-     
-    /**
-     * <p></p>
-     */
     public static Object token
-     
-    /**
-     * <p></p>
-     */
-    public static Object authToken
      
     /**
      * <p></p>
@@ -74,13 +44,7 @@ public class GlobalVariable {
             baseUrl = selectedVariables['baseUrl']
             successCode = selectedVariables['successCode']
             globalId = selectedVariables['globalId']
-            baseUrl1 = selectedVariables['baseUrl1']
-            firstName = selectedVariables['firstName']
-            lastName = selectedVariables['lastName']
-            id = selectedVariables['id']
-            ids = selectedVariables['ids']
             token = selectedVariables['token']
-            authToken = selectedVariables['authToken']
             cookie = selectedVariables['cookie']
             
         } catch (Exception e) {

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="PUT" time="6.66" tests="1" failures="0" errors="1">
+   <testsuite name="PUT" tests="1" failures="0" errors="1" time="6.66" skipped="0" timestamp="23-01-2024T20:51:16" hostname="cucnguyen - 192.168.21.110" id="Test Suites/PUT">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/cucnguyen/git/katalonApiExercise/Reports/20240123_205106/PUT/20240123_205106"/>
+         <property name="logFiles" value="/Users/cucnguyen/git/katalonApiExercise/Reports/20240123_205106/PUT/20240123_205106/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="cucnguyen - 192.168.21.110"/>
+         <property name="hostAddress" value="192.168.21.110"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.1.0.212"/>
+      </properties>
+      <testcase name="Test Cases/PUT Update Booking" time="3.907" classname="Test Cases/PUT Update Booking" status="ERROR">
+         <error type="ERROR" message="Test Cases/PUT Update Booking FAILED.&#xa;Reason:&#xa;org.codehaus.groovy.runtime.typehandling.GroovyCastException: Cannot cast object '403 695 bytes' with class 'com.kms.katalon.core.testobject.ResponseObject' to class 'com.kms.katalon.core.testobject.RequestObject'&#xa;	at PUT Update Booking.run(PUT Update Booking:59)&#xa;	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xa;	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)&#xa;	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)&#xa;	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)&#xa;	at TempTestSuite1706017866262.run(TempTestSuite1706017866262.groovy:36)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#xa;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#xa;"/>
+         <system-out><![CDATA[23-01-2024T20:51:18 - [TEST_CASE][ERROR] - Test Cases/PUT Update Booking: Test Cases/PUT Update Booking FAILED.
+Reason:
+org.codehaus.groovy.runtime.typehandling.GroovyCastException: Cannot cast object '403 695 bytes' with class 'com.kms.katalon.core.testobject.ResponseObject' to class 'com.kms.katalon.core.testobject.RequestObject'
+	at PUT Update Booking.run(PUT Update Booking:59)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1706017866262.run(TempTestSuite1706017866262.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+23-01-2024T20:51:18 - [TEST_STEP][PASSED] - firstName = sample.Common.generateRandomString(): sample.Common.generateRandomString is PASSED
+
+23-01-2024T20:51:18 - [MESSAGE][PASSED] - sample.Common.generateRandomString is PASSED
+
+23-01-2024T20:51:18 - [TEST_STEP][PASSED] - lastName = sample.Common.generateRandomString(): sample.Common.generateRandomString is PASSED
+
+23-01-2024T20:51:18 - [MESSAGE][PASSED] - sample.Common.generateRandomString is PASSED
+
+23-01-2024T20:51:18 - [TEST_STEP][PASSED] - println("First Name: " + firstName): null
+
+23-01-2024T20:51:18 - [TEST_STEP][PASSED] - println("Last Name: " + lastName): null
+
+23-01-2024T20:51:18 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Object Repository/POST Create booking", ["firstName":firstName, "lastName":lastName])): Send request successfully
+
+23-01-2024T20:51:20 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240123_205106/PUT/20240123_205106/requests/main/1.har
+
+23-01-2024T20:51:20 - [MESSAGE][PASSED] - Send request successfully
+
+23-01-2024T20:51:20 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+23-01-2024T20:51:20 - [MESSAGE][PASSED] - Verify response status code successfully
+
+23-01-2024T20:51:20 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.firstname", $firstName): Verify element property value successfully
+
+23-01-2024T20:51:20 - [MESSAGE][PASSED] - Verify element property value successfully
+
+23-01-2024T20:51:20 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.lastname", $lastName): Verify element property value successfully
+
+23-01-2024T20:51:20 - [MESSAGE][PASSED] - Verify element property value successfully
+
+23-01-2024T20:51:20 - [TEST_STEP][PASSED] - id = getElementPropertyValue(response, "bookingid"): null
+
+23-01-2024T20:51:20 - [TEST_STEP][PASSED] - println("ID: " + id): null
+
+23-01-2024T20:51:20 - [TEST_STEP][PASSED] - requestObject = findTestObject("Object Repository/PUT Update Booking", ["id":id, "firstName":firstNameUpdate, "lastName":lastNameUpdate]): null
+
+23-01-2024T20:51:20 - [TEST_STEP][ERROR] - responseObject = sendRequest(requestObject): Test Cases/PUT Update Booking FAILED.
+Reason:
+org.codehaus.groovy.runtime.typehandling.GroovyCastException: Cannot cast object '403 695 bytes' with class 'com.kms.katalon.core.testobject.ResponseObject' to class 'com.kms.katalon.core.testobject.RequestObject'
+	at PUT Update Booking.run(PUT Update Booking:59)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1706017866262.run(TempTestSuite1706017866262.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+23-01-2024T20:51:22 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240123_205106/PUT/20240123_205106/requests/main/2.har
+
+23-01-2024T20:51:22 - [MESSAGE][PASSED] - Send request successfully
+
+23-01-2024T20:51:22 - [MESSAGE][ERROR] - Test Cases/PUT Update Booking FAILED.
+Reason:
+org.codehaus.groovy.runtime.typehandling.GroovyCastException: Cannot cast object '403 695 bytes' with class 'com.kms.katalon.core.testobject.ResponseObject' to class 'com.kms.katalon.core.testobject.RequestObject'
+	at PUT Update Booking.run(PUT Update Booking:59)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1706017866262.run(TempTestSuite1706017866262.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-out>
+         <system-err><![CDATA[23-01-2024T20:51:18 - [TEST_CASE][ERROR] - Test Cases/PUT Update Booking: Test Cases/PUT Update Booking FAILED.
+Reason:
+org.codehaus.groovy.runtime.typehandling.GroovyCastException: Cannot cast object '403 695 bytes' with class 'com.kms.katalon.core.testobject.ResponseObject' to class 'com.kms.katalon.core.testobject.RequestObject'
+	at PUT Update Booking.run(PUT Update Booking:59)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1706017866262.run(TempTestSuite1706017866262.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[23-01-2024T20:51:16 - [TEST_SUITE][ERROR] - PUT: Test Cases/PUT Update Booking FAILED.
+Reason:
+org.codehaus.groovy.runtime.typehandling.GroovyCastException: Cannot cast object '403 695 bytes' with class 'com.kms.katalon.core.testobject.ResponseObject' to class 'com.kms.katalon.core.testobject.RequestObject'
+	at PUT Update Booking.run(PUT Update Booking:59)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1706017866262.run(TempTestSuite1706017866262.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-out>
+      <system-err><![CDATA[23-01-2024T20:51:16 - [TEST_SUITE][ERROR] - PUT: Test Cases/PUT Update Booking FAILED.
+Reason:
+org.codehaus.groovy.runtime.typehandling.GroovyCastException: Cannot cast object '403 695 bytes' with class 'com.kms.katalon.core.testobject.ResponseObject' to class 'com.kms.katalon.core.testobject.RequestObject'
+	at PUT Update Booking.run(PUT Update Booking:59)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1706017866262.run(TempTestSuite1706017866262.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-err>
+   </testsuite>
+</testsuites>

@@ -26,37 +26,41 @@ import com.kms.katalon.core.testobject.TestObjectProperty
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import groovy.json.JsonSlurper
 import com.kms.katalon.core.webservice.verification.WSResponseManager
-def authToken = GlobalVariable.token
-def id = GlobalVariable.id
-def firstName= 'Cuc'
-def lastName= '123 test'
-RequestObject requestObject = findTestObject('Object Repository/PUT Update Booking', [('id') : id, ('firstName') : firstName, ('lastName') : lastName])
-String cookie = 'token=' + authToken
-println 'cookie = ' + cookie
 
-List<TestObjectProperty> headersList = new ArrayList<TestObjectProperty>()
 
-headersList.add(new TestObjectProperty('Content-Type', ConditionType.EQUALS, 'application/json'))
-headersList.add(new TestObjectProperty('Accept', ConditionType.EQUALS, 'application/json'))
-headersList.add(new TestObjectProperty('Cookie', ConditionType.EQUALS, cookie))
+String firstName = CustomKeywords.'sample.Common.generateRandomString'()
+String lastName = CustomKeywords.'sample.Common.generateRandomString'()
 
-requestObject.setHttpHeaderProperties(headersList)
+'Send request create booking'
+ResponseObject response = WS.sendRequest(findTestObject('Object Repository/POST Create booking', [('firstName') : firstName, ('lastName') : lastName]))
 
-ResponseObject response = WS.sendRequest(requestObject)
+'The status should be 200'
+WS.verifyResponseStatusCode(response, 200,FailureHandling.STOP_ON_FAILURE)
+
+'Verify response'
+WS.verifyElementPropertyValue(response, 'booking.firstname',"${firstName}")
+WS.verifyElementPropertyValue(response, 'booking.lastname', "${lastName}")
+
+def id= WS.getElementPropertyValue(response, 'bookingid')
+def firstNameUpdate = "${firstNameUpdate}"
+def lastNameUpdate= "${lastNameUpdate}"
+
+'Send request update first name and last name'
+ResponseObject responseObject = WS.sendRequest(findTestObject('Object Repository/PUT Update Booking', [('id') : id, ('firstNameUpdate') : firstNameUpdate, ('lastNameUpdate') : lastNameUpdate]))
+
 'Verify status code'
-WS.verifyResponseStatusCode(response, 200)
+WS.verifyResponseStatusCode(responseObject , 200,FailureHandling.STOP_ON_FAILURE)
 
-'Verify respone'
-String responseBody = response.getResponseBodyContent()
+'Verify respone' 
+String responseBody = responseObject.getResponseBodyContent()
 def jsonResponse = new JsonSlurper().parseText(responseBody)
 def firstNameRes= jsonResponse.firstname;
 def lastNameRes= jsonResponse.lastname;
-println 'RESPONE: '+jsonResponse 
-WS.verifyEqual(lastNameRes, "${lastName}")
-WS.verifyEqual(firstNameRes, "${firstName}")
+WS.verifyEqual(lastNameRes, lastNameUpdate)
+WS.verifyEqual(firstNameRes, firstNameUpdate)
 
 
 
-//
+
 
 

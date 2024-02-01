@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Exercise 4" time="6.402" tests="1" failures="0" errors="0">
+   <testsuite name="Exercise 4" tests="1" failures="0" errors="0" time="6.402" skipped="0" timestamp="24-01-2024T21:04:04" hostname="cucnguyen - 192.168.21.106" id="Test Suites/Exercise 4">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/cucnguyen/git/katalonApiExercise/Reports/20240124_210357/Exercise 4/20240124_210358"/>
+         <property name="logFiles" value="/Users/cucnguyen/git/katalonApiExercise/Reports/20240124_210357/Exercise 4/20240124_210358/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="cucnguyen - 192.168.21.106"/>
+         <property name="hostAddress" value="192.168.21.106"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.1.0.212"/>
+      </properties>
+      <testcase name="Test Cases/Ex 4- PATCH_DELETE Booking" time="3.652" classname="Test Cases/Ex 4- PATCH_DELETE Booking" status="PASSED">
+         <system-out><![CDATA[24-01-2024T21:04:07 - [TEST_CASE][PASSED] - Test Cases/Ex 4- PATCH_DELETE Booking: Test Cases/Ex 4- PATCH_DELETE Booking
+
+24-01-2024T21:04:07 - [TEST_STEP][PASSED] - firstName = sample.Common.generateRandomString(): sample.Common.generateRandomString is PASSED
+
+24-01-2024T21:04:07 - [MESSAGE][PASSED] - sample.Common.generateRandomString is PASSED
+
+24-01-2024T21:04:07 - [TEST_STEP][PASSED] - lastName = sample.Common.generateRandomString(): sample.Common.generateRandomString is PASSED
+
+24-01-2024T21:04:07 - [MESSAGE][PASSED] - sample.Common.generateRandomString is PASSED
+
+24-01-2024T21:04:07 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Object Repository/POST Create booking", ["firstName":firstName, "lastName":lastName])): Send request successfully
+
+24-01-2024T21:04:09 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240124_210357/Exercise 4/20240124_210358/requests/main/1.har
+
+24-01-2024T21:04:09 - [MESSAGE][PASSED] - Send request successfully
+
+24-01-2024T21:04:09 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+24-01-2024T21:04:09 - [MESSAGE][PASSED] - Verify response status code successfully
+
+24-01-2024T21:04:09 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.firstname", $firstName): Verify element property value successfully
+
+24-01-2024T21:04:09 - [MESSAGE][PASSED] - Verify element property value successfully
+
+24-01-2024T21:04:09 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.lastname", $lastName): Verify element property value successfully
+
+24-01-2024T21:04:09 - [MESSAGE][PASSED] - Verify element property value successfully
+
+24-01-2024T21:04:09 - [TEST_STEP][PASSED] - id = getElementPropertyValue(response, "bookingid"): null
+
+24-01-2024T21:04:09 - [TEST_STEP][PASSED] - firstNameUpdate = $firstNameUpdate: null
+
+24-01-2024T21:04:09 - [TEST_STEP][PASSED] - lastNameUpdate = $lastNameUpdate: null
+
+24-01-2024T21:04:09 - [TEST_STEP][PASSED] - println("id " + id): null
+
+24-01-2024T21:04:09 - [TEST_STEP][PASSED] - responseObject = sendRequest(findTestObject("Object Repository/PATCH Update Booking", ["id":id, "fName":firstNameUpdate, "lName":lastNameUpdate])): Send request successfully
+
+24-01-2024T21:04:10 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240124_210357/Exercise 4/20240124_210358/requests/main/2.har
+
+24-01-2024T21:04:10 - [MESSAGE][PASSED] - Send request successfully
+
+24-01-2024T21:04:10 - [TEST_STEP][PASSED] - verifyResponseStatusCode(responseObject, 200): Verify response status code successfully
+
+24-01-2024T21:04:10 - [MESSAGE][PASSED] - Verify response status code successfully
+
+24-01-2024T21:04:10 - [TEST_STEP][PASSED] - responseBody = responseObject.getResponseBodyContent(): null
+
+24-01-2024T21:04:10 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+24-01-2024T21:04:10 - [TEST_STEP][PASSED] - firstNameRes = firstname: null
+
+24-01-2024T21:04:10 - [TEST_STEP][PASSED] - lastNameRes = lastname: null
+
+24-01-2024T21:04:10 - [TEST_STEP][PASSED] - println("RESPONE: " + jsonResponse): null
+
+24-01-2024T21:04:10 - [TEST_STEP][PASSED] - verifyEqual(lastNameRes, lastNameUpdate): Actual object 'Tung' and expected object 'Tung' are equal
+
+24-01-2024T21:04:10 - [MESSAGE][PASSED] - Actual object 'Tung' and expected object 'Tung' are equal
+
+24-01-2024T21:04:10 - [TEST_STEP][PASSED] - verifyEqual(firstNameRes, firstNameUpdate): Actual object 'Son' and expected object 'Son' are equal
+
+24-01-2024T21:04:10 - [MESSAGE][PASSED] - Actual object 'Son' and expected object 'Son' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[24-01-2024T21:04:04 - [TEST_SUITE][PASSED] - Exercise 4: Test Cases/Ex 4- PATCH_DELETE Booking]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

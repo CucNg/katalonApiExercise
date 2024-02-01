@@ -60,10 +60,8 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 //WS.verifyResponseStatusCode(response, 200)
-def  id = GlobalVariable.id
-def jsonSlurper = new JsonSlurper()
 
-def jsonResponse = jsonSlurper.parseText(response.getResponseText())
+
 
 </verificationScript>
    <wsdlAddress></wsdlAddress>

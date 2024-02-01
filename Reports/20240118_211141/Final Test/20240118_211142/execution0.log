@@ -5020,3 +5020,293 @@ com.kms.katalon.core.exception.StepFailedException: Expected status code is &amp
   <nestedLevel>0</nestedLevel>
   <escapedJava>false</escapedJava>
 </record>
+<record>
+  <date>2024-01-23T13:44:54.450801Z</date>
+  <millis>1706017494450</millis>
+  <nanos>801000</nanos>
+  <sequence>6655</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1277</thread>
+  <message>HAR: /var/folders/rf/1njtc6k14c52yj4flf7jd_wj1r6p79/T/har13973228691483997653/requests/ModalContext/0.har</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+  <property name="harId">f3529024-cb8d-4b53-b739-9a98e0e08cf9</property>
+</record>
+<record>
+  <date>2024-01-24T13:43:53.505456Z</date>
+  <millis>1706103833505</millis>
+  <nanos>456000</nanos>
+  <sequence>12584</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>3273</thread>
+  <message>HAR: /var/folders/rf/1njtc6k14c52yj4flf7jd_wj1r6p79/T/har10635379185827814986/requests/ModalContext/1.har</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+  <property name="harId">7aa8ded2-d8aa-4642-b512-7a4e0048e7a9</property>
+</record>
+<record>
+  <date>2024-01-24T13:44:36.517973Z</date>
+  <millis>1706103876517</millis>
+  <nanos>973000</nanos>
+  <sequence>12585</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>3284</thread>
+  <message>HAR: /var/folders/rf/1njtc6k14c52yj4flf7jd_wj1r6p79/T/har9050824493038665928/requests/ModalContext/2.har</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+  <property name="harId">629197bd-6f6d-45ef-85e5-47b263af70e9</property>
+</record>
+<record>
+  <date>2024-01-24T13:56:29.580544Z</date>
+  <millis>1706104589580</millis>
+  <nanos>544000</nanos>
+  <sequence>13535</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>3727</thread>
+  <message>HAR: /var/folders/rf/1njtc6k14c52yj4flf7jd_wj1r6p79/T/har4541728424540920800/requests/ModalContext/3.har</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+  <property name="harId">850e2810-c19d-4250-9a1a-6204fa3fd62d</property>
+</record>
+<record>
+  <date>2024-01-25T03:20:36.184753Z</date>
+  <millis>1706152836184</millis>
+  <nanos>753000</nanos>
+  <sequence>14213</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>4201</thread>
+  <message>Finding test data with id &amp;apos;Data Files/Booking multiple data&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2024-01-25T03:20:36.187898Z</date>
+  <millis>1706152836187</millis>
+  <nanos>898000</nanos>
+  <sequence>14214</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>4201</thread>
+  <message>Test data is CSV file, reading CSV file</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2024-01-25T03:20:36.188004Z</date>
+  <millis>1706152836188</millis>
+  <nanos>4000</nanos>
+  <sequence>14215</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>4201</thread>
+  <message>Reading CSV file with source file &amp;apos;semicolon&amp;apos;, separator &amp;apos;containing header&amp;apos; and &amp;apos;{2}&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2024-01-25T15:07:39.540720Z</date>
+  <millis>1706195259540</millis>
+  <nanos>720000</nanos>
+  <sequence>16100</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>4399</thread>
+  <message>Finding test data with id &amp;apos;Data Files/Booking multiple data&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2024-01-25T15:07:39.546316Z</date>
+  <millis>1706195259546</millis>
+  <nanos>316000</nanos>
+  <sequence>16101</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>4399</thread>
+  <message>Test data is CSV file, reading CSV file</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2024-01-25T15:07:39.546515Z</date>
+  <millis>1706195259546</millis>
+  <nanos>515000</nanos>
+  <sequence>16102</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>4399</thread>
+  <message>Reading CSV file with source file &amp;apos;semicolon&amp;apos;, separator &amp;apos;containing header&amp;apos; and &amp;apos;{2}&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2024-01-25T15:09:22.052794Z</date>
+  <millis>1706195362052</millis>
+  <nanos>794000</nanos>
+  <sequence>16130</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>4836</thread>
+  <message>Finding test data with id &amp;apos;Data Files/Booking multiple data&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2024-01-25T15:09:22.058042Z</date>
+  <millis>1706195362058</millis>
+  <nanos>42000</nanos>
+  <sequence>16131</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>4836</thread>
+  <message>Test data is CSV file, reading CSV file</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2024-01-25T15:09:22.058541Z</date>
+  <millis>1706195362058</millis>
+  <nanos>541000</nanos>
+  <sequence>16132</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>4836</thread>
+  <message>Reading CSV file with source file &amp;apos;semicolon&amp;apos;, separator &amp;apos;containing header&amp;apos; and &amp;apos;{2}&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2024-01-25T15:09:56.855325Z</date>
+  <millis>1706195396855</millis>
+  <nanos>325000</nanos>
+  <sequence>16160</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>4855</thread>
+  <message>Finding test data with id &amp;apos;Data Files/Booking multiple data&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2024-01-25T15:09:56.857416Z</date>
+  <millis>1706195396857</millis>
+  <nanos>416000</nanos>
+  <sequence>16161</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>4855</thread>
+  <message>Test data is CSV file, reading CSV file</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2024-01-25T15:09:56.857595Z</date>
+  <millis>1706195396857</millis>
+  <nanos>595000</nanos>
+  <sequence>16162</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>4855</thread>
+  <message>Reading CSV file with source file &amp;apos;semicolon&amp;apos;, separator &amp;apos;containing header&amp;apos; and &amp;apos;{2}&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2024-01-25T15:10:44.678182Z</date>
+  <millis>1706195444678</millis>
+  <nanos>182000</nanos>
+  <sequence>16178</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>4836</thread>
+  <message>Finding test data with id &amp;apos;Data Files/Booking multiple data&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2024-01-25T15:10:44.681972Z</date>
+  <millis>1706195444681</millis>
+  <nanos>972000</nanos>
+  <sequence>16179</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>4836</thread>
+  <message>Test data is CSV file, reading CSV file</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2024-01-25T15:10:44.682869Z</date>
+  <millis>1706195444682</millis>
+  <nanos>869000</nanos>
+  <sequence>16180</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>4836</thread>
+  <message>Reading CSV file with source file &amp;apos;semicolon&amp;apos;, separator &amp;apos;containing header&amp;apos; and &amp;apos;{2}&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2024-01-25T15:12:12.706857Z</date>
+  <millis>1706195532706</millis>
+  <nanos>857000</nanos>
+  <sequence>16710</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>4855</thread>
+  <message>Finding test data with id &amp;apos;Data Files/Booking multiple data&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2024-01-25T15:12:12.710903Z</date>
+  <millis>1706195532710</millis>
+  <nanos>903000</nanos>
+  <sequence>16711</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>4855</thread>
+  <message>Test data is CSV file, reading CSV file</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>
+<record>
+  <date>2024-01-25T15:12:12.711087Z</date>
+  <millis>1706195532711</millis>
+  <nanos>87000</nanos>
+  <sequence>16712</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>4855</thread>
+  <message>Reading CSV file with source file &amp;apos;semicolon&amp;apos;, separator &amp;apos;containing header&amp;apos; and &amp;apos;{2}&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+  <escapedJava>false</escapedJava>
+</record>

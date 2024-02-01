@@ -1,0 +1,16 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Exercise 4,,,,24-01-2024 20:40:52,24-01-2024 20:40:58,6.554s,FAILED
+,,,,,,,
+Test Cases/Ex 4- PATCH_DELETE Booking,,,,24-01-2024 20:40:54,24-01-2024 20:40:58,3.997s,FAILED
+firstName = sample.Common.generateRandomString(),,,,24-01-2024 20:40:54,24-01-2024 20:40:54,0.016s,PASSED
+lastName = sample.Common.generateRandomString(),,,,24-01-2024 20:40:54,24-01-2024 20:40:54,0.001s,PASSED
+"response = sendRequest(findTestObject(""Object Repository/POST Create booking"", [""firstName"":firstName, ""lastName"":lastName]))",,Send request create booking,,24-01-2024 20:40:54,24-01-2024 20:40:56,1.992s,PASSED
+"verifyResponseStatusCode(response, 200)",,The status should be 200,,24-01-2024 20:40:56,24-01-2024 20:40:56,0.005s,PASSED
+"verifyElementPropertyValue(response, ""booking.firstname"", $firstName)",,Verify response,,24-01-2024 20:40:56,24-01-2024 20:40:56,0.034s,PASSED
+"verifyElementPropertyValue(response, ""booking.lastname"", $lastName)",,,,24-01-2024 20:40:56,24-01-2024 20:40:56,0.013s,PASSED
+"id = getElementPropertyValue(response, ""bookingid"")",,,,24-01-2024 20:40:56,24-01-2024 20:40:56,0.014s,PASSED
+firstNameUpdate = $firstNameUpdate,,,,24-01-2024 20:40:56,24-01-2024 20:40:56,0.000s,PASSED
+lastNameUpdate = $lastNameUpdate,,,,24-01-2024 20:40:56,24-01-2024 20:40:56,0.000s,PASSED
+"println(""first name_ lastname: "" + firstNameUpdate + lastNameUpdate)",,,,24-01-2024 20:40:56,24-01-2024 20:40:56,0.002s,PASSED
+"responseObject = sendRequest(findTestObject(""Object Repository/PATCH Update Booking"", [""id"":id, ""fName"":firstNameUpdate, ""lName"":lastNameUpdate]))",,Send request update first name and last name,,24-01-2024 20:40:56,24-01-2024 20:40:58,1.828s,PASSED
+"verifyResponseStatusCode(responseObject, 200)",,Verify status code,,24-01-2024 20:40:58,24-01-2024 20:40:58,0.016s,FAILED

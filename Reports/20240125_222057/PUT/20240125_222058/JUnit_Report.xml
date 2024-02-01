@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="PUT" time="0.22" tests="1" failures="0" errors="1">
+   <testsuite name="PUT" tests="1" failures="0" errors="1" time="0.22" skipped="0" timestamp="25-01-2024T22:21:03" hostname="cucnguyen - 192.168.2.12" id="Test Suites/PUT">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/cucnguyen/git/katalonApiExercise/Reports/20240125_222057/PUT/20240125_222058"/>
+         <property name="logFiles" value="/Users/cucnguyen/git/katalonApiExercise/Reports/20240125_222057/PUT/20240125_222058/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="cucnguyen - 192.168.2.12"/>
+         <property name="hostAddress" value="192.168.2.12"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.1.0.212"/>
+      </properties>
+      <testcase name="Test Cases/PUT Update Booking" time="0.114" classname="Test Cases/PUT Update Booking" status="ERROR">
+         <error type="ERROR" message="org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:&#xa;file:/Users/cucnguyen/git/katalonApiExercise/Test%20Suites/PUT.groovy: 55: unable to resolve class ResponseObject&#xa; @ line 55, column 16.&#xa;   ResponseObject response=WS.sendRequest(findTestObject('POST Create Token'))&#xa;                  ^&#xa;&#xa;file:/Users/cucnguyen/git/katalonApiExercise/Test%20Suites/PUT.groovy: 60: unable to resolve class JsonSlurper&#xa; @ line 60, column 20.&#xa;   def jsonResponse = new JsonSlurper().parseText(responseBody)&#xa;                      ^&#xa;&#xa;2 errors&#xa;&#xa;	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)&#xa;	at com.kms.katalon.core.main.ScriptEngine.runScriptMethodAsRawText(ScriptEngine.java:133)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.runMethod(TestSuiteExecutor.java:223)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.lambda$0(TestSuiteExecutor.java:202)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.invokeTestSuiteMethod(TestSuiteExecutor.java:201)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.invokeEachTestCaseMethod(TestSuiteExecutor.java:185)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.invokeTestSuiteMethod(TestCaseExecutor.java:381)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:276)&#xa;	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)&#xa;	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)&#xa;	at TempTestSuite1706196058686.run(TempTestSuite1706196058686.groovy:36)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#xa;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#xa;"/>
+         <system-out><![CDATA[25-01-2024T22:21:03 - [TEST_CASE][ERROR] - Test Cases/PUT Update Booking: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/Users/cucnguyen/git/katalonApiExercise/Test%20Suites/PUT.groovy: 55: unable to resolve class ResponseObject
+ @ line 55, column 16.
+   ResponseObject response=WS.sendRequest(findTestObject('POST Create Token'))
+                  ^
+
+file:/Users/cucnguyen/git/katalonApiExercise/Test%20Suites/PUT.groovy: 60: unable to resolve class JsonSlurper
+ @ line 60, column 20.
+   def jsonResponse = new JsonSlurper().parseText(responseBody)
+                      ^
+
+2 errors
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptMethodAsRawText(ScriptEngine.java:133)
+	at com.kms.katalon.core.main.TestSuiteExecutor.runMethod(TestSuiteExecutor.java:223)
+	at com.kms.katalon.core.main.TestSuiteExecutor.lambda$0(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.invokeTestSuiteMethod(TestSuiteExecutor.java:201)
+	at com.kms.katalon.core.main.TestSuiteExecutor.invokeEachTestCaseMethod(TestSuiteExecutor.java:185)
+	at com.kms.katalon.core.main.TestCaseExecutor.invokeTestSuiteMethod(TestCaseExecutor.java:381)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:276)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1706196058686.run(TempTestSuite1706196058686.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+25-01-2024T22:21:03 - [TEST_STEP][ERROR] - Start setup action : setupTestCase: startup failed:
+file:/Users/cucnguyen/git/katalonApiExercise/Test%20Suites/PUT.groovy: 55: unable to resolve class ResponseObject
+ @ line 55, column 16.
+   ResponseObject response=WS.sendRequest(findTestObject('POST Create Token'))
+                  ^
+
+file:/Users/cucnguyen/git/katalonApiExercise/Test%20Suites/PUT.groovy: 60: unable to resolve class JsonSlurper
+ @ line 60, column 20.
+   def jsonResponse = new JsonSlurper().parseText(responseBody)
+                      ^
+
+2 errors
+
+
+25-01-2024T22:21:03 - [MESSAGE][ERROR] - startup failed:
+file:/Users/cucnguyen/git/katalonApiExercise/Test%20Suites/PUT.groovy: 55: unable to resolve class ResponseObject
+ @ line 55, column 16.
+   ResponseObject response=WS.sendRequest(findTestObject('POST Create Token'))
+                  ^
+
+file:/Users/cucnguyen/git/katalonApiExercise/Test%20Suites/PUT.groovy: 60: unable to resolve class JsonSlurper
+ @ line 60, column 20.
+   def jsonResponse = new JsonSlurper().parseText(responseBody)
+                      ^
+
+2 errors]]></system-out>
+         <system-err><![CDATA[25-01-2024T22:21:03 - [TEST_CASE][ERROR] - Test Cases/PUT Update Booking: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/Users/cucnguyen/git/katalonApiExercise/Test%20Suites/PUT.groovy: 55: unable to resolve class ResponseObject
+ @ line 55, column 16.
+   ResponseObject response=WS.sendRequest(findTestObject('POST Create Token'))
+                  ^
+
+file:/Users/cucnguyen/git/katalonApiExercise/Test%20Suites/PUT.groovy: 60: unable to resolve class JsonSlurper
+ @ line 60, column 20.
+   def jsonResponse = new JsonSlurper().parseText(responseBody)
+                      ^
+
+2 errors
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptMethodAsRawText(ScriptEngine.java:133)
+	at com.kms.katalon.core.main.TestSuiteExecutor.runMethod(TestSuiteExecutor.java:223)
+	at com.kms.katalon.core.main.TestSuiteExecutor.lambda$0(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.invokeTestSuiteMethod(TestSuiteExecutor.java:201)
+	at com.kms.katalon.core.main.TestSuiteExecutor.invokeEachTestCaseMethod(TestSuiteExecutor.java:185)
+	at com.kms.katalon.core.main.TestCaseExecutor.invokeTestSuiteMethod(TestCaseExecutor.java:381)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:276)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1706196058686.run(TempTestSuite1706196058686.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[25-01-2024T22:21:03 - [TEST_SUITE][ERROR] - PUT: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/Users/cucnguyen/git/katalonApiExercise/Test%20Suites/PUT.groovy: 55: unable to resolve class ResponseObject
+ @ line 55, column 16.
+   ResponseObject response=WS.sendRequest(findTestObject('POST Create Token'))
+                  ^
+
+file:/Users/cucnguyen/git/katalonApiExercise/Test%20Suites/PUT.groovy: 60: unable to resolve class JsonSlurper
+ @ line 60, column 20.
+   def jsonResponse = new JsonSlurper().parseText(responseBody)
+                      ^
+
+2 errors
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptMethodAsRawText(ScriptEngine.java:133)
+	at com.kms.katalon.core.main.TestSuiteExecutor.runMethod(TestSuiteExecutor.java:223)
+	at com.kms.katalon.core.main.TestSuiteExecutor.lambda$0(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.invokeTestSuiteMethod(TestSuiteExecutor.java:201)
+	at com.kms.katalon.core.main.TestSuiteExecutor.invokeEachTestCaseMethod(TestSuiteExecutor.java:185)
+	at com.kms.katalon.core.main.TestCaseExecutor.invokeTestSuiteMethod(TestCaseExecutor.java:381)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:276)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1706196058686.run(TempTestSuite1706196058686.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-out>
+      <system-err><![CDATA[25-01-2024T22:21:03 - [TEST_SUITE][ERROR] - PUT: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/Users/cucnguyen/git/katalonApiExercise/Test%20Suites/PUT.groovy: 55: unable to resolve class ResponseObject
+ @ line 55, column 16.
+   ResponseObject response=WS.sendRequest(findTestObject('POST Create Token'))
+                  ^
+
+file:/Users/cucnguyen/git/katalonApiExercise/Test%20Suites/PUT.groovy: 60: unable to resolve class JsonSlurper
+ @ line 60, column 20.
+   def jsonResponse = new JsonSlurper().parseText(responseBody)
+                      ^
+
+2 errors
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptMethodAsRawText(ScriptEngine.java:133)
+	at com.kms.katalon.core.main.TestSuiteExecutor.runMethod(TestSuiteExecutor.java:223)
+	at com.kms.katalon.core.main.TestSuiteExecutor.lambda$0(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.invokeTestSuiteMethod(TestSuiteExecutor.java:201)
+	at com.kms.katalon.core.main.TestSuiteExecutor.invokeEachTestCaseMethod(TestSuiteExecutor.java:185)
+	at com.kms.katalon.core.main.TestCaseExecutor.invokeTestSuiteMethod(TestCaseExecutor.java:381)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:276)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1706196058686.run(TempTestSuite1706196058686.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-err>
+   </testsuite>
+</testsuites>

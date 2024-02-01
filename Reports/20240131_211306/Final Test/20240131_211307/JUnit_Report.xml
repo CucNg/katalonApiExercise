@@ -1,0 +1,908 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Final Test" time="32.251" tests="6" failures="0" errors="1">
+   <testsuite name="Final Test" tests="6" failures="0" errors="1" time="32.251" skipped="0" timestamp="31-01-2024T21:13:13" hostname="cucnguyen - 192.168.2.9" id="Test Suites/Final Test">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/cucnguyen/git/katalonApiExercise/Reports/20240131_211306/Final Test/20240131_211307"/>
+         <property name="logFiles" value="/Users/cucnguyen/git/katalonApiExercise/Reports/20240131_211306/Final Test/20240131_211307/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="cucnguyen - 192.168.2.9"/>
+         <property name="hostAddress" value="192.168.2.9"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.1.0.212"/>
+      </properties>
+      <testcase name="Test Cases/POST Create booking" time="6.391" classname="Test Cases/POST Create booking" status="ERROR">
+         <error type="ERROR" message="Test Cases/POST Create booking FAILED.&#xa;Reason:&#xa;groovy.lang.MissingPropertyException: No such property: id for class: internal.GlobalVariable&#xa;	at WSVerification1706710399719.run(WSVerification1706710399719:16)&#xa;	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xa;	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xa;	at com.kms.katalon.core.main.WSVerificationExecutor.runScript(WSVerificationExecutor.java:180)&#xa;	at com.kms.katalon.core.main.WSVerificationExecutor.doExecute(WSVerificationExecutor.java:174)&#xa;	at com.kms.katalon.core.main.WSVerificationExecutor.processExecutionPhase(WSVerificationExecutor.java:157)&#xa;	at com.kms.katalon.core.main.WSVerificationExecutor.accessMainPhase(WSVerificationExecutor.java:149)&#xa;	at com.kms.katalon.core.main.WSVerificationExecutor.execute(WSVerificationExecutor.java:131)&#xa;	at com.kms.katalon.core.main.TestCaseMain.runWSVerificationScript(TestCaseMain.java:150)&#xa;	at com.kms.katalon.core.main.TestCaseMain$runWSVerificationScript.call(Unknown Source)&#xa;	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.doVerification(SendRequestAndVerifyKeyword.groovy:85)&#xa;	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.access$0(SendRequestAndVerifyKeyword.groovy)&#xa;	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.doCall(SendRequestAndVerifyKeyword.groovy:66)&#xa;	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.call(SendRequestAndVerifyKeyword.groovy)&#xa;	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)&#xa;	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.sendRequestAndVerify(SendRequestAndVerifyKeyword.groovy:54)&#xa;	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.execute(SendRequestAndVerifyKeyword.groovy:49)&#xa;	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)&#xa;	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequestAndVerify(WSBuiltInKeywords.groovy:66)&#xa;	at POST Create booking.run(POST Create booking:38)&#xa;	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xa;	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)&#xa;	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)&#xa;	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)&#xa;	at TempTestSuite1706710387798.run(TempTestSuite1706710387798.groovy:36)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#xa;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#xa;"/>
+         <system-out><![CDATA[31-01-2024T21:13:13 - [TEST_CASE][ERROR] - Test Cases/POST Create booking: Test Cases/POST Create booking FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: id for class: internal.GlobalVariable
+	at WSVerification1706710399719.run(WSVerification1706710399719:16)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.WSVerificationExecutor.runScript(WSVerificationExecutor.java:180)
+	at com.kms.katalon.core.main.WSVerificationExecutor.doExecute(WSVerificationExecutor.java:174)
+	at com.kms.katalon.core.main.WSVerificationExecutor.processExecutionPhase(WSVerificationExecutor.java:157)
+	at com.kms.katalon.core.main.WSVerificationExecutor.accessMainPhase(WSVerificationExecutor.java:149)
+	at com.kms.katalon.core.main.WSVerificationExecutor.execute(WSVerificationExecutor.java:131)
+	at com.kms.katalon.core.main.TestCaseMain.runWSVerificationScript(TestCaseMain.java:150)
+	at com.kms.katalon.core.main.TestCaseMain$runWSVerificationScript.call(Unknown Source)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.doVerification(SendRequestAndVerifyKeyword.groovy:85)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.access$0(SendRequestAndVerifyKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.doCall(SendRequestAndVerifyKeyword.groovy:66)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.call(SendRequestAndVerifyKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.sendRequestAndVerify(SendRequestAndVerifyKeyword.groovy:54)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.execute(SendRequestAndVerifyKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequestAndVerify(WSBuiltInKeywords.groovy:66)
+	at POST Create booking.run(POST Create booking:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1706710387798.run(TempTestSuite1706710387798.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+31-01-2024T21:13:13 - [TEST_STEP][PASSED] - Start setup action : setupTestCase: Method 'setupTestCase' complete successfully
+
+31-01-2024T21:13:13 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/POST Create Token"), [:]): Call Test Case 'Test Cases/POST Create Token' successfully
+
+31-01-2024T21:13:13 - [TEST_CASE][PASSED] - Test Cases/POST Create Token: Test Cases/POST Create Token
+
+31-01-2024T21:13:13 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("POST Create Token")): Send request successfully
+
+31-01-2024T21:13:15 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240131_211306/Final Test/20240131_211307/requests/main/0.har
+
+31-01-2024T21:13:15 - [MESSAGE][PASSED] - Send request successfully
+
+31-01-2024T21:13:15 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+31-01-2024T21:13:15 - [MESSAGE][PASSED] - Verify response status code successfully
+
+31-01-2024T21:13:15 - [TEST_STEP][PASSED] - responseBody = response.getResponseBodyContent(): null
+
+31-01-2024T21:13:15 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+31-01-2024T21:13:15 - [TEST_STEP][PASSED] - token = token: null
+
+31-01-2024T21:13:15 - [TEST_STEP][PASSED] - cookie = "token=" + token: null
+
+31-01-2024T21:13:15 - [TEST_STEP][PASSED] - cookie = cookie: null
+
+31-01-2024T21:13:15 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/POST Create Token' successfully
+
+31-01-2024T21:13:15 - [MESSAGE][PASSED] - Method 'setupTestCase' complete successfully
+
+31-01-2024T21:13:15 - [TEST_STEP][PASSED] - firstName = sample.Common.generateRandomString(): sample.Common.generateRandomString is PASSED
+
+31-01-2024T21:13:15 - [MESSAGE][PASSED] - sample.Common.generateRandomString is PASSED
+
+31-01-2024T21:13:15 - [TEST_STEP][PASSED] - lastName = sample.Common.generateRandomString(): sample.Common.generateRandomString is PASSED
+
+31-01-2024T21:13:15 - [MESSAGE][PASSED] - sample.Common.generateRandomString is PASSED
+
+31-01-2024T21:13:15 - [TEST_STEP][PASSED] - println("First Name: " + firstName): null
+
+31-01-2024T21:13:15 - [TEST_STEP][PASSED] - println("Last Name: " + lastName): null
+
+31-01-2024T21:13:15 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Object Repository/POST Create booking", ["firstName":firstName, "lastName":lastName])): Send request successfully
+
+31-01-2024T21:13:17 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240131_211306/Final Test/20240131_211307/requests/main/1.har
+
+31-01-2024T21:13:17 - [MESSAGE][PASSED] - Send request successfully
+
+31-01-2024T21:13:17 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+31-01-2024T21:13:17 - [MESSAGE][PASSED] - Verify response status code successfully
+
+31-01-2024T21:13:17 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.firstname", $firstName): Verify element property value successfully
+
+31-01-2024T21:13:17 - [MESSAGE][PASSED] - Verify element property value successfully
+
+31-01-2024T21:13:17 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.lastname", $lastName): Verify element property value successfully
+
+31-01-2024T21:13:17 - [MESSAGE][PASSED] - Verify element property value successfully
+
+31-01-2024T21:13:17 - [TEST_STEP][PASSED] - responseFirstName = getElementPropertyValue(response, "booking.firstname"): null
+
+31-01-2024T21:13:17 - [TEST_STEP][PASSED] - responseLastName = getElementPropertyValue(response, "booking.lastname"): null
+
+31-01-2024T21:13:17 - [TEST_STEP][PASSED] - id = getElementPropertyValue(response, "bookingid"): null
+
+31-01-2024T21:13:17 - [TEST_STEP][ERROR] - responseSearch = sendRequestAndVerify(findTestObject("Object Repository/GET Search booking", ["firstName":responseFirstName, "lastName":responseLastName])): Test Cases/POST Create booking FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Verification failed because of error(s)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.doVerification(SendRequestAndVerifyKeyword.groovy:93)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.access$0(SendRequestAndVerifyKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.doCall(SendRequestAndVerifyKeyword.groovy:66)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.call(SendRequestAndVerifyKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.sendRequestAndVerify(SendRequestAndVerifyKeyword.groovy:54)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.execute(SendRequestAndVerifyKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequestAndVerify(WSBuiltInKeywords.groovy:66)
+	at POST Create booking.run(POST Create booking:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1706710387798.run(TempTestSuite1706710387798.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+31-01-2024T21:13:19 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240131_211306/Final Test/20240131_211307/requests/main/2.har
+
+31-01-2024T21:13:19 - [TEST_CASE][ERROR] - Start Test Case : Verification: Verification FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: id for class: internal.GlobalVariable
+	at WSVerification1706710399719.run(WSVerification1706710399719:16)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.WSVerificationExecutor.runScript(WSVerificationExecutor.java:180)
+	at com.kms.katalon.core.main.WSVerificationExecutor.doExecute(WSVerificationExecutor.java:174)
+	at com.kms.katalon.core.main.WSVerificationExecutor.processExecutionPhase(WSVerificationExecutor.java:157)
+	at com.kms.katalon.core.main.WSVerificationExecutor.accessMainPhase(WSVerificationExecutor.java:149)
+	at com.kms.katalon.core.main.WSVerificationExecutor.execute(WSVerificationExecutor.java:131)
+	at com.kms.katalon.core.main.TestCaseMain.runWSVerificationScript(TestCaseMain.java:150)
+	at com.kms.katalon.core.main.TestCaseMain$runWSVerificationScript.call(Unknown Source)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.doVerification(SendRequestAndVerifyKeyword.groovy:85)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.access$0(SendRequestAndVerifyKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.doCall(SendRequestAndVerifyKeyword.groovy:66)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.call(SendRequestAndVerifyKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.sendRequestAndVerify(SendRequestAndVerifyKeyword.groovy:54)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.execute(SendRequestAndVerifyKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequestAndVerify(WSBuiltInKeywords.groovy:66)
+	at POST Create booking.run(POST Create booking:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1706710387798.run(TempTestSuite1706710387798.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+31-01-2024T21:13:19 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+31-01-2024T21:13:19 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+31-01-2024T21:13:19 - [TEST_STEP][PASSED] - id = id: null
+
+31-01-2024T21:13:19 - [MESSAGE][FAILED] - Unable to send request and verify the response (Root cause: com.kms.katalon.core.exception.StepErrorException: Verification failed because of error(s)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.doVerification(SendRequestAndVerifyKeyword.groovy:93)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.access$0(SendRequestAndVerifyKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.doCall(SendRequestAndVerifyKeyword.groovy:66)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.call(SendRequestAndVerifyKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.sendRequestAndVerify(SendRequestAndVerifyKeyword.groovy:54)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.execute(SendRequestAndVerifyKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequestAndVerify(WSBuiltInKeywords.groovy:66)
+	at POST Create booking.run(POST Create booking:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1706710387798.run(TempTestSuite1706710387798.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+)
+
+31-01-2024T21:13:19 - [MESSAGE][ERROR] - Test Cases/POST Create booking FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Verification failed because of error(s)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.doVerification(SendRequestAndVerifyKeyword.groovy:93)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.access$0(SendRequestAndVerifyKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.doCall(SendRequestAndVerifyKeyword.groovy:66)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.call(SendRequestAndVerifyKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.sendRequestAndVerify(SendRequestAndVerifyKeyword.groovy:54)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.execute(SendRequestAndVerifyKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequestAndVerify(WSBuiltInKeywords.groovy:66)
+	at POST Create booking.run(POST Create booking:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1706710387798.run(TempTestSuite1706710387798.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-out>
+         <system-err><![CDATA[31-01-2024T21:13:13 - [TEST_CASE][ERROR] - Test Cases/POST Create booking: Test Cases/POST Create booking FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: id for class: internal.GlobalVariable
+	at WSVerification1706710399719.run(WSVerification1706710399719:16)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.WSVerificationExecutor.runScript(WSVerificationExecutor.java:180)
+	at com.kms.katalon.core.main.WSVerificationExecutor.doExecute(WSVerificationExecutor.java:174)
+	at com.kms.katalon.core.main.WSVerificationExecutor.processExecutionPhase(WSVerificationExecutor.java:157)
+	at com.kms.katalon.core.main.WSVerificationExecutor.accessMainPhase(WSVerificationExecutor.java:149)
+	at com.kms.katalon.core.main.WSVerificationExecutor.execute(WSVerificationExecutor.java:131)
+	at com.kms.katalon.core.main.TestCaseMain.runWSVerificationScript(TestCaseMain.java:150)
+	at com.kms.katalon.core.main.TestCaseMain$runWSVerificationScript.call(Unknown Source)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.doVerification(SendRequestAndVerifyKeyword.groovy:85)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.access$0(SendRequestAndVerifyKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.doCall(SendRequestAndVerifyKeyword.groovy:66)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.call(SendRequestAndVerifyKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.sendRequestAndVerify(SendRequestAndVerifyKeyword.groovy:54)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.execute(SendRequestAndVerifyKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequestAndVerify(WSBuiltInKeywords.groovy:66)
+	at POST Create booking.run(POST Create booking:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1706710387798.run(TempTestSuite1706710387798.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/POST Create Multiple Booking" time="4.677" classname="Test Cases/POST Create Multiple Booking" status="PASSED">
+         <system-out><![CDATA[31-01-2024T21:13:19 - [TEST_CASE][PASSED] - Test Cases/POST Create Multiple Booking: Test Cases/POST Create Multiple Booking
+
+31-01-2024T21:13:19 - [TEST_STEP][PASSED] - Start setup action : setupTestCase: Method 'setupTestCase' complete successfully
+
+31-01-2024T21:13:19 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/POST Create Token"), [:]): Call Test Case 'Test Cases/POST Create Token' successfully
+
+31-01-2024T21:13:19 - [TEST_CASE][PASSED] - Test Cases/POST Create Token: Test Cases/POST Create Token
+
+31-01-2024T21:13:19 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("POST Create Token")): Send request successfully
+
+31-01-2024T21:13:21 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240131_211306/Final Test/20240131_211307/requests/main/3.har
+
+31-01-2024T21:13:21 - [MESSAGE][PASSED] - Send request successfully
+
+31-01-2024T21:13:21 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+31-01-2024T21:13:21 - [MESSAGE][PASSED] - Verify response status code successfully
+
+31-01-2024T21:13:21 - [TEST_STEP][PASSED] - responseBody = response.getResponseBodyContent(): null
+
+31-01-2024T21:13:21 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+31-01-2024T21:13:21 - [TEST_STEP][PASSED] - token = token: null
+
+31-01-2024T21:13:21 - [TEST_STEP][PASSED] - cookie = "token=" + token: null
+
+31-01-2024T21:13:21 - [TEST_STEP][PASSED] - cookie = cookie: null
+
+31-01-2024T21:13:21 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/POST Create Token' successfully
+
+31-01-2024T21:13:21 - [MESSAGE][PASSED] - Method 'setupTestCase' complete successfully
+
+31-01-2024T21:13:21 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Object Repository/POST Create Multiple Booking", ["firstName":firstName, "lastName":lastName])): Send request successfully
+
+31-01-2024T21:13:22 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240131_211306/Final Test/20240131_211307/requests/main/4.har
+
+31-01-2024T21:13:22 - [MESSAGE][PASSED] - Send request successfully
+
+31-01-2024T21:13:22 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+31-01-2024T21:13:22 - [MESSAGE][PASSED] - Verify response status code successfully
+
+31-01-2024T21:13:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.firstname", $firstName): Verify element property value successfully
+
+31-01-2024T21:13:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+31-01-2024T21:13:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.lastname", $lastName): Verify element property value successfully
+
+31-01-2024T21:13:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+31-01-2024T21:13:22 - [TEST_STEP][PASSED] - id = getElementPropertyValue(response, "bookingid"): null
+
+31-01-2024T21:13:22 - [TEST_STEP][PASSED] - responseGETRequest = sendRequestAndVerify(findTestObject("Object Repository/GET Booking Ids", ["id":id])): Send request and verify the response successfully
+
+31-01-2024T21:13:24 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240131_211306/Final Test/20240131_211307/requests/main/5.har
+
+31-01-2024T21:13:24 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+31-01-2024T21:13:24 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+31-01-2024T21:13:24 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+31-01-2024T21:13:24 - [MESSAGE][PASSED] - Verify response successfully
+
+31-01-2024T21:13:24 - [MESSAGE][PASSED] - All validation steps have been passed
+
+31-01-2024T21:13:24 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+31-01-2024T21:13:24 - [TEST_STEP][PASSED] - verifyResponseStatusCode(responseGETRequest, 200): Verify response status code successfully
+
+31-01-2024T21:13:24 - [MESSAGE][PASSED] - Verify response status code successfully
+
+31-01-2024T21:13:24 - [TEST_STEP][PASSED] - responseBody = responseGETRequest.getResponseBodyContent(): null
+
+31-01-2024T21:13:24 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+31-01-2024T21:13:24 - [TEST_STEP][PASSED] - firstNameRes = firstname: null
+
+31-01-2024T21:13:24 - [TEST_STEP][PASSED] - lastNameRes = lastname: null
+
+31-01-2024T21:13:24 - [TEST_STEP][PASSED] - println("RESPONE: " + jsonResponse): null
+
+31-01-2024T21:13:24 - [TEST_STEP][PASSED] - verifyEqual(lastNameRes, $lastName): Actual object 'Nguyen' and expected object 'Nguyen' are equal
+
+31-01-2024T21:13:24 - [MESSAGE][PASSED] - Actual object 'Nguyen' and expected object 'Nguyen' are equal
+
+31-01-2024T21:13:24 - [TEST_STEP][PASSED] - verifyEqual(firstNameRes, $firstName): Actual object 'Cuc' and expected object 'Cuc' are equal
+
+31-01-2024T21:13:24 - [MESSAGE][PASSED] - Actual object 'Cuc' and expected object 'Cuc' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/POST Create Multiple Booking" time="4.806" classname="Test Cases/POST Create Multiple Booking" status="PASSED">
+         <system-out><![CDATA[31-01-2024T21:13:24 - [TEST_CASE][PASSED] - Test Cases/POST Create Multiple Booking: Test Cases/POST Create Multiple Booking
+
+31-01-2024T21:13:24 - [TEST_STEP][PASSED] - Start setup action : setupTestCase: Method 'setupTestCase' complete successfully
+
+31-01-2024T21:13:24 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/POST Create Token"), [:]): Call Test Case 'Test Cases/POST Create Token' successfully
+
+31-01-2024T21:13:24 - [TEST_CASE][PASSED] - Test Cases/POST Create Token: Test Cases/POST Create Token
+
+31-01-2024T21:13:24 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("POST Create Token")): Send request successfully
+
+31-01-2024T21:13:26 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240131_211306/Final Test/20240131_211307/requests/main/6.har
+
+31-01-2024T21:13:26 - [MESSAGE][PASSED] - Send request successfully
+
+31-01-2024T21:13:26 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+31-01-2024T21:13:26 - [MESSAGE][PASSED] - Verify response status code successfully
+
+31-01-2024T21:13:26 - [TEST_STEP][PASSED] - responseBody = response.getResponseBodyContent(): null
+
+31-01-2024T21:13:26 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+31-01-2024T21:13:26 - [TEST_STEP][PASSED] - token = token: null
+
+31-01-2024T21:13:26 - [TEST_STEP][PASSED] - cookie = "token=" + token: null
+
+31-01-2024T21:13:26 - [TEST_STEP][PASSED] - cookie = cookie: null
+
+31-01-2024T21:13:26 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/POST Create Token' successfully
+
+31-01-2024T21:13:26 - [MESSAGE][PASSED] - Method 'setupTestCase' complete successfully
+
+31-01-2024T21:13:26 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Object Repository/POST Create Multiple Booking", ["firstName":firstName, "lastName":lastName])): Send request successfully
+
+31-01-2024T21:13:27 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240131_211306/Final Test/20240131_211307/requests/main/7.har
+
+31-01-2024T21:13:27 - [MESSAGE][PASSED] - Send request successfully
+
+31-01-2024T21:13:27 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+31-01-2024T21:13:27 - [MESSAGE][PASSED] - Verify response status code successfully
+
+31-01-2024T21:13:27 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.firstname", $firstName): Verify element property value successfully
+
+31-01-2024T21:13:27 - [MESSAGE][PASSED] - Verify element property value successfully
+
+31-01-2024T21:13:27 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.lastname", $lastName): Verify element property value successfully
+
+31-01-2024T21:13:27 - [MESSAGE][PASSED] - Verify element property value successfully
+
+31-01-2024T21:13:27 - [TEST_STEP][PASSED] - id = getElementPropertyValue(response, "bookingid"): null
+
+31-01-2024T21:13:27 - [TEST_STEP][PASSED] - responseGETRequest = sendRequestAndVerify(findTestObject("Object Repository/GET Booking Ids", ["id":id])): Send request and verify the response successfully
+
+31-01-2024T21:13:29 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240131_211306/Final Test/20240131_211307/requests/main/8.har
+
+31-01-2024T21:13:29 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+31-01-2024T21:13:29 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+31-01-2024T21:13:29 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+31-01-2024T21:13:29 - [MESSAGE][PASSED] - Verify response successfully
+
+31-01-2024T21:13:29 - [MESSAGE][PASSED] - All validation steps have been passed
+
+31-01-2024T21:13:29 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+31-01-2024T21:13:29 - [TEST_STEP][PASSED] - verifyResponseStatusCode(responseGETRequest, 200): Verify response status code successfully
+
+31-01-2024T21:13:29 - [MESSAGE][PASSED] - Verify response status code successfully
+
+31-01-2024T21:13:29 - [TEST_STEP][PASSED] - responseBody = responseGETRequest.getResponseBodyContent(): null
+
+31-01-2024T21:13:29 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+31-01-2024T21:13:29 - [TEST_STEP][PASSED] - firstNameRes = firstname: null
+
+31-01-2024T21:13:29 - [TEST_STEP][PASSED] - lastNameRes = lastname: null
+
+31-01-2024T21:13:29 - [TEST_STEP][PASSED] - println("RESPONE: " + jsonResponse): null
+
+31-01-2024T21:13:29 - [TEST_STEP][PASSED] - verifyEqual(lastNameRes, $lastName): Actual object 'Chau' and expected object 'Chau' are equal
+
+31-01-2024T21:13:29 - [MESSAGE][PASSED] - Actual object 'Chau' and expected object 'Chau' are equal
+
+31-01-2024T21:13:29 - [TEST_STEP][PASSED] - verifyEqual(firstNameRes, $firstName): Actual object 'Lap' and expected object 'Lap' are equal
+
+31-01-2024T21:13:29 - [MESSAGE][PASSED] - Actual object 'Lap' and expected object 'Lap' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/POST Create Multiple Booking" time="5.337" classname="Test Cases/POST Create Multiple Booking" status="PASSED">
+         <system-out><![CDATA[31-01-2024T21:13:29 - [TEST_CASE][PASSED] - Test Cases/POST Create Multiple Booking: Test Cases/POST Create Multiple Booking
+
+31-01-2024T21:13:29 - [TEST_STEP][PASSED] - Start setup action : setupTestCase: Method 'setupTestCase' complete successfully
+
+31-01-2024T21:13:29 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/POST Create Token"), [:]): Call Test Case 'Test Cases/POST Create Token' successfully
+
+31-01-2024T21:13:29 - [TEST_CASE][PASSED] - Test Cases/POST Create Token: Test Cases/POST Create Token
+
+31-01-2024T21:13:29 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("POST Create Token")): Send request successfully
+
+31-01-2024T21:13:31 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240131_211306/Final Test/20240131_211307/requests/main/9.har
+
+31-01-2024T21:13:31 - [MESSAGE][PASSED] - Send request successfully
+
+31-01-2024T21:13:31 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+31-01-2024T21:13:31 - [MESSAGE][PASSED] - Verify response status code successfully
+
+31-01-2024T21:13:31 - [TEST_STEP][PASSED] - responseBody = response.getResponseBodyContent(): null
+
+31-01-2024T21:13:31 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+31-01-2024T21:13:31 - [TEST_STEP][PASSED] - token = token: null
+
+31-01-2024T21:13:31 - [TEST_STEP][PASSED] - cookie = "token=" + token: null
+
+31-01-2024T21:13:31 - [TEST_STEP][PASSED] - cookie = cookie: null
+
+31-01-2024T21:13:31 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/POST Create Token' successfully
+
+31-01-2024T21:13:31 - [MESSAGE][PASSED] - Method 'setupTestCase' complete successfully
+
+31-01-2024T21:13:31 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Object Repository/POST Create Multiple Booking", ["firstName":firstName, "lastName":lastName])): Send request successfully
+
+31-01-2024T21:13:33 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240131_211306/Final Test/20240131_211307/requests/main/10.har
+
+31-01-2024T21:13:33 - [MESSAGE][PASSED] - Send request successfully
+
+31-01-2024T21:13:33 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+31-01-2024T21:13:33 - [MESSAGE][PASSED] - Verify response status code successfully
+
+31-01-2024T21:13:33 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.firstname", $firstName): Verify element property value successfully
+
+31-01-2024T21:13:33 - [MESSAGE][PASSED] - Verify element property value successfully
+
+31-01-2024T21:13:33 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.lastname", $lastName): Verify element property value successfully
+
+31-01-2024T21:13:33 - [MESSAGE][PASSED] - Verify element property value successfully
+
+31-01-2024T21:13:33 - [TEST_STEP][PASSED] - id = getElementPropertyValue(response, "bookingid"): null
+
+31-01-2024T21:13:33 - [TEST_STEP][PASSED] - responseGETRequest = sendRequestAndVerify(findTestObject("Object Repository/GET Booking Ids", ["id":id])): Send request and verify the response successfully
+
+31-01-2024T21:13:34 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240131_211306/Final Test/20240131_211307/requests/main/11.har
+
+31-01-2024T21:13:34 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+31-01-2024T21:13:34 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+31-01-2024T21:13:34 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+31-01-2024T21:13:34 - [MESSAGE][PASSED] - Verify response successfully
+
+31-01-2024T21:13:34 - [MESSAGE][PASSED] - All validation steps have been passed
+
+31-01-2024T21:13:34 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+31-01-2024T21:13:34 - [TEST_STEP][PASSED] - verifyResponseStatusCode(responseGETRequest, 200): Verify response status code successfully
+
+31-01-2024T21:13:34 - [MESSAGE][PASSED] - Verify response status code successfully
+
+31-01-2024T21:13:34 - [TEST_STEP][PASSED] - responseBody = responseGETRequest.getResponseBodyContent(): null
+
+31-01-2024T21:13:34 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+31-01-2024T21:13:34 - [TEST_STEP][PASSED] - firstNameRes = firstname: null
+
+31-01-2024T21:13:34 - [TEST_STEP][PASSED] - lastNameRes = lastname: null
+
+31-01-2024T21:13:34 - [TEST_STEP][PASSED] - println("RESPONE: " + jsonResponse): null
+
+31-01-2024T21:13:34 - [TEST_STEP][PASSED] - verifyEqual(lastNameRes, $lastName): Actual object 'Nguyen' and expected object 'Nguyen' are equal
+
+31-01-2024T21:13:34 - [MESSAGE][PASSED] - Actual object 'Nguyen' and expected object 'Nguyen' are equal
+
+31-01-2024T21:13:34 - [TEST_STEP][PASSED] - verifyEqual(firstNameRes, $firstName): Actual object 'Anh' and expected object 'Anh' are equal
+
+31-01-2024T21:13:34 - [MESSAGE][PASSED] - Actual object 'Anh' and expected object 'Anh' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/PUT Update Booking" time="5.056" classname="Test Cases/PUT Update Booking" status="PASSED">
+         <system-out><![CDATA[31-01-2024T21:13:34 - [TEST_CASE][PASSED] - Test Cases/PUT Update Booking: Test Cases/PUT Update Booking
+
+31-01-2024T21:13:34 - [TEST_STEP][PASSED] - Start setup action : setupTestCase: Method 'setupTestCase' complete successfully
+
+31-01-2024T21:13:34 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/POST Create Token"), [:]): Call Test Case 'Test Cases/POST Create Token' successfully
+
+31-01-2024T21:13:34 - [TEST_CASE][PASSED] - Test Cases/POST Create Token: Test Cases/POST Create Token
+
+31-01-2024T21:13:34 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("POST Create Token")): Send request successfully
+
+31-01-2024T21:13:36 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240131_211306/Final Test/20240131_211307/requests/main/12.har
+
+31-01-2024T21:13:36 - [MESSAGE][PASSED] - Send request successfully
+
+31-01-2024T21:13:36 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+31-01-2024T21:13:36 - [MESSAGE][PASSED] - Verify response status code successfully
+
+31-01-2024T21:13:36 - [TEST_STEP][PASSED] - responseBody = response.getResponseBodyContent(): null
+
+31-01-2024T21:13:36 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+31-01-2024T21:13:36 - [TEST_STEP][PASSED] - token = token: null
+
+31-01-2024T21:13:36 - [TEST_STEP][PASSED] - cookie = "token=" + token: null
+
+31-01-2024T21:13:36 - [TEST_STEP][PASSED] - cookie = cookie: null
+
+31-01-2024T21:13:36 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/POST Create Token' successfully
+
+31-01-2024T21:13:36 - [MESSAGE][PASSED] - Method 'setupTestCase' complete successfully
+
+31-01-2024T21:13:36 - [TEST_STEP][PASSED] - firstName = sample.Common.generateRandomString(): sample.Common.generateRandomString is PASSED
+
+31-01-2024T21:13:36 - [MESSAGE][PASSED] - sample.Common.generateRandomString is PASSED
+
+31-01-2024T21:13:36 - [TEST_STEP][PASSED] - lastName = sample.Common.generateRandomString(): sample.Common.generateRandomString is PASSED
+
+31-01-2024T21:13:36 - [MESSAGE][PASSED] - sample.Common.generateRandomString is PASSED
+
+31-01-2024T21:13:36 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Object Repository/POST Create booking", ["firstName":firstName, "lastName":lastName])): Send request successfully
+
+31-01-2024T21:13:38 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240131_211306/Final Test/20240131_211307/requests/main/13.har
+
+31-01-2024T21:13:38 - [MESSAGE][PASSED] - Send request successfully
+
+31-01-2024T21:13:38 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200, STOP_ON_FAILURE): Verify response status code successfully
+
+31-01-2024T21:13:38 - [MESSAGE][PASSED] - Verify response status code successfully
+
+31-01-2024T21:13:38 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.firstname", $firstName): Verify element property value successfully
+
+31-01-2024T21:13:38 - [MESSAGE][PASSED] - Verify element property value successfully
+
+31-01-2024T21:13:38 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.lastname", $lastName): Verify element property value successfully
+
+31-01-2024T21:13:38 - [MESSAGE][PASSED] - Verify element property value successfully
+
+31-01-2024T21:13:38 - [TEST_STEP][PASSED] - id = getElementPropertyValue(response, "bookingid"): null
+
+31-01-2024T21:13:38 - [TEST_STEP][PASSED] - firstNameUpdate = $firstNameUpdate: null
+
+31-01-2024T21:13:38 - [TEST_STEP][PASSED] - lastNameUpdate = $lastNameUpdate: null
+
+31-01-2024T21:13:38 - [TEST_STEP][PASSED] - responseObject = sendRequest(findTestObject("Object Repository/PUT Update Booking", ["id":id, "firstNameUpdate":firstNameUpdate, "lastNameUpdate":lastNameUpdate])): Send request successfully
+
+31-01-2024T21:13:39 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240131_211306/Final Test/20240131_211307/requests/main/14.har
+
+31-01-2024T21:13:39 - [MESSAGE][PASSED] - Send request successfully
+
+31-01-2024T21:13:39 - [TEST_STEP][PASSED] - verifyResponseStatusCode(responseObject, 200, STOP_ON_FAILURE): Verify response status code successfully
+
+31-01-2024T21:13:39 - [MESSAGE][PASSED] - Verify response status code successfully
+
+31-01-2024T21:13:39 - [TEST_STEP][PASSED] - responseBody = responseObject.getResponseBodyContent(): null
+
+31-01-2024T21:13:39 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+31-01-2024T21:13:39 - [TEST_STEP][PASSED] - firstNameRes = firstname: null
+
+31-01-2024T21:13:39 - [TEST_STEP][PASSED] - lastNameRes = lastname: null
+
+31-01-2024T21:13:39 - [TEST_STEP][PASSED] - verifyEqual(lastNameRes, lastNameUpdate): Actual object 'Nguyen' and expected object 'Nguyen' are equal
+
+31-01-2024T21:13:39 - [MESSAGE][PASSED] - Actual object 'Nguyen' and expected object 'Nguyen' are equal
+
+31-01-2024T21:13:39 - [TEST_STEP][PASSED] - verifyEqual(firstNameRes, firstNameUpdate): Actual object 'Cuc' and expected object 'Cuc' are equal
+
+31-01-2024T21:13:39 - [MESSAGE][PASSED] - Actual object 'Cuc' and expected object 'Cuc' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Ex 4- PATCH_DELETE Booking" time="5.868" classname="Test Cases/Ex 4- PATCH_DELETE Booking" status="PASSED">
+         <system-out><![CDATA[31-01-2024T21:13:39 - [TEST_CASE][PASSED] - Test Cases/Ex 4- PATCH_DELETE Booking: Test Cases/Ex 4- PATCH_DELETE Booking
+
+31-01-2024T21:13:39 - [TEST_STEP][PASSED] - Start setup action : setupTestCase: Method 'setupTestCase' complete successfully
+
+31-01-2024T21:13:39 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/POST Create Token"), [:]): Call Test Case 'Test Cases/POST Create Token' successfully
+
+31-01-2024T21:13:39 - [TEST_CASE][PASSED] - Test Cases/POST Create Token: Test Cases/POST Create Token
+
+31-01-2024T21:13:39 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("POST Create Token")): Send request successfully
+
+31-01-2024T21:13:41 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240131_211306/Final Test/20240131_211307/requests/main/15.har
+
+31-01-2024T21:13:41 - [MESSAGE][PASSED] - Send request successfully
+
+31-01-2024T21:13:41 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+31-01-2024T21:13:41 - [MESSAGE][PASSED] - Verify response status code successfully
+
+31-01-2024T21:13:41 - [TEST_STEP][PASSED] - responseBody = response.getResponseBodyContent(): null
+
+31-01-2024T21:13:41 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+31-01-2024T21:13:41 - [TEST_STEP][PASSED] - token = token: null
+
+31-01-2024T21:13:41 - [TEST_STEP][PASSED] - cookie = "token=" + token: null
+
+31-01-2024T21:13:41 - [TEST_STEP][PASSED] - cookie = cookie: null
+
+31-01-2024T21:13:41 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/POST Create Token' successfully
+
+31-01-2024T21:13:41 - [MESSAGE][PASSED] - Method 'setupTestCase' complete successfully
+
+31-01-2024T21:13:41 - [TEST_STEP][PASSED] - firstName = sample.Common.generateRandomString(): sample.Common.generateRandomString is PASSED
+
+31-01-2024T21:13:41 - [MESSAGE][PASSED] - sample.Common.generateRandomString is PASSED
+
+31-01-2024T21:13:41 - [TEST_STEP][PASSED] - lastName = sample.Common.generateRandomString(): sample.Common.generateRandomString is PASSED
+
+31-01-2024T21:13:41 - [MESSAGE][PASSED] - sample.Common.generateRandomString is PASSED
+
+31-01-2024T21:13:41 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Object Repository/POST Create booking", ["firstName":firstName, "lastName":lastName])): Send request successfully
+
+31-01-2024T21:13:42 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240131_211306/Final Test/20240131_211307/requests/main/16.har
+
+31-01-2024T21:13:42 - [MESSAGE][PASSED] - Send request successfully
+
+31-01-2024T21:13:42 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200, STOP_ON_FAILURE): Verify response status code successfully
+
+31-01-2024T21:13:42 - [MESSAGE][PASSED] - Verify response status code successfully
+
+31-01-2024T21:13:42 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.firstname", $firstName): Verify element property value successfully
+
+31-01-2024T21:13:42 - [MESSAGE][PASSED] - Verify element property value successfully
+
+31-01-2024T21:13:42 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.lastname", $lastName): Verify element property value successfully
+
+31-01-2024T21:13:42 - [MESSAGE][PASSED] - Verify element property value successfully
+
+31-01-2024T21:13:42 - [TEST_STEP][PASSED] - id = getElementPropertyValue(response, "bookingid"): null
+
+31-01-2024T21:13:42 - [TEST_STEP][PASSED] - firstNameUpdate = $firstNameUpdate: null
+
+31-01-2024T21:13:42 - [TEST_STEP][PASSED] - lastNameUpdate = $lastNameUpdate: null
+
+31-01-2024T21:13:42 - [TEST_STEP][PASSED] - responseObject = sendRequest(findTestObject("Object Repository/PATCH Update Booking", ["id":id, "fName":firstNameUpdate, "lName":lastNameUpdate])): Send request successfully
+
+31-01-2024T21:13:43 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240131_211306/Final Test/20240131_211307/requests/main/17.har
+
+31-01-2024T21:13:43 - [MESSAGE][PASSED] - Send request successfully
+
+31-01-2024T21:13:43 - [TEST_STEP][PASSED] - verifyResponseStatusCode(responseObject, 200, STOP_ON_FAILURE): Verify response status code successfully
+
+31-01-2024T21:13:43 - [MESSAGE][PASSED] - Verify response status code successfully
+
+31-01-2024T21:13:43 - [TEST_STEP][PASSED] - responseBody = responseObject.getResponseBodyContent(): null
+
+31-01-2024T21:13:43 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+31-01-2024T21:13:43 - [TEST_STEP][PASSED] - firstNameRes = firstname: null
+
+31-01-2024T21:13:43 - [TEST_STEP][PASSED] - lastNameRes = lastname: null
+
+31-01-2024T21:13:43 - [TEST_STEP][PASSED] - verifyEqual(lastNameRes, lastNameUpdate): Actual object 'Tung' and expected object 'Tung' are equal
+
+31-01-2024T21:13:43 - [MESSAGE][PASSED] - Actual object 'Tung' and expected object 'Tung' are equal
+
+31-01-2024T21:13:43 - [TEST_STEP][PASSED] - verifyEqual(firstNameRes, firstNameUpdate): Actual object 'Son' and expected object 'Son' are equal
+
+31-01-2024T21:13:43 - [MESSAGE][PASSED] - Actual object 'Son' and expected object 'Son' are equal
+
+31-01-2024T21:13:43 - [TEST_STEP][PASSED] - jsonPass = "
+{
+  "$id": "https://example.com/booking.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "firstname": { "type": "string" },
+    "lastname": { "type": "string" },
+    "totalprice": { "type": "integer" },
+    "depositpaid": { "type": "boolean" },
+    "bookingdates": {
+      "type": "object",
+      "properties": {
+        "checkin": { "type": "string", "format": "date" },
+        "checkout": { "type": "string", "format": "date" }
+      },
+      "required": ["checkin", "checkout"]
+    },
+    "additionalneeds": { "type": "string" }
+  },
+  "required": ["firstname", "lastname", "totalprice", "depositpaid", "bookingdates", "additionalneeds"]
+}
+": null
+
+31-01-2024T21:13:43 - [TEST_STEP][PASSED] - successful = validateJsonAgainstSchema(responseObject, jsonPass): Validate with JSON Schema successfully
+
+31-01-2024T21:13:43 - [MESSAGE][PASSED] - Validate with JSON Schema successfully
+
+31-01-2024T21:13:43 - [TEST_STEP][PASSED] - verifyEqual(successful, true): Actual object 'true' and expected object 'true' are equal
+
+31-01-2024T21:13:43 - [MESSAGE][PASSED] - Actual object 'true' and expected object 'true' are equal
+
+31-01-2024T21:13:43 - [TEST_STEP][PASSED] - responseDelete = sendRequest(findTestObject("Object Repository/DELETE Booking", ["id":id])): Send request successfully
+
+31-01-2024T21:13:44 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240131_211306/Final Test/20240131_211307/requests/main/18.har
+
+31-01-2024T21:13:44 - [MESSAGE][PASSED] - Send request successfully
+
+31-01-2024T21:13:44 - [TEST_STEP][PASSED] - verifyResponseStatusCode(responseDelete, 201, STOP_ON_FAILURE): Verify response status code successfully
+
+31-01-2024T21:13:44 - [MESSAGE][PASSED] - Verify response status code successfully
+
+31-01-2024T21:13:44 - [TEST_STEP][PASSED] - assert getResponseBodyContent().contains("Created"): null
+
+31-01-2024T21:13:44 - [TEST_STEP][PASSED] - responseGETRequest = sendRequestAndVerify(findTestObject("Object Repository/GET Booking Ids", ["id":id])): Send request and verify the response successfully
+
+31-01-2024T21:13:45 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240131_211306/Final Test/20240131_211307/requests/main/19.har
+
+31-01-2024T21:13:45 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+31-01-2024T21:13:45 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+31-01-2024T21:13:45 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+31-01-2024T21:13:45 - [MESSAGE][PASSED] - Verify response successfully
+
+31-01-2024T21:13:45 - [MESSAGE][PASSED] - All validation steps have been passed
+
+31-01-2024T21:13:45 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+31-01-2024T21:13:45 - [TEST_STEP][PASSED] - verifyResponseStatusCode(responseGETRequest, 404, STOP_ON_FAILURE): Verify response status code successfully
+
+31-01-2024T21:13:45 - [MESSAGE][PASSED] - Verify response status code successfully
+
+31-01-2024T21:13:45 - [TEST_STEP][PASSED] - assert getResponseBodyContent().contains("Not Found"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[31-01-2024T21:13:13 - [TEST_SUITE][ERROR] - Final Test: Test Cases/POST Create booking FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: id for class: internal.GlobalVariable
+	at WSVerification1706710399719.run(WSVerification1706710399719:16)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.WSVerificationExecutor.runScript(WSVerificationExecutor.java:180)
+	at com.kms.katalon.core.main.WSVerificationExecutor.doExecute(WSVerificationExecutor.java:174)
+	at com.kms.katalon.core.main.WSVerificationExecutor.processExecutionPhase(WSVerificationExecutor.java:157)
+	at com.kms.katalon.core.main.WSVerificationExecutor.accessMainPhase(WSVerificationExecutor.java:149)
+	at com.kms.katalon.core.main.WSVerificationExecutor.execute(WSVerificationExecutor.java:131)
+	at com.kms.katalon.core.main.TestCaseMain.runWSVerificationScript(TestCaseMain.java:150)
+	at com.kms.katalon.core.main.TestCaseMain$runWSVerificationScript.call(Unknown Source)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.doVerification(SendRequestAndVerifyKeyword.groovy:85)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.access$0(SendRequestAndVerifyKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.doCall(SendRequestAndVerifyKeyword.groovy:66)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.call(SendRequestAndVerifyKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.sendRequestAndVerify(SendRequestAndVerifyKeyword.groovy:54)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.execute(SendRequestAndVerifyKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequestAndVerify(WSBuiltInKeywords.groovy:66)
+	at POST Create booking.run(POST Create booking:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1706710387798.run(TempTestSuite1706710387798.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-out>
+      <system-err><![CDATA[31-01-2024T21:13:13 - [TEST_SUITE][ERROR] - Final Test: Test Cases/POST Create booking FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: id for class: internal.GlobalVariable
+	at WSVerification1706710399719.run(WSVerification1706710399719:16)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.WSVerificationExecutor.runScript(WSVerificationExecutor.java:180)
+	at com.kms.katalon.core.main.WSVerificationExecutor.doExecute(WSVerificationExecutor.java:174)
+	at com.kms.katalon.core.main.WSVerificationExecutor.processExecutionPhase(WSVerificationExecutor.java:157)
+	at com.kms.katalon.core.main.WSVerificationExecutor.accessMainPhase(WSVerificationExecutor.java:149)
+	at com.kms.katalon.core.main.WSVerificationExecutor.execute(WSVerificationExecutor.java:131)
+	at com.kms.katalon.core.main.TestCaseMain.runWSVerificationScript(TestCaseMain.java:150)
+	at com.kms.katalon.core.main.TestCaseMain$runWSVerificationScript.call(Unknown Source)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.doVerification(SendRequestAndVerifyKeyword.groovy:85)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.access$0(SendRequestAndVerifyKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.doCall(SendRequestAndVerifyKeyword.groovy:66)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.call(SendRequestAndVerifyKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.sendRequestAndVerify(SendRequestAndVerifyKeyword.groovy:54)
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.execute(SendRequestAndVerifyKeyword.groovy:49)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequestAndVerify(WSBuiltInKeywords.groovy:66)
+	at POST Create booking.run(POST Create booking:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1706710387798.run(TempTestSuite1706710387798.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-err>
+   </testsuite>
+</testsuites>

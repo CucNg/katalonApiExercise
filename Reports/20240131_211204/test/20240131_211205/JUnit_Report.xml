@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="test" time="4.806" tests="1" failures="0" errors="0">
+   <testsuite name="test" tests="1" failures="0" errors="0" time="4.806" skipped="0" timestamp="31-01-2024T21:12:10" hostname="cucnguyen - 192.168.2.9" id="Test Suites/test">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/cucnguyen/git/katalonApiExercise/Reports/20240131_211204/test/20240131_211205"/>
+         <property name="logFiles" value="/Users/cucnguyen/git/katalonApiExercise/Reports/20240131_211204/test/20240131_211205/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="cucnguyen - 192.168.2.9"/>
+         <property name="hostAddress" value="192.168.2.9"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.1.0.212"/>
+      </properties>
+      <testcase name="Test Cases/PUT Update Booking" time="4.737" classname="Test Cases/PUT Update Booking" status="PASSED">
+         <system-out><![CDATA[31-01-2024T21:12:10 - [TEST_CASE][PASSED] - Test Cases/PUT Update Booking: Test Cases/PUT Update Booking
+
+31-01-2024T21:12:10 - [TEST_STEP][PASSED] - Start setup action : setupTestCase: Method 'setupTestCase' complete successfully
+
+31-01-2024T21:12:10 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/POST Create Token"), [:]): Call Test Case 'Test Cases/POST Create Token' successfully
+
+31-01-2024T21:12:10 - [TEST_CASE][PASSED] - Test Cases/POST Create Token: Test Cases/POST Create Token
+
+31-01-2024T21:12:10 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("POST Create Token")): Send request successfully
+
+31-01-2024T21:12:12 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240131_211204/test/20240131_211205/requests/main/0.har
+
+31-01-2024T21:12:12 - [MESSAGE][PASSED] - Send request successfully
+
+31-01-2024T21:12:12 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+31-01-2024T21:12:12 - [MESSAGE][PASSED] - Verify response status code successfully
+
+31-01-2024T21:12:12 - [TEST_STEP][PASSED] - responseBody = response.getResponseBodyContent(): null
+
+31-01-2024T21:12:12 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+31-01-2024T21:12:12 - [TEST_STEP][PASSED] - token = token: null
+
+31-01-2024T21:12:12 - [TEST_STEP][PASSED] - cookie = "token=" + token: null
+
+31-01-2024T21:12:12 - [TEST_STEP][PASSED] - cookie = cookie: null
+
+31-01-2024T21:12:12 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/POST Create Token' successfully
+
+31-01-2024T21:12:12 - [TEST_STEP][PASSED] - println("Stored "): null
+
+31-01-2024T21:12:12 - [MESSAGE][PASSED] - Method 'setupTestCase' complete successfully
+
+31-01-2024T21:12:12 - [TEST_STEP][PASSED] - firstName = sample.Common.generateRandomString(): sample.Common.generateRandomString is PASSED
+
+31-01-2024T21:12:12 - [MESSAGE][PASSED] - sample.Common.generateRandomString is PASSED
+
+31-01-2024T21:12:12 - [TEST_STEP][PASSED] - lastName = sample.Common.generateRandomString(): sample.Common.generateRandomString is PASSED
+
+31-01-2024T21:12:12 - [MESSAGE][PASSED] - sample.Common.generateRandomString is PASSED
+
+31-01-2024T21:12:12 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Object Repository/POST Create booking", ["firstName":firstName, "lastName":lastName])): Send request successfully
+
+31-01-2024T21:12:13 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240131_211204/test/20240131_211205/requests/main/1.har
+
+31-01-2024T21:12:13 - [MESSAGE][PASSED] - Send request successfully
+
+31-01-2024T21:12:13 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200, STOP_ON_FAILURE): Verify response status code successfully
+
+31-01-2024T21:12:13 - [MESSAGE][PASSED] - Verify response status code successfully
+
+31-01-2024T21:12:13 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.firstname", $firstName): Verify element property value successfully
+
+31-01-2024T21:12:13 - [MESSAGE][PASSED] - Verify element property value successfully
+
+31-01-2024T21:12:13 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.lastname", $lastName): Verify element property value successfully
+
+31-01-2024T21:12:13 - [MESSAGE][PASSED] - Verify element property value successfully
+
+31-01-2024T21:12:13 - [TEST_STEP][PASSED] - id = getElementPropertyValue(response, "bookingid"): null
+
+31-01-2024T21:12:13 - [TEST_STEP][PASSED] - firstNameUpdate = $firstNameUpdate: null
+
+31-01-2024T21:12:13 - [TEST_STEP][PASSED] - lastNameUpdate = $lastNameUpdate: null
+
+31-01-2024T21:12:13 - [TEST_STEP][PASSED] - responseObject = sendRequest(findTestObject("Object Repository/PUT Update Booking", ["id":id, "firstNameUpdate":firstNameUpdate, "lastNameUpdate":lastNameUpdate])): Send request successfully
+
+31-01-2024T21:12:14 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240131_211204/test/20240131_211205/requests/main/2.har
+
+31-01-2024T21:12:14 - [MESSAGE][PASSED] - Send request successfully
+
+31-01-2024T21:12:14 - [TEST_STEP][PASSED] - verifyResponseStatusCode(responseObject, 200, STOP_ON_FAILURE): Verify response status code successfully
+
+31-01-2024T21:12:14 - [MESSAGE][PASSED] - Verify response status code successfully
+
+31-01-2024T21:12:14 - [TEST_STEP][PASSED] - responseBody = responseObject.getResponseBodyContent(): null
+
+31-01-2024T21:12:14 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+31-01-2024T21:12:14 - [TEST_STEP][PASSED] - firstNameRes = firstname: null
+
+31-01-2024T21:12:14 - [TEST_STEP][PASSED] - lastNameRes = lastname: null
+
+31-01-2024T21:12:14 - [TEST_STEP][PASSED] - verifyEqual(lastNameRes, lastNameUpdate): Actual object 'Nguyen' and expected object 'Nguyen' are equal
+
+31-01-2024T21:12:14 - [MESSAGE][PASSED] - Actual object 'Nguyen' and expected object 'Nguyen' are equal
+
+31-01-2024T21:12:14 - [TEST_STEP][PASSED] - verifyEqual(firstNameRes, firstNameUpdate): Actual object 'Cuc' and expected object 'Cuc' are equal
+
+31-01-2024T21:12:14 - [MESSAGE][PASSED] - Actual object 'Cuc' and expected object 'Cuc' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[31-01-2024T21:12:10 - [TEST_SUITE][PASSED] - test: Test Cases/PUT Update Booking]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

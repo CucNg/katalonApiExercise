@@ -1,0 +1,16 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+PUT,,,,23-01-2024 21:00:25,23-01-2024 21:00:31,6.113s,FAILED
+,,,,,,,
+Test Cases/PUT Update Booking,,,,23-01-2024 21:00:28,23-01-2024 21:00:31,3.163s,FAILED
+firstName = sample.Common.generateRandomString(),,,,23-01-2024 21:00:28,23-01-2024 21:00:28,0.017s,PASSED
+lastName = sample.Common.generateRandomString(),,,,23-01-2024 21:00:28,23-01-2024 21:00:28,0.001s,PASSED
+"println(""First Name: "" + firstName)",,,,23-01-2024 21:00:28,23-01-2024 21:00:28,0.001s,PASSED
+"println(""Last Name: "" + lastName)",,,,23-01-2024 21:00:28,23-01-2024 21:00:28,0.001s,PASSED
+"response = sendRequest(findTestObject(""Object Repository/POST Create booking"", [""firstName"":firstName, ""lastName"":lastName]))",,Send request create booking,,23-01-2024 21:00:28,23-01-2024 21:00:29,1.494s,PASSED
+"verifyResponseStatusCode(response, 200)",,The status should be 200,,23-01-2024 21:00:29,23-01-2024 21:00:29,0.005s,PASSED
+"verifyElementPropertyValue(response, ""booking.firstname"", $firstName)",,Verify response,,23-01-2024 21:00:29,23-01-2024 21:00:29,0.028s,PASSED
+"verifyElementPropertyValue(response, ""booking.lastname"", $lastName)",,,,23-01-2024 21:00:29,23-01-2024 21:00:29,0.014s,PASSED
+"id = getElementPropertyValue(response, ""bookingid"")",,,,23-01-2024 21:00:29,23-01-2024 21:00:29,0.014s,PASSED
+"println(""ID: "" + id)",,,,23-01-2024 21:00:29,23-01-2024 21:00:29,0.001s,PASSED
+"requestObject = sendRequest(findTestObject(""Object Repository/PUT Update Booking"", [""id"":id, ""firstName"":$firstNameUpdate, ""lastName"":$lastNameUpdate]))",,,,23-01-2024 21:00:29,23-01-2024 21:00:31,1.493s,PASSED
+"verifyResponseStatusCode(requestObject, 200)",,Verify status code,,23-01-2024 21:00:31,23-01-2024 21:00:31,0.017s,FAILED

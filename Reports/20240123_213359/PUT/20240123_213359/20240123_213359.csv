@@ -1,0 +1,25 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+PUT,,,,23-01-2024 21:34:05,23-01-2024 21:34:13,8.035s,PASSED
+,,,,,,,
+Test Cases/PUT Update Booking,,,,23-01-2024 21:34:08,23-01-2024 21:34:13,4.986s,PASSED
+firstName = sample.Common.generateRandomString(),,,,23-01-2024 21:34:08,23-01-2024 21:34:08,0.019s,PASSED
+lastName = sample.Common.generateRandomString(),,,,23-01-2024 21:34:08,23-01-2024 21:34:08,0.001s,PASSED
+"println(""First Name: "" + firstName)",,,,23-01-2024 21:34:08,23-01-2024 21:34:08,0.001s,PASSED
+"println(""Last Name: "" + lastName)",,,,23-01-2024 21:34:08,23-01-2024 21:34:08,0.001s,PASSED
+"response = sendRequest(findTestObject(""Object Repository/POST Create booking"", [""firstName"":firstName, ""lastName"":lastName]))",,Send request create booking,,23-01-2024 21:34:08,23-01-2024 21:34:10,1.863s,PASSED
+"verifyResponseStatusCode(response, 200)",,The status should be 200,,23-01-2024 21:34:10,23-01-2024 21:34:10,0.011s,PASSED
+"verifyElementPropertyValue(response, ""booking.firstname"", $firstName)",,Verify response,,23-01-2024 21:34:10,23-01-2024 21:34:10,0.018s,PASSED
+"verifyElementPropertyValue(response, ""booking.lastname"", $lastName)",,,,23-01-2024 21:34:10,23-01-2024 21:34:10,0.015s,PASSED
+"id = getElementPropertyValue(response, ""bookingid"")",,,,23-01-2024 21:34:10,23-01-2024 21:34:10,0.015s,PASSED
+"println(""ID: "" + id)",,,,23-01-2024 21:34:10,23-01-2024 21:34:10,0.001s,PASSED
+firstNameUpdate = $firstNameUpdate,,,,23-01-2024 21:34:10,23-01-2024 21:34:10,0.001s,PASSED
+lastNameUpdate = $lastNameUpdate,,,,23-01-2024 21:34:10,23-01-2024 21:34:10,0.000s,PASSED
+"responseObject = sendRequest(findTestObject(""Object Repository/PUT Update Booking"", [""id"":id, ""firstNameUpdate"":firstNameUpdate, ""lastNameUpdate"":lastNameUpdate]))",,,,23-01-2024 21:34:10,23-01-2024 21:34:13,2.935s,PASSED
+"verifyResponseStatusCode(responseObject, 200)",,Verify status code,,23-01-2024 21:34:13,23-01-2024 21:34:13,0.007s,PASSED
+responseBody = responseObject.getResponseBodyContent(),,Verify respone,,23-01-2024 21:34:13,23-01-2024 21:34:13,0.002s,PASSED
+jsonResponse = JsonSlurper().parseText(responseBody),,,,23-01-2024 21:34:13,23-01-2024 21:34:13,0.002s,PASSED
+firstNameRes = firstname,,,,23-01-2024 21:34:13,23-01-2024 21:34:13,0.002s,PASSED
+lastNameRes = lastname,,,,23-01-2024 21:34:13,23-01-2024 21:34:13,0.002s,PASSED
+"println(""RESPONE: "" + jsonResponse)",,,,23-01-2024 21:34:13,23-01-2024 21:34:13,0.002s,PASSED
+"verifyEqual(lastNameRes, lastNameUpdate)",,,,23-01-2024 21:34:13,23-01-2024 21:34:13,0.011s,PASSED
+"verifyEqual(firstNameRes, firstNameUpdate)",,,,23-01-2024 21:34:13,23-01-2024 21:34:13,0.002s,PASSED

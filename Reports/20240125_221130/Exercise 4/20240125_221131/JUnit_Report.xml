@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Exercise 4" time="4.685" tests="1" failures="1" errors="0">
+   <testsuite name="Exercise 4" tests="1" failures="1" errors="0" time="4.685" skipped="0" timestamp="25-01-2024T22:11:35" hostname="cucnguyen - 192.168.2.12" id="Test Suites/Exercise 4">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/cucnguyen/git/katalonApiExercise/Reports/20240125_221130/Exercise 4/20240125_221131"/>
+         <property name="logFiles" value="/Users/cucnguyen/git/katalonApiExercise/Reports/20240125_221130/Exercise 4/20240125_221131/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="cucnguyen - 192.168.2.12"/>
+         <property name="hostAddress" value="192.168.2.12"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.1.0.212"/>
+      </properties>
+      <testcase name="Test Cases/Ex 4- PATCH_DELETE Booking" time="4.621" classname="Test Cases/Ex 4- PATCH_DELETE Booking" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Ex 4- PATCH_DELETE Booking FAILED.&#xa;Reason:&#xa;com.kms.katalon.core.exception.StepFailedException: Failed to validate your JSON Object with the JSON Schema (Root cause: com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Tung': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')&#xa; at [Source: (String)&quot;Tung&quot;; line: 1, column: 5]&#xa;	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2418)&#xa;	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:759)&#xa;	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:3038)&#xa;	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2079)&#xa;	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:805)&#xa;	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4759)&#xa;	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3124)&#xa;	at com.kms.katalon.core.webservice.helper.WebServiceValidationHelper.validateJsonSchema(WebServiceValidationHelper.java:276)&#xa;	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema$_validateWithJsonSchema_closure1.doCall(ValidateWithJsonSchema.groovy:55)&#xa;	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema$_validateWithJsonSchema_closure1.call(ValidateWithJsonSchema.groovy)&#xa;	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)&#xa;	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.validateWithJsonSchema(ValidateWithJsonSchema.groovy:53)&#xa;	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.validateWithJsonSchema(ValidateWithJsonSchema.groovy:48)&#xa;	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.execute(ValidateWithJsonSchema.groovy:36)&#xa;	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)&#xa;	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.validateJsonAgainstSchema(WSBuiltInKeywords.groovy:486)&#xa;	at Ex 4- PATCH_DELETE Booking.run(Ex 4- PATCH_DELETE Booking:63)&#xa;	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xa;	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)&#xa;	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)&#xa;	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)&#xa;	at TempTestSuite1706195491521.run(TempTestSuite1706195491521.groovy:36)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#xa;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#xa;)&#xa;	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)&#xa;	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)&#xa;	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:77)&#xa;	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.validateWithJsonSchema(ValidateWithJsonSchema.groovy:53)&#xa;	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.validateWithJsonSchema(ValidateWithJsonSchema.groovy:48)&#xa;	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.execute(ValidateWithJsonSchema.groovy:36)&#xa;	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)&#xa;	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.validateJsonAgainstSchema(WSBuiltInKeywords.groovy:486)&#xa;	at Ex 4- PATCH_DELETE Booking.run(Ex 4- PATCH_DELETE Booking:63)&#xa;	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xa;	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)&#xa;	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)&#xa;	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)&#xa;	at TempTestSuite1706195491521.run(TempTestSuite1706195491521.groovy:36)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#xa;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#xa;Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Tung': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')&#xa; at [Source: (String)&quot;Tung&quot;; line: 1, column: 5]&#xa;	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2418)&#xa;	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:759)&#xa;	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:3038)&#xa;	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2079)&#xa;	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:805)&#xa;	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4759)&#xa;	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3124)&#xa;	at com.kms.katalon.core.webservice.helper.WebServiceValidationHelper.validateJsonSchema(WebServiceValidationHelper.java:276)&#xa;	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema$_validateWithJsonSchema_closure1.doCall(ValidateWithJsonSchema.groovy:55)&#xa;	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema$_validateWithJsonSchema_closure1.call(ValidateWithJsonSchema.groovy)&#xa;	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)&#xa;	... 21 more&#xa;"/>
+         <system-out><![CDATA[25-01-2024T22:11:35 - [TEST_CASE][FAILED] - Test Cases/Ex 4- PATCH_DELETE Booking: Test Cases/Ex 4- PATCH_DELETE Booking FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Failed to validate your JSON Object with the JSON Schema (Root cause: com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Tung': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"Tung"; line: 1, column: 5]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2418)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:759)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:3038)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2079)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:805)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4759)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3124)
+	at com.kms.katalon.core.webservice.helper.WebServiceValidationHelper.validateJsonSchema(WebServiceValidationHelper.java:276)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema$_validateWithJsonSchema_closure1.doCall(ValidateWithJsonSchema.groovy:55)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema$_validateWithJsonSchema_closure1.call(ValidateWithJsonSchema.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.validateWithJsonSchema(ValidateWithJsonSchema.groovy:53)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.validateWithJsonSchema(ValidateWithJsonSchema.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.execute(ValidateWithJsonSchema.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.validateJsonAgainstSchema(WSBuiltInKeywords.groovy:486)
+	at Ex 4- PATCH_DELETE Booking.run(Ex 4- PATCH_DELETE Booking:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1706195491521.run(TempTestSuite1706195491521.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:77)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.validateWithJsonSchema(ValidateWithJsonSchema.groovy:53)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.validateWithJsonSchema(ValidateWithJsonSchema.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.execute(ValidateWithJsonSchema.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.validateJsonAgainstSchema(WSBuiltInKeywords.groovy:486)
+	at Ex 4- PATCH_DELETE Booking.run(Ex 4- PATCH_DELETE Booking:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1706195491521.run(TempTestSuite1706195491521.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Tung': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"Tung"; line: 1, column: 5]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2418)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:759)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:3038)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2079)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:805)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4759)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3124)
+	at com.kms.katalon.core.webservice.helper.WebServiceValidationHelper.validateJsonSchema(WebServiceValidationHelper.java:276)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema$_validateWithJsonSchema_closure1.doCall(ValidateWithJsonSchema.groovy:55)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema$_validateWithJsonSchema_closure1.call(ValidateWithJsonSchema.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	... 21 more
+
+
+25-01-2024T22:11:36 - [TEST_STEP][PASSED] - firstName = sample.Common.generateRandomString(): sample.Common.generateRandomString is PASSED
+
+25-01-2024T22:11:36 - [MESSAGE][PASSED] - sample.Common.generateRandomString is PASSED
+
+25-01-2024T22:11:36 - [TEST_STEP][PASSED] - lastName = sample.Common.generateRandomString(): sample.Common.generateRandomString is PASSED
+
+25-01-2024T22:11:36 - [MESSAGE][PASSED] - sample.Common.generateRandomString is PASSED
+
+25-01-2024T22:11:36 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Object Repository/POST Create booking", ["firstName":firstName, "lastName":lastName])): Send request successfully
+
+25-01-2024T22:11:38 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240125_221130/Exercise 4/20240125_221131/requests/main/0.har
+
+25-01-2024T22:11:38 - [MESSAGE][PASSED] - Send request successfully
+
+25-01-2024T22:11:38 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+25-01-2024T22:11:38 - [MESSAGE][PASSED] - Verify response status code successfully
+
+25-01-2024T22:11:38 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.firstname", $firstName): Verify element property value successfully
+
+25-01-2024T22:11:38 - [MESSAGE][PASSED] - Verify element property value successfully
+
+25-01-2024T22:11:38 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.lastname", $lastName): Verify element property value successfully
+
+25-01-2024T22:11:38 - [MESSAGE][PASSED] - Verify element property value successfully
+
+25-01-2024T22:11:38 - [TEST_STEP][PASSED] - id = getElementPropertyValue(response, "bookingid"): null
+
+25-01-2024T22:11:38 - [TEST_STEP][PASSED] - firstNameUpdate = $firstNameUpdate: null
+
+25-01-2024T22:11:38 - [TEST_STEP][PASSED] - lastNameUpdate = $lastNameUpdate: null
+
+25-01-2024T22:11:38 - [TEST_STEP][PASSED] - println("id " + id): null
+
+25-01-2024T22:11:38 - [TEST_STEP][PASSED] - responseObject = sendRequest(findTestObject("Object Repository/PATCH Update Booking", ["id":id, "fName":firstNameUpdate, "lName":lastNameUpdate])): Send request successfully
+
+25-01-2024T22:11:40 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240125_221130/Exercise 4/20240125_221131/requests/main/1.har
+
+25-01-2024T22:11:40 - [MESSAGE][PASSED] - Send request successfully
+
+25-01-2024T22:11:40 - [TEST_STEP][PASSED] - verifyResponseStatusCode(responseObject, 200): Verify response status code successfully
+
+25-01-2024T22:11:40 - [MESSAGE][PASSED] - Verify response status code successfully
+
+25-01-2024T22:11:40 - [TEST_STEP][PASSED] - responseBody = responseObject.getResponseBodyContent(): null
+
+25-01-2024T22:11:40 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+25-01-2024T22:11:40 - [TEST_STEP][PASSED] - firstNameRes = firstname: null
+
+25-01-2024T22:11:40 - [TEST_STEP][PASSED] - lastNameRes = lastname: null
+
+25-01-2024T22:11:40 - [TEST_STEP][FAILED] - validateJsonAgainstSchema(response, lastNameUpdate): Failed to validate your JSON Object with the JSON Schema (Root cause: com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Tung': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"Tung"; line: 1, column: 5]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2418)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:759)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:3038)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2079)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:805)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4759)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3124)
+	at com.kms.katalon.core.webservice.helper.WebServiceValidationHelper.validateJsonSchema(WebServiceValidationHelper.java:276)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema$_validateWithJsonSchema_closure1.doCall(ValidateWithJsonSchema.groovy:55)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema$_validateWithJsonSchema_closure1.call(ValidateWithJsonSchema.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.validateWithJsonSchema(ValidateWithJsonSchema.groovy:53)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.validateWithJsonSchema(ValidateWithJsonSchema.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.execute(ValidateWithJsonSchema.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.validateJsonAgainstSchema(WSBuiltInKeywords.groovy:486)
+	at Ex 4- PATCH_DELETE Booking.run(Ex 4- PATCH_DELETE Booking:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1706195491521.run(TempTestSuite1706195491521.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+)
+
+25-01-2024T22:11:40 - [MESSAGE][FAILED] - Failed to validate your JSON Object with the JSON Schema (Root cause: com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Tung': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"Tung"; line: 1, column: 5]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2418)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:759)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:3038)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2079)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:805)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4759)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3124)
+	at com.kms.katalon.core.webservice.helper.WebServiceValidationHelper.validateJsonSchema(WebServiceValidationHelper.java:276)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema$_validateWithJsonSchema_closure1.doCall(ValidateWithJsonSchema.groovy:55)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema$_validateWithJsonSchema_closure1.call(ValidateWithJsonSchema.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.validateWithJsonSchema(ValidateWithJsonSchema.groovy:53)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.validateWithJsonSchema(ValidateWithJsonSchema.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.execute(ValidateWithJsonSchema.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.validateJsonAgainstSchema(WSBuiltInKeywords.groovy:486)
+	at Ex 4- PATCH_DELETE Booking.run(Ex 4- PATCH_DELETE Booking:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1706195491521.run(TempTestSuite1706195491521.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+)]]></system-out>
+         <system-err><![CDATA[25-01-2024T22:11:35 - [TEST_CASE][FAILED] - Test Cases/Ex 4- PATCH_DELETE Booking: Test Cases/Ex 4- PATCH_DELETE Booking FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Failed to validate your JSON Object with the JSON Schema (Root cause: com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Tung': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"Tung"; line: 1, column: 5]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2418)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:759)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:3038)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2079)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:805)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4759)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3124)
+	at com.kms.katalon.core.webservice.helper.WebServiceValidationHelper.validateJsonSchema(WebServiceValidationHelper.java:276)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema$_validateWithJsonSchema_closure1.doCall(ValidateWithJsonSchema.groovy:55)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema$_validateWithJsonSchema_closure1.call(ValidateWithJsonSchema.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.validateWithJsonSchema(ValidateWithJsonSchema.groovy:53)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.validateWithJsonSchema(ValidateWithJsonSchema.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.execute(ValidateWithJsonSchema.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.validateJsonAgainstSchema(WSBuiltInKeywords.groovy:486)
+	at Ex 4- PATCH_DELETE Booking.run(Ex 4- PATCH_DELETE Booking:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1706195491521.run(TempTestSuite1706195491521.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:77)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.validateWithJsonSchema(ValidateWithJsonSchema.groovy:53)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.validateWithJsonSchema(ValidateWithJsonSchema.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.execute(ValidateWithJsonSchema.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.validateJsonAgainstSchema(WSBuiltInKeywords.groovy:486)
+	at Ex 4- PATCH_DELETE Booking.run(Ex 4- PATCH_DELETE Booking:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1706195491521.run(TempTestSuite1706195491521.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Tung': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"Tung"; line: 1, column: 5]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2418)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:759)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:3038)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2079)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:805)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4759)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3124)
+	at com.kms.katalon.core.webservice.helper.WebServiceValidationHelper.validateJsonSchema(WebServiceValidationHelper.java:276)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema$_validateWithJsonSchema_closure1.doCall(ValidateWithJsonSchema.groovy:55)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema$_validateWithJsonSchema_closure1.call(ValidateWithJsonSchema.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	... 21 more]]></system-err>
+      </testcase>
+      <system-out><![CDATA[25-01-2024T22:11:35 - [TEST_SUITE][FAILED] - Exercise 4: Test Cases/Ex 4- PATCH_DELETE Booking FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Failed to validate your JSON Object with the JSON Schema (Root cause: com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Tung': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"Tung"; line: 1, column: 5]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2418)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:759)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:3038)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2079)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:805)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4759)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3124)
+	at com.kms.katalon.core.webservice.helper.WebServiceValidationHelper.validateJsonSchema(WebServiceValidationHelper.java:276)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema$_validateWithJsonSchema_closure1.doCall(ValidateWithJsonSchema.groovy:55)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema$_validateWithJsonSchema_closure1.call(ValidateWithJsonSchema.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.validateWithJsonSchema(ValidateWithJsonSchema.groovy:53)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.validateWithJsonSchema(ValidateWithJsonSchema.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.execute(ValidateWithJsonSchema.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.validateJsonAgainstSchema(WSBuiltInKeywords.groovy:486)
+	at Ex 4- PATCH_DELETE Booking.run(Ex 4- PATCH_DELETE Booking:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1706195491521.run(TempTestSuite1706195491521.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:77)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.validateWithJsonSchema(ValidateWithJsonSchema.groovy:53)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.validateWithJsonSchema(ValidateWithJsonSchema.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.execute(ValidateWithJsonSchema.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.validateJsonAgainstSchema(WSBuiltInKeywords.groovy:486)
+	at Ex 4- PATCH_DELETE Booking.run(Ex 4- PATCH_DELETE Booking:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1706195491521.run(TempTestSuite1706195491521.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Tung': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"Tung"; line: 1, column: 5]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2418)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:759)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:3038)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2079)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:805)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4759)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3124)
+	at com.kms.katalon.core.webservice.helper.WebServiceValidationHelper.validateJsonSchema(WebServiceValidationHelper.java:276)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema$_validateWithJsonSchema_closure1.doCall(ValidateWithJsonSchema.groovy:55)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema$_validateWithJsonSchema_closure1.call(ValidateWithJsonSchema.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	... 21 more]]></system-out>
+      <system-err><![CDATA[25-01-2024T22:11:35 - [TEST_SUITE][FAILED] - Exercise 4: Test Cases/Ex 4- PATCH_DELETE Booking FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Failed to validate your JSON Object with the JSON Schema (Root cause: com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Tung': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"Tung"; line: 1, column: 5]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2418)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:759)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:3038)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2079)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:805)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4759)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3124)
+	at com.kms.katalon.core.webservice.helper.WebServiceValidationHelper.validateJsonSchema(WebServiceValidationHelper.java:276)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema$_validateWithJsonSchema_closure1.doCall(ValidateWithJsonSchema.groovy:55)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema$_validateWithJsonSchema_closure1.call(ValidateWithJsonSchema.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.validateWithJsonSchema(ValidateWithJsonSchema.groovy:53)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.validateWithJsonSchema(ValidateWithJsonSchema.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.execute(ValidateWithJsonSchema.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.validateJsonAgainstSchema(WSBuiltInKeywords.groovy:486)
+	at Ex 4- PATCH_DELETE Booking.run(Ex 4- PATCH_DELETE Booking:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1706195491521.run(TempTestSuite1706195491521.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:51)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:77)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.validateWithJsonSchema(ValidateWithJsonSchema.groovy:53)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.validateWithJsonSchema(ValidateWithJsonSchema.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema.execute(ValidateWithJsonSchema.groovy:36)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.validateJsonAgainstSchema(WSBuiltInKeywords.groovy:486)
+	at Ex 4- PATCH_DELETE Booking.run(Ex 4- PATCH_DELETE Booking:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1706195491521.run(TempTestSuite1706195491521.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Tung': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"Tung"; line: 1, column: 5]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2418)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:759)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:3038)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2079)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:805)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4759)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3124)
+	at com.kms.katalon.core.webservice.helper.WebServiceValidationHelper.validateJsonSchema(WebServiceValidationHelper.java:276)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema$_validateWithJsonSchema_closure1.doCall(ValidateWithJsonSchema.groovy:55)
+	at com.kms.katalon.core.webservice.keyword.builtin.ValidateWithJsonSchema$_validateWithJsonSchema_closure1.call(ValidateWithJsonSchema.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	... 21 more]]></system-err>
+   </testsuite>
+</testsuites>

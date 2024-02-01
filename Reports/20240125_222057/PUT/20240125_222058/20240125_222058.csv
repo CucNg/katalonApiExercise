@@ -1,0 +1,5 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+PUT,,,,25-01-2024 22:21:03,25-01-2024 22:21:03,0.220s,ERROR
+,,,,,,,
+Test Cases/PUT Update Booking,,,,25-01-2024 22:21:03,25-01-2024 22:21:03,0.114s,ERROR
+Start setup action : setupTestCase,,,,25-01-2024 22:21:03,25-01-2024 22:21:03,0.056s,ERROR

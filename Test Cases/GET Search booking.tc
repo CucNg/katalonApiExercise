@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>by first name and last name</description>
-   <name>GET Search booking</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>52755ba7-665c-4c61-abae-b9041be736b3</testCaseGuid>
-</TestCaseEntity>

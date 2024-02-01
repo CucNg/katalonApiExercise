@@ -28,6 +28,5 @@ String responseBody = responseGETRequest.getResponseBodyContent()
 def jsonResponse = new JsonSlurper().parseText(responseBody)
 def firstNameRes= jsonResponse.firstname;
 def lastNameRes= jsonResponse.lastname;
-println 'RESPONE: '+jsonResponse 
 WS.verifyEqual(lastNameRes, "${lastName}")
 WS.verifyEqual(firstNameRes, "${firstName}")

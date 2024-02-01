@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Exercise 4" time="6.13" tests="1" failures="0" errors="0">
+   <testsuite name="Exercise 4" tests="1" failures="0" errors="0" time="6.13" skipped="0" timestamp="31-01-2024T13:56:34" hostname="cucnguyen - 192.168.2.9" id="Test Suites/Exercise 4">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/cucnguyen/git/katalonApiExercise/Reports/20240131_135630/Exercise 4/20240131_135630"/>
+         <property name="logFiles" value="/Users/cucnguyen/git/katalonApiExercise/Reports/20240131_135630/Exercise 4/20240131_135630/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="cucnguyen - 192.168.2.9"/>
+         <property name="hostAddress" value="192.168.2.9"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.1.0.212"/>
+      </properties>
+      <testcase name="Test Cases/Ex 4- PATCH_DELETE Booking" time="6.06" classname="Test Cases/Ex 4- PATCH_DELETE Booking" status="PASSED">
+         <system-out><![CDATA[31-01-2024T13:56:34 - [TEST_CASE][PASSED] - Test Cases/Ex 4- PATCH_DELETE Booking: Test Cases/Ex 4- PATCH_DELETE Booking
+
+31-01-2024T13:56:34 - [TEST_STEP][PASSED] - firstName = sample.Common.generateRandomString(): sample.Common.generateRandomString is PASSED
+
+31-01-2024T13:56:35 - [MESSAGE][PASSED] - sample.Common.generateRandomString is PASSED
+
+31-01-2024T13:56:35 - [TEST_STEP][PASSED] - lastName = sample.Common.generateRandomString(): sample.Common.generateRandomString is PASSED
+
+31-01-2024T13:56:35 - [MESSAGE][PASSED] - sample.Common.generateRandomString is PASSED
+
+31-01-2024T13:56:35 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Object Repository/POST Create booking", ["firstName":firstName, "lastName":lastName])): Send request successfully
+
+31-01-2024T13:56:36 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240131_135630/Exercise 4/20240131_135630/requests/main/0.har
+
+31-01-2024T13:56:36 - [MESSAGE][PASSED] - Send request successfully
+
+31-01-2024T13:56:36 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200, STOP_ON_FAILURE): Verify response status code successfully
+
+31-01-2024T13:56:36 - [MESSAGE][PASSED] - Verify response status code successfully
+
+31-01-2024T13:56:36 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.firstname", $firstName): Verify element property value successfully
+
+31-01-2024T13:56:36 - [MESSAGE][PASSED] - Verify element property value successfully
+
+31-01-2024T13:56:36 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.lastname", $lastName): Verify element property value successfully
+
+31-01-2024T13:56:36 - [MESSAGE][PASSED] - Verify element property value successfully
+
+31-01-2024T13:56:36 - [TEST_STEP][PASSED] - id = getElementPropertyValue(response, "bookingid"): null
+
+31-01-2024T13:56:36 - [TEST_STEP][PASSED] - firstNameUpdate = $firstNameUpdate: null
+
+31-01-2024T13:56:36 - [TEST_STEP][PASSED] - lastNameUpdate = $lastNameUpdate: null
+
+31-01-2024T13:56:36 - [TEST_STEP][PASSED] - responseObject = sendRequest(findTestObject("Object Repository/PATCH Update Booking", ["id":id, "fName":firstNameUpdate, "lName":lastNameUpdate])): Send request successfully
+
+31-01-2024T13:56:37 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240131_135630/Exercise 4/20240131_135630/requests/main/1.har
+
+31-01-2024T13:56:37 - [MESSAGE][PASSED] - Send request successfully
+
+31-01-2024T13:56:37 - [TEST_STEP][PASSED] - verifyResponseStatusCode(responseObject, 200, STOP_ON_FAILURE): Verify response status code successfully
+
+31-01-2024T13:56:37 - [MESSAGE][PASSED] - Verify response status code successfully
+
+31-01-2024T13:56:37 - [TEST_STEP][PASSED] - responseBody = responseObject.getResponseBodyContent(): null
+
+31-01-2024T13:56:37 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+31-01-2024T13:56:37 - [TEST_STEP][PASSED] - firstNameRes = firstname: null
+
+31-01-2024T13:56:37 - [TEST_STEP][PASSED] - lastNameRes = lastname: null
+
+31-01-2024T13:56:37 - [TEST_STEP][PASSED] - verifyEqual(lastNameRes, lastNameUpdate): Actual object 'Tung' and expected object 'Tung' are equal
+
+31-01-2024T13:56:37 - [MESSAGE][PASSED] - Actual object 'Tung' and expected object 'Tung' are equal
+
+31-01-2024T13:56:38 - [TEST_STEP][PASSED] - verifyEqual(firstNameRes, firstNameUpdate): Actual object 'Son' and expected object 'Son' are equal
+
+31-01-2024T13:56:38 - [MESSAGE][PASSED] - Actual object 'Son' and expected object 'Son' are equal
+
+31-01-2024T13:56:38 - [TEST_STEP][PASSED] - jsonPass = "
+{
+  "$id": "https://example.com/booking.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "firstname": { "type": "string" },
+    "lastname": { "type": "string" },
+    "totalprice": { "type": "integer" },
+    "depositpaid": { "type": "boolean" },
+    "bookingdates": {
+      "type": "object",
+      "properties": {
+        "checkin": { "type": "string", "format": "date" },
+        "checkout": { "type": "string", "format": "date" }
+      },
+      "required": ["checkin", "checkout"]
+    },
+    "additionalneeds": { "type": "string" }
+  },
+  "required": ["firstname", "lastname", "totalprice", "depositpaid", "bookingdates", "additionalneeds"]
+}
+": null
+
+31-01-2024T13:56:38 - [TEST_STEP][PASSED] - successful = validateJsonAgainstSchema(responseObject, jsonPass): Validate with JSON Schema successfully
+
+31-01-2024T13:56:38 - [MESSAGE][PASSED] - Validate with JSON Schema successfully
+
+31-01-2024T13:56:38 - [TEST_STEP][PASSED] - verifyEqual(successful, true): Actual object 'true' and expected object 'true' are equal
+
+31-01-2024T13:56:38 - [MESSAGE][PASSED] - Actual object 'true' and expected object 'true' are equal
+
+31-01-2024T13:56:38 - [TEST_STEP][PASSED] - responseDelete = sendRequest(findTestObject("Object Repository/DELETE Booking", ["id":id])): Send request successfully
+
+31-01-2024T13:56:39 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240131_135630/Exercise 4/20240131_135630/requests/main/2.har
+
+31-01-2024T13:56:39 - [MESSAGE][PASSED] - Send request successfully
+
+31-01-2024T13:56:39 - [TEST_STEP][PASSED] - verifyResponseStatusCode(responseDelete, 201, STOP_ON_FAILURE): Verify response status code successfully
+
+31-01-2024T13:56:39 - [MESSAGE][PASSED] - Verify response status code successfully
+
+31-01-2024T13:56:39 - [TEST_STEP][PASSED] - assert getResponseBodyContent().contains("Created"): null
+
+31-01-2024T13:56:39 - [TEST_STEP][PASSED] - responseGETRequest = sendRequestAndVerify(findTestObject("Object Repository/GET Booking Ids", ["id":id])): Send request and verify the response successfully
+
+31-01-2024T13:56:40 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240131_135630/Exercise 4/20240131_135630/requests/main/3.har
+
+31-01-2024T13:56:40 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+31-01-2024T13:56:40 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+31-01-2024T13:56:40 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+31-01-2024T13:56:40 - [MESSAGE][PASSED] - Verify response successfully
+
+31-01-2024T13:56:40 - [MESSAGE][PASSED] - All validation steps have been passed
+
+31-01-2024T13:56:40 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+31-01-2024T13:56:40 - [TEST_STEP][PASSED] - verifyResponseStatusCode(responseGETRequest, 404, STOP_ON_FAILURE): Verify response status code successfully
+
+31-01-2024T13:56:40 - [MESSAGE][PASSED] - Verify response status code successfully
+
+31-01-2024T13:56:40 - [TEST_STEP][PASSED] - assert getResponseBodyContent().contains("Not Found"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[31-01-2024T13:56:34 - [TEST_SUITE][PASSED] - Exercise 4: Test Cases/Ex 4- PATCH_DELETE Booking]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

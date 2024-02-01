@@ -11,7 +11,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;firstname\&quot;: \&quot;${firstName}\&quot;,\n    \&quot;lastname\&quot;: \&quot;${lastName}\&quot;,\n     \&quot;totalprice\&quot;: 111,\n    \&quot;depositpaid\&quot;: true,\n    \&quot;bookingdates\&quot;: {\n        \&quot;checkin\&quot;: \&quot;na\&quot;,\n        \&quot;checkout\&quot;: \&quot;2019-01-01\&quot;\n    },\n    \&quot;additionalneeds\&quot; : \&quot;Breakfast\&quot;\n   \n}&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;firstname\&quot;: \&quot;${firstName}\&quot;,\n    \&quot;lastname\&quot;: \&quot;${lastName}\&quot;,\n     \&quot;totalprice\&quot;: 111,\n    \&quot;depositpaid\&quot;: true,\n    \&quot;bookingdates\&quot;: {\n        \&quot;checkin\&quot;: \&quot;2019-01-04\&quot;,\n        \&quot;checkout\&quot;: \&quot;2019-01-01\&quot;\n    },\n    \&quot;additionalneeds\&quot; : \&quot;Dinner\&quot;\n   \n}&quot;,
   &quot;contentType&quot;: &quot;text/plain&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
