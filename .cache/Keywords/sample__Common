@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "079CAF422D5C24AC34E523736191E635",
+  "keywordFileContentHash": "851D80016A300863D75FD33E32EA60A6",
   "keywordClasses": [
     {
       "name": "sample.Common",
@@ -72,8 +72,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "findUserById",
@@ -156,16 +155,14 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "generateRandomString",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

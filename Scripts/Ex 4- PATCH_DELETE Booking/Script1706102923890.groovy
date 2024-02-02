@@ -39,8 +39,8 @@ ResponseObject response = WS.sendRequest(findTestObject('Object Repository/POST 
 WS.verifyResponseStatusCode(response, 200,FailureHandling.STOP_ON_FAILURE)
 
 'Verify response'
-WS.verifyElementPropertyValue(response, 'booking.firstname',"${firstName}")
-WS.verifyElementPropertyValue(response, 'booking.lastname', "${lastName}")
+WS.verifyElementPropertyValue(response, 'booking.firstname',"${firstName}",FailureHandling.CONTINUE_ON_FAILURE)
+WS.verifyElementPropertyValue(response, 'booking.lastname', "${lastName}",FailureHandling.CONTINUE_ON_FAILURE)
 
 def id= WS.getElementPropertyValue(response, 'bookingid')
 def firstNameUpdate = "${firstNameUpdate}"
@@ -58,8 +58,8 @@ def jsonResponse = new JsonSlurper().parseText(responseBody)
 def firstNameRes= jsonResponse.firstname;
 def lastNameRes= jsonResponse.lastname;
 
-WS.verifyEqual(lastNameRes, lastNameUpdate)
-WS.verifyEqual(firstNameRes, firstNameUpdate)
+WS.verifyEqual(lastNameRes, lastNameUpdate,FailureHandling.CONTINUE_ON_FAILURE)
+WS.verifyEqual(firstNameRes, firstNameUpdate,FailureHandling.CONTINUE_ON_FAILURE)
 
 'Verify schema of response body'
 String jsonPass =
@@ -88,7 +88,7 @@ String jsonPass =
 """
 
 boolean successful = WS.validateJsonAgainstSchema(responseObject,jsonPass)
-WS.verifyEqual(successful, true) 
+WS.verifyEqual(successful, true,FailureHandling.CONTINUE_ON_FAILURE) 
 
 'Delete booking by ID'
 ResponseObject responseDelete = WS.sendRequest(findTestObject('Object Repository/DELETE Booking', [('id') : id]))

@@ -29,8 +29,8 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.t
 
 
 
-RunConfiguration.setExecutionSettingFile("/Users/cucnguyen/git/katalonApiExercise/Reports/20240201_085711/Final Test/20240201_085712/execution.properties")
+RunConfiguration.setExecutionSettingFile("/Users/cucnguyen/git/katalonApiExercise/Reports/20240202_163239/Final Test/20240202_163240/execution.properties")
 
 TestCaseMain.beforeStart()
 
-TestCaseMain.startTestSuite('Test Suites/Final Test', suiteProperties, new File("/Users/cucnguyen/git/katalonApiExercise/Reports/20240201_085711/Final Test/20240201_085712/testCaseBinding"))
+TestCaseMain.startTestSuite('Test Suites/Final Test', suiteProperties, new File("/Users/cucnguyen/git/katalonApiExercise/Reports/20240202_163239/Final Test/20240202_163240/testCaseBinding"))

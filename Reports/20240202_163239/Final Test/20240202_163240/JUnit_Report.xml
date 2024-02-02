@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Final Test" time="23.962" tests="6" failures="0" errors="0">
+   <testsuite name="Final Test" tests="6" failures="0" errors="0" time="23.962" skipped="0" timestamp="02-02-2024T16:32:44" hostname="cucnguyen - 192.168.2.9" id="Test Suites/Final Test">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/cucnguyen/git/katalonApiExercise/Reports/20240202_163239/Final Test/20240202_163240"/>
+         <property name="logFiles" value="/Users/cucnguyen/git/katalonApiExercise/Reports/20240202_163239/Final Test/20240202_163240/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="cucnguyen - 192.168.2.9"/>
+         <property name="hostAddress" value="192.168.2.9"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.1.0.212"/>
+      </properties>
+      <testcase name="Test Cases/POST Create booking" time="4.574" classname="Test Cases/POST Create booking" status="PASSED">
+         <system-out><![CDATA[02-02-2024T16:32:44 - [TEST_CASE][PASSED] - Test Cases/POST Create booking: Test Cases/POST Create booking
+
+02-02-2024T16:32:44 - [TEST_STEP][PASSED] - Start setup action : setupTestCase: Method 'setupTestCase' complete successfully
+
+02-02-2024T16:32:44 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/POST Create Token"), [:]): Call Test Case 'Test Cases/POST Create Token' successfully
+
+02-02-2024T16:32:45 - [TEST_CASE][PASSED] - Test Cases/POST Create Token: Test Cases/POST Create Token
+
+02-02-2024T16:32:45 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("POST Create Token")): Send request successfully
+
+02-02-2024T16:32:46 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240202_163239/Final Test/20240202_163240/requests/main/0.har
+
+02-02-2024T16:32:46 - [MESSAGE][PASSED] - Send request successfully
+
+02-02-2024T16:32:46 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+02-02-2024T16:32:46 - [MESSAGE][PASSED] - Verify response status code successfully
+
+02-02-2024T16:32:46 - [TEST_STEP][PASSED] - responseBody = response.getResponseBodyContent(): null
+
+02-02-2024T16:32:46 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+02-02-2024T16:32:46 - [TEST_STEP][PASSED] - token = token: null
+
+02-02-2024T16:32:46 - [TEST_STEP][PASSED] - cookie = "token=" + token: null
+
+02-02-2024T16:32:46 - [TEST_STEP][PASSED] - cookie = cookie: null
+
+02-02-2024T16:32:46 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/POST Create Token' successfully
+
+02-02-2024T16:32:46 - [MESSAGE][PASSED] - Method 'setupTestCase' complete successfully
+
+02-02-2024T16:32:46 - [TEST_STEP][PASSED] - firstName = sample.Common.generateRandomString(): sample.Common.generateRandomString is PASSED
+
+02-02-2024T16:32:46 - [MESSAGE][PASSED] - sample.Common.generateRandomString is PASSED
+
+02-02-2024T16:32:46 - [TEST_STEP][PASSED] - lastName = sample.Common.generateRandomString(): sample.Common.generateRandomString is PASSED
+
+02-02-2024T16:32:46 - [MESSAGE][PASSED] - sample.Common.generateRandomString is PASSED
+
+02-02-2024T16:32:46 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Object Repository/POST Create booking", ["firstName":firstName, "lastName":lastName])): Send request successfully
+
+02-02-2024T16:32:48 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240202_163239/Final Test/20240202_163240/requests/main/1.har
+
+02-02-2024T16:32:48 - [MESSAGE][PASSED] - Send request successfully
+
+02-02-2024T16:32:48 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200, STOP_ON_FAILURE): Verify response status code successfully
+
+02-02-2024T16:32:48 - [MESSAGE][PASSED] - Verify response status code successfully
+
+02-02-2024T16:32:48 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.firstname", $firstName): Verify element property value successfully
+
+02-02-2024T16:32:48 - [MESSAGE][PASSED] - Verify element property value successfully
+
+02-02-2024T16:32:48 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.lastname", $lastName): Verify element property value successfully
+
+02-02-2024T16:32:48 - [MESSAGE][PASSED] - Verify element property value successfully
+
+02-02-2024T16:32:48 - [TEST_STEP][PASSED] - responseFirstName = getElementPropertyValue(response, "booking.firstname"): null
+
+02-02-2024T16:32:48 - [TEST_STEP][PASSED] - responseLastName = getElementPropertyValue(response, "booking.lastname"): null
+
+02-02-2024T16:32:48 - [TEST_STEP][PASSED] - id = getElementPropertyValue(response, "bookingid"): null
+
+02-02-2024T16:32:48 - [TEST_STEP][PASSED] - responseSearch = sendRequestAndVerify(findTestObject("Object Repository/GET Search booking", ["firstName":responseFirstName, "lastName":responseLastName])): Send request and verify the response successfully
+
+02-02-2024T16:32:49 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240202_163239/Final Test/20240202_163240/requests/main/2.har
+
+02-02-2024T16:32:49 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+02-02-2024T16:32:49 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+02-02-2024T16:32:49 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+02-02-2024T16:32:49 - [MESSAGE][PASSED] - Verify response successfully
+
+02-02-2024T16:32:49 - [MESSAGE][PASSED] - All validation steps have been passed
+
+02-02-2024T16:32:49 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+02-02-2024T16:32:49 - [TEST_STEP][PASSED] - verifyResponseStatusCode(responseSearch, 200, STOP_ON_FAILURE): Verify response status code successfully
+
+02-02-2024T16:32:49 - [MESSAGE][PASSED] - Verify response status code successfully
+
+02-02-2024T16:32:49 - [TEST_STEP][PASSED] - responseBody = responseSearch.getResponseBodyContent(): null
+
+02-02-2024T16:32:49 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+02-02-2024T16:32:49 - [TEST_STEP][PASSED] - userId = bookingid: null
+
+02-02-2024T16:32:49 - [TEST_STEP][PASSED] - verifyEqual(userId, id): Actual object '949' and expected object '949' are equal
+
+02-02-2024T16:32:49 - [MESSAGE][PASSED] - Actual object '949' and expected object '949' are equal
+
+02-02-2024T16:32:49 - [TEST_STEP][PASSED] - countID = jsonResponse.collect({ -> ... }): null
+
+02-02-2024T16:32:49 - [TEST_STEP][PASSED] - expectedNumber = 1: null
+
+02-02-2024T16:32:49 - [TEST_STEP][PASSED] - verifyEqual(countID.size(), expectedNumber): Actual object '1' and expected object '1' are equal
+
+02-02-2024T16:32:49 - [MESSAGE][PASSED] - Actual object '1' and expected object '1' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/POST Create Multiple Booking" time="3.42" classname="Test Cases/POST Create Multiple Booking" status="PASSED">
+         <system-out><![CDATA[02-02-2024T16:32:49 - [TEST_CASE][PASSED] - Test Cases/POST Create Multiple Booking: Test Cases/POST Create Multiple Booking
+
+02-02-2024T16:32:49 - [TEST_STEP][PASSED] - Start setup action : setupTestCase: Method 'setupTestCase' complete successfully
+
+02-02-2024T16:32:49 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/POST Create Token"), [:]): Call Test Case 'Test Cases/POST Create Token' successfully
+
+02-02-2024T16:32:49 - [TEST_CASE][PASSED] - Test Cases/POST Create Token: Test Cases/POST Create Token
+
+02-02-2024T16:32:49 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("POST Create Token")): Send request successfully
+
+02-02-2024T16:32:50 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240202_163239/Final Test/20240202_163240/requests/main/3.har
+
+02-02-2024T16:32:50 - [MESSAGE][PASSED] - Send request successfully
+
+02-02-2024T16:32:50 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+02-02-2024T16:32:50 - [MESSAGE][PASSED] - Verify response status code successfully
+
+02-02-2024T16:32:50 - [TEST_STEP][PASSED] - responseBody = response.getResponseBodyContent(): null
+
+02-02-2024T16:32:50 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+02-02-2024T16:32:50 - [TEST_STEP][PASSED] - token = token: null
+
+02-02-2024T16:32:50 - [TEST_STEP][PASSED] - cookie = "token=" + token: null
+
+02-02-2024T16:32:50 - [TEST_STEP][PASSED] - cookie = cookie: null
+
+02-02-2024T16:32:50 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/POST Create Token' successfully
+
+02-02-2024T16:32:50 - [MESSAGE][PASSED] - Method 'setupTestCase' complete successfully
+
+02-02-2024T16:32:50 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Object Repository/POST Create Multiple Booking", ["firstName":firstName, "lastName":lastName])): Send request successfully
+
+02-02-2024T16:32:51 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240202_163239/Final Test/20240202_163240/requests/main/4.har
+
+02-02-2024T16:32:51 - [MESSAGE][PASSED] - Send request successfully
+
+02-02-2024T16:32:51 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+02-02-2024T16:32:51 - [MESSAGE][PASSED] - Verify response status code successfully
+
+02-02-2024T16:32:51 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.firstname", $firstName): Verify element property value successfully
+
+02-02-2024T16:32:51 - [MESSAGE][PASSED] - Verify element property value successfully
+
+02-02-2024T16:32:51 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.lastname", $lastName): Verify element property value successfully
+
+02-02-2024T16:32:51 - [MESSAGE][PASSED] - Verify element property value successfully
+
+02-02-2024T16:32:51 - [TEST_STEP][PASSED] - id = getElementPropertyValue(response, "bookingid"): null
+
+02-02-2024T16:32:51 - [TEST_STEP][PASSED] - responseGETRequest = sendRequestAndVerify(findTestObject("Object Repository/GET Booking Ids", ["id":id])): Send request and verify the response successfully
+
+02-02-2024T16:32:52 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240202_163239/Final Test/20240202_163240/requests/main/5.har
+
+02-02-2024T16:32:52 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+02-02-2024T16:32:52 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+02-02-2024T16:32:52 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+02-02-2024T16:32:52 - [MESSAGE][PASSED] - Verify response successfully
+
+02-02-2024T16:32:52 - [MESSAGE][PASSED] - All validation steps have been passed
+
+02-02-2024T16:32:52 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+02-02-2024T16:32:52 - [TEST_STEP][PASSED] - verifyResponseStatusCode(responseGETRequest, 200): Verify response status code successfully
+
+02-02-2024T16:32:52 - [MESSAGE][PASSED] - Verify response status code successfully
+
+02-02-2024T16:32:52 - [TEST_STEP][PASSED] - responseBody = responseGETRequest.getResponseBodyContent(): null
+
+02-02-2024T16:32:52 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+02-02-2024T16:32:52 - [TEST_STEP][PASSED] - firstNameRes = firstname: null
+
+02-02-2024T16:32:52 - [TEST_STEP][PASSED] - lastNameRes = lastname: null
+
+02-02-2024T16:32:52 - [TEST_STEP][PASSED] - verifyEqual(lastNameRes, $lastName): Actual object 'Nguyen' and expected object 'Nguyen' are equal
+
+02-02-2024T16:32:52 - [MESSAGE][PASSED] - Actual object 'Nguyen' and expected object 'Nguyen' are equal
+
+02-02-2024T16:32:52 - [TEST_STEP][PASSED] - verifyEqual(firstNameRes, $firstName): Actual object 'Cuc' and expected object 'Cuc' are equal
+
+02-02-2024T16:32:52 - [MESSAGE][PASSED] - Actual object 'Cuc' and expected object 'Cuc' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/POST Create Multiple Booking" time="3.32" classname="Test Cases/POST Create Multiple Booking" status="PASSED">
+         <system-out><![CDATA[02-02-2024T16:32:52 - [TEST_CASE][PASSED] - Test Cases/POST Create Multiple Booking: Test Cases/POST Create Multiple Booking
+
+02-02-2024T16:32:52 - [TEST_STEP][PASSED] - Start setup action : setupTestCase: Method 'setupTestCase' complete successfully
+
+02-02-2024T16:32:52 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/POST Create Token"), [:]): Call Test Case 'Test Cases/POST Create Token' successfully
+
+02-02-2024T16:32:52 - [TEST_CASE][PASSED] - Test Cases/POST Create Token: Test Cases/POST Create Token
+
+02-02-2024T16:32:52 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("POST Create Token")): Send request successfully
+
+02-02-2024T16:32:53 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240202_163239/Final Test/20240202_163240/requests/main/6.har
+
+02-02-2024T16:32:53 - [MESSAGE][PASSED] - Send request successfully
+
+02-02-2024T16:32:53 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+02-02-2024T16:32:54 - [MESSAGE][PASSED] - Verify response status code successfully
+
+02-02-2024T16:32:54 - [TEST_STEP][PASSED] - responseBody = response.getResponseBodyContent(): null
+
+02-02-2024T16:32:54 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+02-02-2024T16:32:54 - [TEST_STEP][PASSED] - token = token: null
+
+02-02-2024T16:32:54 - [TEST_STEP][PASSED] - cookie = "token=" + token: null
+
+02-02-2024T16:32:54 - [TEST_STEP][PASSED] - cookie = cookie: null
+
+02-02-2024T16:32:54 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/POST Create Token' successfully
+
+02-02-2024T16:32:54 - [MESSAGE][PASSED] - Method 'setupTestCase' complete successfully
+
+02-02-2024T16:32:54 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Object Repository/POST Create Multiple Booking", ["firstName":firstName, "lastName":lastName])): Send request successfully
+
+02-02-2024T16:32:55 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240202_163239/Final Test/20240202_163240/requests/main/7.har
+
+02-02-2024T16:32:55 - [MESSAGE][PASSED] - Send request successfully
+
+02-02-2024T16:32:55 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+02-02-2024T16:32:55 - [MESSAGE][PASSED] - Verify response status code successfully
+
+02-02-2024T16:32:55 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.firstname", $firstName): Verify element property value successfully
+
+02-02-2024T16:32:55 - [MESSAGE][PASSED] - Verify element property value successfully
+
+02-02-2024T16:32:55 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.lastname", $lastName): Verify element property value successfully
+
+02-02-2024T16:32:55 - [MESSAGE][PASSED] - Verify element property value successfully
+
+02-02-2024T16:32:55 - [TEST_STEP][PASSED] - id = getElementPropertyValue(response, "bookingid"): null
+
+02-02-2024T16:32:55 - [TEST_STEP][PASSED] - responseGETRequest = sendRequestAndVerify(findTestObject("Object Repository/GET Booking Ids", ["id":id])): Send request and verify the response successfully
+
+02-02-2024T16:32:56 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240202_163239/Final Test/20240202_163240/requests/main/8.har
+
+02-02-2024T16:32:56 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+02-02-2024T16:32:56 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+02-02-2024T16:32:56 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+02-02-2024T16:32:56 - [MESSAGE][PASSED] - Verify response successfully
+
+02-02-2024T16:32:56 - [MESSAGE][PASSED] - All validation steps have been passed
+
+02-02-2024T16:32:56 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+02-02-2024T16:32:56 - [TEST_STEP][PASSED] - verifyResponseStatusCode(responseGETRequest, 200): Verify response status code successfully
+
+02-02-2024T16:32:56 - [MESSAGE][PASSED] - Verify response status code successfully
+
+02-02-2024T16:32:56 - [TEST_STEP][PASSED] - responseBody = responseGETRequest.getResponseBodyContent(): null
+
+02-02-2024T16:32:56 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+02-02-2024T16:32:56 - [TEST_STEP][PASSED] - firstNameRes = firstname: null
+
+02-02-2024T16:32:56 - [TEST_STEP][PASSED] - lastNameRes = lastname: null
+
+02-02-2024T16:32:56 - [TEST_STEP][PASSED] - verifyEqual(lastNameRes, $lastName): Actual object 'Chau' and expected object 'Chau' are equal
+
+02-02-2024T16:32:56 - [MESSAGE][PASSED] - Actual object 'Chau' and expected object 'Chau' are equal
+
+02-02-2024T16:32:56 - [TEST_STEP][PASSED] - verifyEqual(firstNameRes, $firstName): Actual object 'Lap' and expected object 'Lap' are equal
+
+02-02-2024T16:32:56 - [MESSAGE][PASSED] - Actual object 'Lap' and expected object 'Lap' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/POST Create Multiple Booking" time="3.463" classname="Test Cases/POST Create Multiple Booking" status="PASSED">
+         <system-out><![CDATA[02-02-2024T16:32:56 - [TEST_CASE][PASSED] - Test Cases/POST Create Multiple Booking: Test Cases/POST Create Multiple Booking
+
+02-02-2024T16:32:56 - [TEST_STEP][PASSED] - Start setup action : setupTestCase: Method 'setupTestCase' complete successfully
+
+02-02-2024T16:32:56 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/POST Create Token"), [:]): Call Test Case 'Test Cases/POST Create Token' successfully
+
+02-02-2024T16:32:56 - [TEST_CASE][PASSED] - Test Cases/POST Create Token: Test Cases/POST Create Token
+
+02-02-2024T16:32:56 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("POST Create Token")): Send request successfully
+
+02-02-2024T16:32:57 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240202_163239/Final Test/20240202_163240/requests/main/9.har
+
+02-02-2024T16:32:57 - [MESSAGE][PASSED] - Send request successfully
+
+02-02-2024T16:32:57 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+02-02-2024T16:32:57 - [MESSAGE][PASSED] - Verify response status code successfully
+
+02-02-2024T16:32:57 - [TEST_STEP][PASSED] - responseBody = response.getResponseBodyContent(): null
+
+02-02-2024T16:32:57 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+02-02-2024T16:32:57 - [TEST_STEP][PASSED] - token = token: null
+
+02-02-2024T16:32:57 - [TEST_STEP][PASSED] - cookie = "token=" + token: null
+
+02-02-2024T16:32:57 - [TEST_STEP][PASSED] - cookie = cookie: null
+
+02-02-2024T16:32:57 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/POST Create Token' successfully
+
+02-02-2024T16:32:57 - [MESSAGE][PASSED] - Method 'setupTestCase' complete successfully
+
+02-02-2024T16:32:57 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Object Repository/POST Create Multiple Booking", ["firstName":firstName, "lastName":lastName])): Send request successfully
+
+02-02-2024T16:32:58 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240202_163239/Final Test/20240202_163240/requests/main/10.har
+
+02-02-2024T16:32:58 - [MESSAGE][PASSED] - Send request successfully
+
+02-02-2024T16:32:58 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+02-02-2024T16:32:58 - [MESSAGE][PASSED] - Verify response status code successfully
+
+02-02-2024T16:32:58 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.firstname", $firstName): Verify element property value successfully
+
+02-02-2024T16:32:58 - [MESSAGE][PASSED] - Verify element property value successfully
+
+02-02-2024T16:32:58 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.lastname", $lastName): Verify element property value successfully
+
+02-02-2024T16:32:58 - [MESSAGE][PASSED] - Verify element property value successfully
+
+02-02-2024T16:32:58 - [TEST_STEP][PASSED] - id = getElementPropertyValue(response, "bookingid"): null
+
+02-02-2024T16:32:58 - [TEST_STEP][PASSED] - responseGETRequest = sendRequestAndVerify(findTestObject("Object Repository/GET Booking Ids", ["id":id])): Send request and verify the response successfully
+
+02-02-2024T16:32:59 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240202_163239/Final Test/20240202_163240/requests/main/11.har
+
+02-02-2024T16:32:59 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+02-02-2024T16:32:59 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+02-02-2024T16:32:59 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+02-02-2024T16:32:59 - [MESSAGE][PASSED] - Verify response successfully
+
+02-02-2024T16:32:59 - [MESSAGE][PASSED] - All validation steps have been passed
+
+02-02-2024T16:32:59 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+02-02-2024T16:32:59 - [TEST_STEP][PASSED] - verifyResponseStatusCode(responseGETRequest, 200): Verify response status code successfully
+
+02-02-2024T16:32:59 - [MESSAGE][PASSED] - Verify response status code successfully
+
+02-02-2024T16:32:59 - [TEST_STEP][PASSED] - responseBody = responseGETRequest.getResponseBodyContent(): null
+
+02-02-2024T16:32:59 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+02-02-2024T16:32:59 - [TEST_STEP][PASSED] - firstNameRes = firstname: null
+
+02-02-2024T16:32:59 - [TEST_STEP][PASSED] - lastNameRes = lastname: null
+
+02-02-2024T16:32:59 - [TEST_STEP][PASSED] - verifyEqual(lastNameRes, $lastName): Actual object 'Nguyen' and expected object 'Nguyen' are equal
+
+02-02-2024T16:32:59 - [MESSAGE][PASSED] - Actual object 'Nguyen' and expected object 'Nguyen' are equal
+
+02-02-2024T16:32:59 - [TEST_STEP][PASSED] - verifyEqual(firstNameRes, $firstName): Actual object 'Anh' and expected object 'Anh' are equal
+
+02-02-2024T16:32:59 - [MESSAGE][PASSED] - Actual object 'Anh' and expected object 'Anh' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/PUT Update Booking" time="3.386" classname="Test Cases/PUT Update Booking" status="PASSED">
+         <system-out><![CDATA[02-02-2024T16:32:59 - [TEST_CASE][PASSED] - Test Cases/PUT Update Booking: Test Cases/PUT Update Booking
+
+02-02-2024T16:32:59 - [TEST_STEP][PASSED] - Start setup action : setupTestCase: Method 'setupTestCase' complete successfully
+
+02-02-2024T16:32:59 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/POST Create Token"), [:]): Call Test Case 'Test Cases/POST Create Token' successfully
+
+02-02-2024T16:32:59 - [TEST_CASE][PASSED] - Test Cases/POST Create Token: Test Cases/POST Create Token
+
+02-02-2024T16:32:59 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("POST Create Token")): Send request successfully
+
+02-02-2024T16:33:00 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240202_163239/Final Test/20240202_163240/requests/main/12.har
+
+02-02-2024T16:33:00 - [MESSAGE][PASSED] - Send request successfully
+
+02-02-2024T16:33:00 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+02-02-2024T16:33:00 - [MESSAGE][PASSED] - Verify response status code successfully
+
+02-02-2024T16:33:00 - [TEST_STEP][PASSED] - responseBody = response.getResponseBodyContent(): null
+
+02-02-2024T16:33:00 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+02-02-2024T16:33:00 - [TEST_STEP][PASSED] - token = token: null
+
+02-02-2024T16:33:00 - [TEST_STEP][PASSED] - cookie = "token=" + token: null
+
+02-02-2024T16:33:00 - [TEST_STEP][PASSED] - cookie = cookie: null
+
+02-02-2024T16:33:00 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/POST Create Token' successfully
+
+02-02-2024T16:33:00 - [MESSAGE][PASSED] - Method 'setupTestCase' complete successfully
+
+02-02-2024T16:33:00 - [TEST_STEP][PASSED] - firstName = sample.Common.generateRandomString(): sample.Common.generateRandomString is PASSED
+
+02-02-2024T16:33:00 - [MESSAGE][PASSED] - sample.Common.generateRandomString is PASSED
+
+02-02-2024T16:33:00 - [TEST_STEP][PASSED] - lastName = sample.Common.generateRandomString(): sample.Common.generateRandomString is PASSED
+
+02-02-2024T16:33:00 - [MESSAGE][PASSED] - sample.Common.generateRandomString is PASSED
+
+02-02-2024T16:33:00 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Object Repository/POST Create booking", ["firstName":firstName, "lastName":lastName])): Send request successfully
+
+02-02-2024T16:33:01 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240202_163239/Final Test/20240202_163240/requests/main/13.har
+
+02-02-2024T16:33:01 - [MESSAGE][PASSED] - Send request successfully
+
+02-02-2024T16:33:01 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200, STOP_ON_FAILURE): Verify response status code successfully
+
+02-02-2024T16:33:01 - [MESSAGE][PASSED] - Verify response status code successfully
+
+02-02-2024T16:33:01 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.firstname", $firstName, CONTINUE_ON_FAILURE): Verify element property value successfully
+
+02-02-2024T16:33:01 - [MESSAGE][PASSED] - Verify element property value successfully
+
+02-02-2024T16:33:01 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.lastname", $lastName, CONTINUE_ON_FAILURE): Verify element property value successfully
+
+02-02-2024T16:33:01 - [MESSAGE][PASSED] - Verify element property value successfully
+
+02-02-2024T16:33:01 - [TEST_STEP][PASSED] - id = getElementPropertyValue(response, "bookingid"): null
+
+02-02-2024T16:33:01 - [TEST_STEP][PASSED] - firstNameUpdate = $firstNameUpdate: null
+
+02-02-2024T16:33:01 - [TEST_STEP][PASSED] - lastNameUpdate = $lastNameUpdate: null
+
+02-02-2024T16:33:01 - [TEST_STEP][PASSED] - responseObject = sendRequest(findTestObject("Object Repository/PUT Update Booking", ["id":id, "firstNameUpdate":firstNameUpdate, "lastNameUpdate":lastNameUpdate])): Send request successfully
+
+02-02-2024T16:33:03 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240202_163239/Final Test/20240202_163240/requests/main/14.har
+
+02-02-2024T16:33:03 - [MESSAGE][PASSED] - Send request successfully
+
+02-02-2024T16:33:03 - [TEST_STEP][PASSED] - verifyResponseStatusCode(responseObject, 200, STOP_ON_FAILURE): Verify response status code successfully
+
+02-02-2024T16:33:03 - [MESSAGE][PASSED] - Verify response status code successfully
+
+02-02-2024T16:33:03 - [TEST_STEP][PASSED] - responseBody = responseObject.getResponseBodyContent(): null
+
+02-02-2024T16:33:03 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+02-02-2024T16:33:03 - [TEST_STEP][PASSED] - firstNameRes = firstname: null
+
+02-02-2024T16:33:03 - [TEST_STEP][PASSED] - lastNameRes = lastname: null
+
+02-02-2024T16:33:03 - [TEST_STEP][PASSED] - verifyEqual(lastNameRes, lastNameUpdate, CONTINUE_ON_FAILURE): Actual object 'Nguyen' and expected object 'Nguyen' are equal
+
+02-02-2024T16:33:03 - [MESSAGE][PASSED] - Actual object 'Nguyen' and expected object 'Nguyen' are equal
+
+02-02-2024T16:33:03 - [TEST_STEP][PASSED] - verifyEqual(firstNameRes, firstNameUpdate, CONTINUE_ON_FAILURE): Actual object 'Cuc' and expected object 'Cuc' are equal
+
+02-02-2024T16:33:03 - [MESSAGE][PASSED] - Actual object 'Cuc' and expected object 'Cuc' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Ex 4- PATCH_DELETE Booking" time="5.685" classname="Test Cases/Ex 4- PATCH_DELETE Booking" status="PASSED">
+         <system-out><![CDATA[02-02-2024T16:33:03 - [TEST_CASE][PASSED] - Test Cases/Ex 4- PATCH_DELETE Booking: Test Cases/Ex 4- PATCH_DELETE Booking
+
+02-02-2024T16:33:03 - [TEST_STEP][PASSED] - Start setup action : setupTestCase: Method 'setupTestCase' complete successfully
+
+02-02-2024T16:33:03 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/POST Create Token"), [:]): Call Test Case 'Test Cases/POST Create Token' successfully
+
+02-02-2024T16:33:03 - [TEST_CASE][PASSED] - Test Cases/POST Create Token: Test Cases/POST Create Token
+
+02-02-2024T16:33:03 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("POST Create Token")): Send request successfully
+
+02-02-2024T16:33:04 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240202_163239/Final Test/20240202_163240/requests/main/15.har
+
+02-02-2024T16:33:04 - [MESSAGE][PASSED] - Send request successfully
+
+02-02-2024T16:33:04 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+02-02-2024T16:33:04 - [MESSAGE][PASSED] - Verify response status code successfully
+
+02-02-2024T16:33:04 - [TEST_STEP][PASSED] - responseBody = response.getResponseBodyContent(): null
+
+02-02-2024T16:33:04 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+02-02-2024T16:33:04 - [TEST_STEP][PASSED] - token = token: null
+
+02-02-2024T16:33:04 - [TEST_STEP][PASSED] - cookie = "token=" + token: null
+
+02-02-2024T16:33:04 - [TEST_STEP][PASSED] - cookie = cookie: null
+
+02-02-2024T16:33:04 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/POST Create Token' successfully
+
+02-02-2024T16:33:04 - [MESSAGE][PASSED] - Method 'setupTestCase' complete successfully
+
+02-02-2024T16:33:04 - [TEST_STEP][PASSED] - firstName = sample.Common.generateRandomString(): sample.Common.generateRandomString is PASSED
+
+02-02-2024T16:33:04 - [MESSAGE][PASSED] - sample.Common.generateRandomString is PASSED
+
+02-02-2024T16:33:04 - [TEST_STEP][PASSED] - lastName = sample.Common.generateRandomString(): sample.Common.generateRandomString is PASSED
+
+02-02-2024T16:33:04 - [MESSAGE][PASSED] - sample.Common.generateRandomString is PASSED
+
+02-02-2024T16:33:04 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Object Repository/POST Create booking", ["firstName":firstName, "lastName":lastName])): Send request successfully
+
+02-02-2024T16:33:05 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240202_163239/Final Test/20240202_163240/requests/main/16.har
+
+02-02-2024T16:33:05 - [MESSAGE][PASSED] - Send request successfully
+
+02-02-2024T16:33:05 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200, STOP_ON_FAILURE): Verify response status code successfully
+
+02-02-2024T16:33:05 - [MESSAGE][PASSED] - Verify response status code successfully
+
+02-02-2024T16:33:05 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.firstname", $firstName, CONTINUE_ON_FAILURE): Verify element property value successfully
+
+02-02-2024T16:33:05 - [MESSAGE][PASSED] - Verify element property value successfully
+
+02-02-2024T16:33:05 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.lastname", $lastName, CONTINUE_ON_FAILURE): Verify element property value successfully
+
+02-02-2024T16:33:05 - [MESSAGE][PASSED] - Verify element property value successfully
+
+02-02-2024T16:33:05 - [TEST_STEP][PASSED] - id = getElementPropertyValue(response, "bookingid"): null
+
+02-02-2024T16:33:05 - [TEST_STEP][PASSED] - firstNameUpdate = $firstNameUpdate: null
+
+02-02-2024T16:33:05 - [TEST_STEP][PASSED] - lastNameUpdate = $lastNameUpdate: null
+
+02-02-2024T16:33:05 - [TEST_STEP][PASSED] - responseObject = sendRequest(findTestObject("Object Repository/PATCH Update Booking", ["id":id, "fName":firstNameUpdate, "lName":lastNameUpdate])): Send request successfully
+
+02-02-2024T16:33:06 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240202_163239/Final Test/20240202_163240/requests/main/17.har
+
+02-02-2024T16:33:06 - [MESSAGE][PASSED] - Send request successfully
+
+02-02-2024T16:33:06 - [TEST_STEP][PASSED] - verifyResponseStatusCode(responseObject, 200, STOP_ON_FAILURE): Verify response status code successfully
+
+02-02-2024T16:33:06 - [MESSAGE][PASSED] - Verify response status code successfully
+
+02-02-2024T16:33:06 - [TEST_STEP][PASSED] - responseBody = responseObject.getResponseBodyContent(): null
+
+02-02-2024T16:33:06 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(responseBody): null
+
+02-02-2024T16:33:06 - [TEST_STEP][PASSED] - firstNameRes = firstname: null
+
+02-02-2024T16:33:06 - [TEST_STEP][PASSED] - lastNameRes = lastname: null
+
+02-02-2024T16:33:06 - [TEST_STEP][PASSED] - verifyEqual(lastNameRes, lastNameUpdate, CONTINUE_ON_FAILURE): Actual object 'Tung' and expected object 'Tung' are equal
+
+02-02-2024T16:33:06 - [MESSAGE][PASSED] - Actual object 'Tung' and expected object 'Tung' are equal
+
+02-02-2024T16:33:06 - [TEST_STEP][PASSED] - verifyEqual(firstNameRes, firstNameUpdate, CONTINUE_ON_FAILURE): Actual object 'Son' and expected object 'Son' are equal
+
+02-02-2024T16:33:06 - [MESSAGE][PASSED] - Actual object 'Son' and expected object 'Son' are equal
+
+02-02-2024T16:33:06 - [TEST_STEP][PASSED] - jsonPass = "
+{
+  "$id": "https://example.com/booking.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "firstname": { "type": "string" },
+    "lastname": { "type": "string" },
+    "totalprice": { "type": "integer" },
+    "depositpaid": { "type": "boolean" },
+    "bookingdates": {
+      "type": "object",
+      "properties": {
+        "checkin": { "type": "string", "format": "date" },
+        "checkout": { "type": "string", "format": "date" }
+      },
+      "required": ["checkin", "checkout"]
+    },
+    "additionalneeds": { "type": "string" }
+  },
+  "required": ["firstname", "lastname", "totalprice", "depositpaid", "bookingdates", "additionalneeds"]
+}
+": null
+
+02-02-2024T16:33:06 - [TEST_STEP][PASSED] - successful = validateJsonAgainstSchema(responseObject, jsonPass): Validate with JSON Schema successfully
+
+02-02-2024T16:33:06 - [MESSAGE][PASSED] - Validate with JSON Schema successfully
+
+02-02-2024T16:33:06 - [TEST_STEP][PASSED] - verifyEqual(successful, true, CONTINUE_ON_FAILURE): Actual object 'true' and expected object 'true' are equal
+
+02-02-2024T16:33:06 - [MESSAGE][PASSED] - Actual object 'true' and expected object 'true' are equal
+
+02-02-2024T16:33:06 - [TEST_STEP][PASSED] - responseDelete = sendRequest(findTestObject("Object Repository/DELETE Booking", ["id":id])): Send request successfully
+
+02-02-2024T16:33:07 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240202_163239/Final Test/20240202_163240/requests/main/18.har
+
+02-02-2024T16:33:07 - [MESSAGE][PASSED] - Send request successfully
+
+02-02-2024T16:33:07 - [TEST_STEP][PASSED] - verifyResponseStatusCode(responseDelete, 201, STOP_ON_FAILURE): Verify response status code successfully
+
+02-02-2024T16:33:07 - [MESSAGE][PASSED] - Verify response status code successfully
+
+02-02-2024T16:33:07 - [TEST_STEP][PASSED] - assert getResponseBodyContent().contains("Created"): null
+
+02-02-2024T16:33:07 - [TEST_STEP][PASSED] - responseGETRequest = sendRequestAndVerify(findTestObject("Object Repository/GET Booking Ids", ["id":id])): Send request and verify the response successfully
+
+02-02-2024T16:33:08 - [MESSAGE][INFO] - HAR: /Users/cucnguyen/git/katalonApiExercise/Reports/20240202_163239/Final Test/20240202_163240/requests/main/19.har
+
+02-02-2024T16:33:08 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+02-02-2024T16:33:08 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+02-02-2024T16:33:08 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+02-02-2024T16:33:08 - [MESSAGE][PASSED] - Verify response successfully
+
+02-02-2024T16:33:08 - [MESSAGE][PASSED] - All validation steps have been passed
+
+02-02-2024T16:33:08 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+02-02-2024T16:33:08 - [TEST_STEP][PASSED] - verifyResponseStatusCode(responseGETRequest, 404, STOP_ON_FAILURE): Verify response status code successfully
+
+02-02-2024T16:33:08 - [MESSAGE][PASSED] - Verify response status code successfully
+
+02-02-2024T16:33:08 - [TEST_STEP][PASSED] - assert getResponseBodyContent().contains("Not Found"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[02-02-2024T16:32:44 - [TEST_SUITE][PASSED] - Final Test: Test Cases/Ex 4- PATCH_DELETE Booking]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

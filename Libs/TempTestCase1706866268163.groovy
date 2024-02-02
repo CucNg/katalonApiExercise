@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('/var/folders/rf/1njtc6k14c52yj4flf7jd_wj1r6p79/T/Katalon/Test Cases/POST Create booking/20240131_221720/execution.properties')
+RunConfiguration.setExecutionSettingFile('/var/folders/rf/1njtc6k14c52yj4flf7jd_wj1r6p79/T/Katalon/Test Cases/PUT Update Booking/20240202_163108/execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/POST Create booking', new TestCaseBinding('Test Cases/POST Create booking',[:]), FailureHandling.STOP_ON_FAILURE , false)
+        TestCaseMain.runTestCase('Test Cases/PUT Update Booking', new TestCaseBinding('Test Cases/PUT Update Booking',[:]), FailureHandling.STOP_ON_FAILURE , false)
     

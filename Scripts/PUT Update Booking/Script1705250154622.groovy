@@ -38,8 +38,8 @@ ResponseObject response = WS.sendRequest(findTestObject('Object Repository/POST 
 WS.verifyResponseStatusCode(response, 200,FailureHandling.STOP_ON_FAILURE)
 
 'Verify response'
-WS.verifyElementPropertyValue(response, 'booking.firstname',"${firstName}")
-WS.verifyElementPropertyValue(response, 'booking.lastname', "${lastName}")
+WS.verifyElementPropertyValue(response, 'booking.firstname',"${firstName}",FailureHandling.CONTINUE_ON_FAILURE)
+WS.verifyElementPropertyValue(response, 'booking.lastname', "${lastName}",FailureHandling.CONTINUE_ON_FAILURE)
 
 def id= WS.getElementPropertyValue(response, 'bookingid')
 def firstNameUpdate = "${firstNameUpdate}"
@@ -56,8 +56,8 @@ String responseBody = responseObject.getResponseBodyContent()
 def jsonResponse = new JsonSlurper().parseText(responseBody)
 def firstNameRes= jsonResponse.firstname;
 def lastNameRes= jsonResponse.lastname;
-WS.verifyEqual(lastNameRes, lastNameUpdate)
-WS.verifyEqual(firstNameRes, firstNameUpdate)
+WS.verifyEqual(lastNameRes, lastNameUpdate,FailureHandling.CONTINUE_ON_FAILURE)
+WS.verifyEqual(firstNameRes, firstNameUpdate,FailureHandling.CONTINUE_ON_FAILURE)
 
 
 
